@@ -284,7 +284,170 @@ body{
     color: var(--tittle1);
     margin-top: -2rem;
 }
-.integrazioni-img{
+.BioVitalAge_integrazione {
+    position: relative;
     width: 100%;
-    opacity: 0.6;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+.BioVitalAge_integrazione::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(includes/images/screenshot2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8; 
+    z-index: 0; 
+}
+.integrazioni-description {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    color: var(--tittle1);
+    text-align: center;
+    z-index: 1; /* Ensure this is above the background */
+}
+.integrazioni-description h3 {
+    color: var(--tittle1);
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.integrazioni-description p {
+    font-size: 1.5rem;
+    color: var(--tittl2);
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.6;
+    max-width: 50%;
+    margin: 2rem auto;
+}
+.integrazioni-description p span {
+    color: var(--light1);
+}
+.integrazioni-description ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 0;
+    margin-top: 2rem;
+}
+.integrazioni-description li {
+    list-style: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(36, 21, 59, 0.6); 
+    color: var(--light1);
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    width: calc(25% - 20px); 
+    margin: 10px;
+    font-weight: bolder;
+}
+.integrazioni-description li::before {
+    content: "➤";
+    margin-right: 8px;
+    color: var(--tittl2);
+    font-weight: bold;
+}
+
+
+
+.Biomarcatori-container{
+    height: 850px;
+    background-image: url(includes/images/screenshot3.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -2rem;
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+.Biomarcatori-tittle{
+    text-align: center;
+    color: var(--tittl2);
+    font-size: 30px;
+    padding-top: 80px;
+    letter-spacing: 4px;
+    border-radius: 12px;
+    width: 50%;
+    margin: 2rem auto;
+    font-weight: 900;
+}
+.biomarcatori-parametri-container{
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+.tittle-container{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tittle-container h3{
+    color: var(--tittle1);
+    font-size: 45px;
+    max-width: 40%;
+}
+.biomarcatori-parametri-container ul{
+    width: 45%;
+    margin-left: 10%;
+    height: 80%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.biomarcatori-parametri-container ul li {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.01); 
+    height: 2rem;
+    width: 25rem;
+    border-radius: 12px;
+    color: var(--light1);
+    font-size: 20px;
+}
+.biomarcatori-parametri-container ul li::before {
+    content: "➤";
+    margin-right: 8px;
+    color: var(--tittl2);
+    font-weight: bold;
+    position: absolute;
+    left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.biomarcatori-parametri-footer{
+    background-image: url(includes/images/screenshot5.png);
+    background-size: cover;
+    background-position: center;
+    height: 235px;
+    width: 100%;
+    margin-top: -4.4rem;
 }
