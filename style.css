@@ -94,7 +94,7 @@ body{
     height: 20px;
     transform: translate(5%, 15%);
 }
-.nav-bar__social-link{
+.nav-bar__other-link{
     width: 20%;
     height: 5rem;
     display: flex;
@@ -102,17 +102,45 @@ body{
     align-items: center;
     gap: 10px;
 }
-.nav-bar__social-link a{
+.nav-bar__other-link a{
     margin-top: 0.5rem;
+    text-decoration: none;
 }
-.nav-bar__social-link a:hover{
-    transform: scale(1.1);
+.info-link{
+    max-width: 7.2rem;
+    color: var(--tittle1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.nav-bar__social-link a img{
-    border-radius: 4px;
+.info-link:hover{
+    color: var(--tittl2);
+}
+.info-link img{
     width: 25px;
     height: 25px;
 }
+.a-btn{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    background-color: var(--contrast-color);
+    color: var(--tittle1);
+    margin-left: 1rem;
+    border: 1px solid var(--contrast-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-btn:hover{
+    color: var(--tittle1);
+    background-color: var(--contrast-color2);
+}
+
+
+
+
+
 .nav-bar-tittle{
     color: var(--tittle1);
     font-weight: bold;
@@ -160,7 +188,6 @@ body{
     letter-spacing: -0.05em;
     font-weight: 300;
 }
-
 .Home__content-container {
     position: relative;
     background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
@@ -313,7 +340,7 @@ body{
     padding: 20px;
     color: var(--tittle1);
     text-align: center;
-    z-index: 1; /* Ensure this is above the background */
+    z-index: 1;
 }
 .integrazioni-description h3 {
     color: var(--tittle1);
@@ -345,8 +372,8 @@ body{
 }
 .integrazioni-description li {
     list-style: none;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-    background-color: rgba(36, 21, 59, 0.6); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); 
+    background-color: rgba(255, 255, 255, 0.05); 
     color: var(--light1);
     border-radius: 12px;
     padding: 15px 20px;
@@ -361,21 +388,35 @@ body{
     color: var(--tittl2);
     font-weight: bold;
 }
-
-
-
-.Biomarcatori-container{
-    height: 850px;
-    background-image: url(includes/images/screenshot3.png);
+.Biomarcatori-container {
+    position: relative;
+    height: 1700px;
+    margin-top: -2rem;
+    z-index: 1; 
+}
+.Biomarcatori-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(includes/images/background_circular.png);
     background-size: cover;
     background-position: center;
-    margin-top: -2rem;
-    box-shadow: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    opacity: 0.4; 
+    z-index: -1; 
+}
+.Biomarcatori-tittle,
+.biomarcatori-parametri-container {
+    position: relative; 
+    z-index: 2; 
 }
 .Biomarcatori-tittle{
     text-align: center;
-    color: var(--tittl2);
-    font-size: 30px;
+    color: var(--light1);
+    font-size: 35px;
     padding-top: 80px;
     letter-spacing: 4px;
     border-radius: 12px;
@@ -385,30 +426,25 @@ body{
 }
 .biomarcatori-parametri-container{
     width: 100%;
-    height: 750px;
-    display: flex;
+    height: 400px;
+    transform: translate(0%, 10%);
+    margin-bottom: 2rem;
 }
-.tittle-container{
-    width: 45%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tittle-container h3{
-    color: var(--tittle1);
-    font-size: 45px;
-    max-width: 40%;
+.biomarcatori-parametri-container h3{
+    color: var(--tittl2);
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
 }
 .biomarcatori-parametri-container ul{
-    width: 45%;
-    margin-left: 10%;
+    width: 80%;
     height: 80%;
-    padding: 60px;
+    margin: 2rem auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 .biomarcatori-parametri-container ul li {
     position: relative;
@@ -416,38 +452,37 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     list-style: none;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-    background-color: rgba(255, 255, 255, 0.01); 
-    height: 2rem;
-    width: 25rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); 
+    background-color: rgba(255, 255, 255, 0.05); 
+    height: 5rem;
+    width: 25%;
     border-radius: 12px;
     color: var(--light1);
     font-size: 20px;
 }
-.biomarcatori-parametri-container ul li::before {
-    content: "➤";
-    margin-right: 8px;
+.biomarcatori-parametri-container:last-of-type{
+    height: 600px;
+}
+.Home-content-description span{
     color: var(--tittl2);
-    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.microbiota{
     position: absolute;
-    left: 1rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    height: 25rem;
 }
 
 
 
 
-
-
-
-
-
-
-.biomarcatori-parametri-footer{
-    background-image: url(includes/images/screenshot5.png);
-    background-size: cover;
-    background-position: center;
-    height: 235px;
-    width: 100%;
-    margin-top: -4.4rem;
+/* BiovitalAge Teraphy */
+.BioVitalAge_Teraphy{
+    height: 950px;
 }
