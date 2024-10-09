@@ -112,13 +112,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 .info-link:hover{
     color: var(--tittl2);
 }
 .info-link img{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 .a-btn{
     width: 8rem;
@@ -136,11 +137,6 @@ body{
     color: var(--tittle1);
     background-color: var(--contrast-color2);
 }
-
-
-
-
-
 .nav-bar-tittle{
     color: var(--tittle1);
     font-weight: bold;
@@ -258,14 +254,12 @@ body{
 
 
 
-
 /* Chi Siamo section style */
 .ChiSiamo{
     width: 100%;
     height: 950px;
     background-color: lightblue;
 }
-
 
 
 
@@ -390,7 +384,7 @@ body{
 }
 .Biomarcatori-container {
     position: relative;
-    height: 1700px;
+    height: 1850px;
     margin-top: -2rem;
     z-index: 1; 
 }
@@ -462,7 +456,7 @@ body{
     color: var(--light1);
     font-size: 20px;
 }
-.biomarcatori-parametri-container:last-of-type{
+.vital{
     height: 600px;
 }
 .Home-content-description span{
@@ -473,16 +467,104 @@ body{
 }
 .microbiota{
     position: absolute;
-    bottom: 2rem;
+    bottom: 7rem;
     left: 50%;
     transform: translate(-50%);
     height: 25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.05); 
 }
 
 
 
 
 /* BiovitalAge Teraphy */
-.BioVitalAge_Teraphy{
-    height: 950px;
+.BioVitalAge_Teraphy {
+    height: 1300px;
+    background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
+}
+.teraphy-container {
+    background-color: rgba(255, 255, 255, 0.05); 
+    height: auto; 
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    padding: 2rem; 
+    width: 70%;
+}
+.teraphy-container p {
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    color: var(--light1);
+    letter-spacing: 1px;
+    line-height: 1.6; 
+    text-align: justify; 
+}
+.teraphy-container .first {
+    color: green;
+}
+.teraphy-container .second {
+    color: yellow;
+}
+.teraphy-container .third {
+    color: red;
+}
+.teraphy-description-container {
+    display: flex;
+    margin-top: 0rem; 
+    justify-content: space-between;
+}
+.img-container-teraphy{
+    width: 50%;
+    height: auto; 
+    padding-top: 10px;
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container-teraphy img{
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px;
+}
+.teraphy-description-container img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+.teraphy-description-container ul {
+    width: 50%;
+    list-style-type: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: var(--tittl2); 
+    font-size: 25px; 
+    font-weight: bold;
+    line-height: 1.5; 
+    padding-left: 100px;
+}
+.teraphy-description-container ul li {
+    margin-bottom: 2rem; 
+}
+.teraphy-description-container ul li::before {
+    content: "➤";
+    margin-right: 1rem;
+    color: var(--tittl2);
+    font-weight: bold;
+}
+.teraphy-description-container ul li:last-of-type{
+    max-width: 50%;
+}
+
+
+
+
+/*  Bio Vital Age Platform style */
+.BioVitalAgePiattaforma{
+    height: 2000px;
 }
