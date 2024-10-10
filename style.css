@@ -566,5 +566,28 @@ body{
 
 /*  Bio Vital Age Platform style */
 .BioVitalAgePiattaforma{
-    height: 2000px;
+    height: 3500px;
+    background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
+}
+.archi h3{
+    margin-left: 2rem;
+    margin-bottom: -1rem;
+}
+.archiviazione{
+    width: 80%;
+    padding: 50px;
+}
+.archiviazione li{
+    color: var(--light1);
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.presentazione-tittle{
+    text-align: center;
+    color: var(--tittle1);
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
