@@ -5,48 +5,163 @@
 }
 
 :root{
-
     --dark1: #0c042c;
     --dark2: #0c214b;
     --light1: #c3ccd4;
+
     --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c;
     --contrast-color2: #6a2dcc;
         
     --tittle1: whitesmoke;
     --tittl2: #2ac4dd;
-
-
-
-    --bg-color-dark: #014760;
-    --bg-color-light: rgb(214, 231, 214);
-    --bg-color-second-level:rgba(216, 255, 133, 0.473);
-    --title-color-dark-lighter: #107e57;
-    --title-color-dark:#013026;
-    --title-color-light: #a1ce3f;
-    --title-light-contrast-color: whitesmoke;
-    --dark-color: rgba(49, 18, 100, 0.734);
-    --lighter-two-color: rgb(232, 82, 82);
-    --lighter-one-color: rgb(254, 138, 79);
-    --light-color: rgb(223, 165, 58);
-    --mind-color: rgb(49, 133, 90); 
 }
 
+
+/* :root --Style Generic Button */
+.button-style{
+    height: 80%;
+    width: 50%;
+    background-color:  var(--contrast-color-shadow);
+    border: 2px solid var(--contrast-color2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: var(--tittle1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.button-style::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    background-color: var(--contrast-color2);
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+.button-style::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background-color: var(--dark2);
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+.button-style:hover::before {
+    width: 0%; 
+}
+.button-style:hover::after {
+    width: 100%; 
+}
+.button-style:hover{
+    color: var(--tittle1); 
+    font-weight: bold
+}
+
+
+/* :root --Generic Card Style */
+.Card {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.05);  
+}
+.Card-img {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.Card-img img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: transform 0.3s ease; 
+}
+.Card-img img:hover{
+    transform: scale(1.05); 
+}
+.Card-description{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+.Card-description h3 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--tittle1);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+.Card-description p {
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--light1);
+    line-height: 1.8rem;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* :root --Generic container style */
+.container{
+    height: 950px;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+
+
+
+
+
+
+
+
+
+
+
 body{
-    background-color: var(--dark1);
     overflow-x: hidden;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
 ::-webkit-scrollbar{
     width: 0px;
 }
 
+
+
 /* Nav Bar style */
 .nav-bar{
-    height: 20rem;
+    height: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
     flex-wrap: wrap;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 1s ease-in-out;
 }
 .nav-bar-tittle{
     color: var(--title-light-contrast-color);
@@ -121,32 +236,34 @@ body{
     width: 20px;
     height: 20px;
 }
-.a-btn{
-    width: 8rem;
-    height: 2.5rem;
-    border-radius: 4px;
-    background-color: var(--contrast-color);
-    color: var(--tittle1);
-    margin-left: 1rem;
-    border: 1px solid var(--contrast-color2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.a-btn:hover{
-    color: var(--tittle1);
-    background-color: var(--contrast-color2);
-}
 .nav-bar-tittle{
     color: var(--tittle1);
     font-weight: bold;
     font-style: italic;
 }
+.accedi{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: 10rem;
+}
+.nav-bar.scrolled{
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+
+
+
 
 
 /* Home Section Style */
 .Home{
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
 }
 .Home__img-container{
     width: 100%;
@@ -156,7 +273,7 @@ body{
 }
 .Home__img-container img{
     width: 50%;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .Home__subtitle-container{
     width: 50%;
@@ -184,82 +301,101 @@ body{
     letter-spacing: -0.05em;
     font-weight: 300;
 }
-.Home__content-container {
-    position: relative;
-    background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
-    padding: 40px 0; 
+.green{
+    color: green;
 }
-.Home__content-container-età,
-.Home__content-container-vitale,
-.Home__content-container-resilenza {
-    margin: 30px auto;
-    width: 90%;
-    max-width: 1400px; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; 
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-    background-color: rgba(255, 255, 255, 0.05); 
+.yellow{
+    color: yellow;
 }
-.img-container-età,
-.img-container-vitality,
-.img-container-resilenza {
-    width: 40%;
+.red{
+    color: red;
+}
+.button-container{
+    height: 4rem;
+    width: 50%;
+    margin: auto;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.img-container-età img,
-.img-container-vitality img,
-.img-container-resilenza img {
-    width: 90%;
-    height: auto;
-    opacity: 0.8;
-    border-radius: 10px; 
-    transition: transform 0.3s ease; 
-}
-.img-container-età img:hover,
-.img-container-vitality img:hover,
-.img-container-resilenza img:hover {
-    transform: scale(1.05); 
-}
-.Home-content-description {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-}
-.Home-content-description h3 {
-    font-size: 32px;
-    font-style: italic;
-    font-weight: bold;
-    color: var(--tittle1);
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-}
-.Home-content-description p {
-    max-width: 100%;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--light1);
-    line-height: 1.8rem;
-    text-align: justify;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+    gap: 10px;
 }
 
 
 
-/* Chi Siamo section style */
-.ChiSiamo{
+/* Home Content Part 1 */
+.Home__content-container-one{
     width: 100%;
-    height: 950px;
-    background-color: lightblue;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.home-card__container{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Home__content-container-two{
+    width: 100%;
+    grid-row: 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card__container{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test{
+    grid-row: 3 / 3;
+    height: 950px;
+    background-color: cyan;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -475,9 +611,6 @@ body{
     background-color: rgba(255, 255, 255, 0.05); 
 }
 
-
-
-
 /* BiovitalAge Teraphy */
 .BioVitalAge_Teraphy {
     height: 1300px;
@@ -561,9 +694,6 @@ body{
     max-width: 50%;
 }
 
-
-
-
 /*  Bio Vital Age Platform style */
 .BioVitalAgePiattaforma{
     height: 3500px;
@@ -583,7 +713,6 @@ body{
     letter-spacing: 1px;
     line-height: 1.5rem;
 }
-
 .presentazione-tittle{
     text-align: center;
     color: var(--tittle1);
@@ -591,3 +720,20 @@ body{
     letter-spacing: 1px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

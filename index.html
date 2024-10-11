@@ -8,7 +8,7 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar" id="navbar">
         <div class="nav-bar__logo-container">
             <img src="includes/images/Logo.png">
         </div>
@@ -22,85 +22,129 @@
                 <li><a href="" refer="Contatti">Contatti</a><img src="includes/images/navBarArrow.png" alt=""></li>
             </ul>
         </div>
-
         <div class="nav-bar__other-link">
             <a href="#Piattaforma" refer="Piattaforma" class="info-link">Piattaforma<img src="includes/images/navBarArrow.png" alt=""></a>
-            <a href="#" class="a-btn">Accedi</a>
+                <button href="#" class="button-style accedi">Accedi</button>
         </div>
-
-        <h1 class="nav-bar-tittle">Libera l’energia della tua età migliore</h1>
+        <!-- 
+            <h1 class="nav-bar-tittle">Libera l’energia della tua età migliore</h1>
+         -->
     </nav>
 
     <section class="Home" id="Home_Section">
-        <div class="Home__img-container">
+
+        <div class="Home__img-container ">
             <img src="includes/images/HomeImage1.webp" alt="">
             <img src="includes/images/HomeImafe2.webp" alt="">
             <div class="Home__subtitle-container">
                 <img src="includes/images/Logo.png" alt="">
                 <h3>
-                    Una piattaforma che sfrutta l'intelligenza artificiale e il calcolo dei biomarcatori
-                    per definire l'età biologica, la capacità vitale e la resilenza dei pazienti.
+                    Una piattaforma che sfrutta l'intelligenza artificiale e il 
+                    calcolo dei biomarcatori per definire l'
+                    <span class="green">Età Biologica</span> ,la 
+                    <span class="yellow">Capacità Vitale </span>e la 
+                    <span class="red">Resilienza</span> dei pazienti.
                 </h3>
+                <div class="button-container">
+                    <button class="button-style">Scopri la Piattaforma</button>
+                    <button class="button-style">Calcola l'Età Biologica ora</button>
+                </div>
             </div>
         </div>
 
-        <div class="Home__content-container">
-            <div class="Home__content-container-età">
-                <div class="img-container-età">
-                    <img src="includes/images/etàBiologica.webp" alt="">
-                </div>  
-                <div class="Home-content-description">
-                    <h3>Che cos'è l'età Biologica?</h3>
-                    <p>
-                        L'età biologica rappresenta lo stato di salute 
-                        e il livello di invecchiamento del corpo, 
-                        diverso dall'età anagrafica. Si determina 
-                        valutando la funzione degli organi, i biomarcatori,
-                        lo stile di vita e la condizione fisica, stimando 
-                        quanto il corpo sia "giovane" o "vecchio" rispetto
-                        all'età reale.</p>
-                </div>           
-            </div>
-
-            <div class="Home__content-container-vitale">   
-                <div class="Home-content-description">
-                    <h3>Che cos'è la Capacità Vitale?</h3>
-                    <p>
-                        La capacità vitale o Vitality 
-                        è il risultato del funzionamento
-                        di diversi sistemi del corpo, e 
-                        si manifesta attraverso il livello 
-                        di energia, il metabolismo, la forza 
-                        muscolare e il modo in cui il corpo 
-                        reagisce allo stress e alle malattie.
-                    </p>
-                </div>
-                <div class="img-container-vitality">
-                    <img src="includes/images/capacitàVitale.webp" alt="">
-                </div>     
-            </div>
-
-            <div class="Home__content-container-resilenza">
-                <div class="img-container-resilenza">
-                    <img src="includes/images/resilienza.webp" alt="">
-                </div>  
-                <div class="Home-content-description">
-                    <h3>Che cos'è la resilenza?</h3>
-                    <p>
-                        è la capacità del corpo di adattarsi
-                        e recuperare dopo stress, malattie 
-                        o traumi. Rappresenta la capacità di
-                        mantenere o ripristinare la salute
-                        nonostante le difficoltà, influenzata
-                        da fattori biologici, psicologici e 
-                        ambientali.
-                    </p>
-                </div>
-                
-            </div>
+        <div class="Home__content-container-one container">
+           
+           
+     
         </div>
+
+
+        <div class="Home__content-container-two container">
+           
+            <div class="Card">
+                    <div class="Card-img">
+                        <img src="includes/images/etàBiologica.webp" alt="">
+                    </div>  
+                    <div class="Card-description">
+                        <h3>Che cos'è l'età Biologica?</h3>
+                        <p>
+                            L'età biologica rappresenta lo stato di salute 
+                            e il livello di invecchiamento del corpo, 
+                            diverso dall'età anagrafica. Si determina 
+                            valutando la funzione degli organi, i biomarcatori,
+                            lo stile di vita e la condizione fisica, stimando 
+                            quanto il corpo sia "giovane" o "vecchio" rispetto
+                            all'età reale.</p>
+                    </div>           
+            </div>
+            <div class="Card">   
+                    <div class="Card-description">
+                        <h3>Che cos'è la Capacità Vitale?</h3>
+                        <p>
+                            La capacità vitale o Vitality 
+                            è il risultato del funzionamento
+                            di diversi sistemi del corpo, e 
+                            si manifesta attraverso il livello 
+                            di energia, il metabolismo, la forza 
+                            muscolare e il modo in cui il corpo 
+                            reagisce allo stress e alle malattie.
+                        </p>
+                    </div>
+                    <div class="Card-img">
+                        <img src="includes/images/capacitàVitale.webp" alt="">
+                    </div>     
+            </div>
+            <div class="Card">
+                    <div class="Card-img">
+                        <img src="includes/images/resilienza.webp" alt="">
+                    </div>  
+                    <div class="Card-description">
+                        <h3>Che cos'è la resilenza?</h3>
+                        <p>
+                            è la capacità del corpo di adattarsi
+                            e recuperare dopo stress, malattie 
+                            o traumi. Rappresenta la capacità di
+                            mantenere o ripristinare la salute
+                            nonostante le difficoltà, influenzata
+                            da fattori biologici, psicologici e 
+                            ambientali.
+                        </p>
+                    </div>
+            </div>
+     
+        </div>
+
+
+
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
     <section class="BioVitalAge_Clock" id="BioVitalAge_Clock">
         
         <div class="BioVitalAge_image_presentation">
@@ -112,12 +156,12 @@
             </div>
         </div>
             
-        <div class="Home__content-container-età bio">
-            <div class="img-container-età">
+        <div class="Card bio">
+            <div class="Card-img">
                 <img src="includes/images/immagine1.webp" alt="">
             </div>  
 
-            <div class="Home-content-description">
+            <div class="Card-description">
                 <h3>Cos’è BioVitalAge Clock?</h3>
                 <p>
                     È un sistema che utilizza 
@@ -134,9 +178,9 @@
             </div>           
         </div>
 
-        <div class="Home__content-container-età bio">
+        <div class="Card bio">
             
-            <div class="Home-content-description">
+            <div class="Card-description">
                 <h3>A cosa serve BioVitalAge Clock?</h3>
                 <p>
                     Lo scopo è quello di fornire una valutazione
@@ -152,7 +196,7 @@
                     proprio invecchiamento.
                 </p>
             </div>   
-            <div class="img-container-età">
+            <div class="Card-img">
                 <img src="includes/images/screenshot1.png" alt="">
             </div>         
         </div>
@@ -253,12 +297,12 @@
                 </ul>
             </div>
 
-            <div class="Home__content-container-età microbiota">
-                <div class="img-container-età">
+            <div class="Card microbiota">
+                <div class="Card-img">
                     <img src="https://www.uliveto.it/wp-content/uploads/2021/11/shutterstock_1873015870-1-1024x576.jpeg" alt="">
                 </div>  
     
-                <div class="Home-content-description">
+                <div class="Card-description">
                     <h3>Il Microbiota</h3>
                     <p>
                         Analisi della composizione individuale per la valutazione dello stato di disbiosi (annoverato tra le cause di invecchiamento)
@@ -272,7 +316,6 @@
             </div>
         </div>   
     </section>
-
 
     <section class="BioVitalAge_Teraphy" id="BioVitalAge_Teraphy">
         <div class="BioVitalAge_image_presentation">
@@ -313,10 +356,6 @@
 
     </section>
 
-
-
-
-
     <section class="BioVitalAgePiattaforma" id="Piattaforma">
         <div class="BioVitalAge_image_presentation">
             <img class="BioVitalAgeClock-image" src="includes/images/platform.webp" alt="">
@@ -328,11 +367,11 @@
         </div>
 
         <div class="Home__content-container">
-            <div class="Home__content-container-età">
-                <div class="img-container-età">
+            <div class="Card">
+                <div class="Card-img">
                     <img src="includes/images/responsive.webp" alt="">
                 </div>  
-                <div class="Home-content-description">
+                <div class="Card-description">
                     <h3>Com'è organizzata la Piattaforma?</h3>
                     <p>
                         Il BioVitalAge Clock e il BioVitalAge 
@@ -346,8 +385,8 @@
                 </div>           
             </div>
 
-            <div class="Home__content-container-vitale">   
-                <div class="Home-content-description archi">
+            <div class="Card">   
+                <div class="Card-description archi">
                     <h3>Archiviazione Dati e Big Data Analysis</h3>
                     <ul class="archiviazione">
                         <li><span>Archiviazione sicura e centralizzata</span>dei dati nel database cloud Firebase Firestore</li>
@@ -355,16 +394,16 @@
                         <li><span> Potenziale per sincronizzare i dati su diversi dispositivi</span>e facilitare l’accesso remoto</li>
                     </ul>
                 </div>
-                <div class="img-container-vitality">
+                <div class="Card-img">
                     <img src="includes/images/archiviazione.webp" alt="">
                 </div>     
             </div>
 
-            <div class="Home__content-container-resilenza">
-                <div class="img-container-resilenza">
+            <div class="Card">
+                <div class="Card-img">
                     <img src="includes/images/ai.webp" alt="">
                 </div>  
-                <div class="Home-content-description">
+                <div class="Card-description">
                     <h3>Affinamento dei Risultati</h3>
                     <p>
                         Uno dei pilastri della piattaforma è l’integrazione
@@ -382,11 +421,11 @@
         <h3 class="presentazione-tittle">PRESENTAZIONE PIATTAFORMA</h3>
 
         <div class="Home__content-container">
-            <div class="Home__content-container-età">
-                <div class="img-container-età">
+            <div class="Card">
+                <div class="Card-img">
                     <img src="includes/images/piattaforma1.png" alt="">
                 </div>  
-                <div class="Home-content-description archi">
+                <div class="Card-description archi">
                     <h3>Archiviazione Dati e Big Data Analysis</h3>
                     <ul class="archiviazione">
                         <li><span>Interfaccia utente intuitiva</span>sviluppata con tkinter per una navigazione semplice anche per utenti meno esperti.</li>
@@ -396,8 +435,8 @@
                 </div>      
             </div>
 
-            <div class="Home__content-container-vitale">   
-                <div class="Home-content-description archi">
+            <div class="Card">   
+                <div class="Card-description archi">
                     <h3>Archiviazione Dati e Big Data Analysis</h3>
                     <ul class="archiviazione">
                         <li>Generazione automatica di report PDF personalizzati utilizzando modelli predefiniti in formato JPG.</li>
@@ -405,24 +444,28 @@
                         <li>Report strutturati per fornire una panoramica chiara e immediata delle condizioni di salute del paziente.</li>
                     </ul>
                 </div>  
-                <div class="img-container-vitality">
+                <div class="Card-img">
                     <img src="includes/images/piattaforma2.png" alt="">
                 </div>     
             </div>
         </div>
     </section>
+ -->
 
 
 
-
-
+    <!-- Da Implementare -->
+<!--     <section class="ChiSiamo" id="Contatti">
+        Coming Soon - Chi Siamo
+    </section>
 
     <section class="ChiSiamo" id="Contatti">
         Coming Soon - Contatti
     </section>
-
-    <footer>
+ -->
+   <!--  <footer>
         test
     </footer>
+ -->
 </body>
 </html>

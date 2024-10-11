@@ -13,3 +13,28 @@ navBarLinkage.forEach(element => {
         }
     });
 });
+
+
+
+const navbar = document.getElementById('navbar');
+const containers = document.querySelectorAll('.container');
+
+containers.forEach((el) => {
+    window.onscroll = function() {
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        const pageHeight = el.offsetHeight;
+        const halfPageHeight = parseInt((pageHeight * 30) / 100)
+
+    
+        if (scrollPosition > halfPageHeight ) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
+});
+
+
+
+
