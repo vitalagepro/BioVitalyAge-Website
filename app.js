@@ -17,14 +17,15 @@ navBarLinkage.forEach(element => {
 
 
 const navbar = document.getElementById('navbar');
-const containers = document.querySelectorAll('.container');
+const HomeContainer = document.getElementById('Home_Section');
+console.log(HomeContainer)
 
-containers.forEach((el) => {
-    window.onscroll = function() {
+
+window.onscroll = function() {
         const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-        const pageHeight = el.offsetHeight;
-        const halfPageHeight = parseInt((pageHeight * 30) / 100)
+        const pageHeight = HomeContainer.offsetHeight;
+        const halfPageHeight = parseInt((pageHeight * 25) / 100)
 
     
         if (scrollPosition > halfPageHeight ) {
@@ -32,8 +33,7 @@ containers.forEach((el) => {
         } else {
             navbar.classList.remove('scrolled');
         }
-    };
-});
+};
 
 
 
