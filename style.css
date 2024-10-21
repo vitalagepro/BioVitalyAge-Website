@@ -343,16 +343,12 @@ body{
     position: absolute;
     top: 960px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 2900px;
+    grid-template-rows: 950px 900px 850px;
+    height: 2700px;
     width: 100%;
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
-.Bio_Clock-container{
-    height: 900px;
-    width: 100%;
-    margin-top: 2rem;
-}
+
 .bio-clock-content-container{
     display: flex;
     justify-content: center;
@@ -418,9 +414,12 @@ body{
     height: 3rem;
     margin-top: 1.5rem;
 }
-
-
-
+.bio-clock{
+    margin-top: -2rem;
+}
+.bio-clock-two{
+    transform: translate(0%, -20%);
+}
 
 
 
