@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page - Vitaly Age</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="componenti.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="app.js" defer></script>
+
+    <!--  Aos per animazioni -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
 </head>
 <body>
     <nav class="nav-bar" id="navbar">
@@ -15,575 +22,273 @@
 
         <div class="nav-bar__linkage">
             <ul class="linkage-container">
-                <li><a href="#Home_Section" refer="Home_Section">Home Page</a> <img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="" refer="BioVitalAgeClock_Section">BioVitalAge Clock</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="" refer="BioVitalAge_Teraphy">BioVitalAge Teraphy</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="" refer="ChiSiamo">Chi Siamo</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="" refer="Piattaforma" >Piattaforma<img src="includes/images/navBarArrow.png" alt=""></a></li>
+                <li><a href="index.html">Home Page</a> <img src="includes/images/navBarArrow.png" alt=""></li>
+                <li><a href="url/BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a><img src="includes/images/navBarArrow.png" alt=""></li>
+                <li><a href="">BioVitalAge Teraphy</a><img src="includes/images/navBarArrow.png" alt=""></li>
+                <li><a href="">Blog</a><img src="includes/images/navBarArrow.png" alt=""></li>
+                <li><a href="">Collaborazioni<img src="includes/images/navBarArrow.png" alt=""></a></li>
+                <li><a href="">Chi Siamo<img src="includes/images/navBarArrow.png" alt=""></a></li>
             </ul>
         </div>
         <div class="nav-bar__other-link">
-            <a href="#Contatti_Section" refer="Contatti" class="info-link">Contattaci<img src="includes/images/navBarArrow.png" alt=""></a>
+            <a href="#" class="info-link">Contattaci<img src="includes/images/navBarArrow.png" alt=""></a>
             <button href="#" class="button-style accedi">Accedi</button>
         </div>
     </nav>
 
-    <section class="Home" id="Home_Section">
+    <section class="Home">
         <div class="Home__img-container ">
             <img src="includes/images/HomeImage1.webp" alt="">
             <img src="includes/images/HomeImafe2.webp" alt="">
             <div class="Home__subtitle-container">
                 <img src="includes/images/Logo.png" alt="">
                 <h3>
-                    Una piattaforma che sfrutta l'intelligenza artificiale e il 
-                    calcolo dei biomarcatori per definire l'
-                    <span class="green">Età Biologica</span> ,la 
-                    <span class="yellow">Capacità Vitale </span>e la 
-                    <span class="red">Resilienza</span> dei pazienti.
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Molestias quia fugit amet iusto ratione ut itaque, cum explicabo aspernatur culpa,
                 </h3>
                 <div class="button-container">
                     <button class="button-style">Scopri la Piattaforma</button>
-                    <button class="button-style">Calcola l'Età Biologica ora</button>
+                    <button class="button-style">Prova la demo ora</button>
                 </div>
             </div>
         </div>
-    </section>
 
+        <div class="w-100 m-0 p-5 Home-content-container">
 
-    <section class="Bio_Vital_Age_Clock" id="BioVitalAgeClock_Section">
-
-
-            <div class="bio-clock-content-container">
-
-                <div class="bio-clock-image-container">
-                    <div class="container-hidden">
-                        <img src="includes/images/BioVitalAgeClock.webp" alt="">
-                    </div>
-                </div>
-    
-                <div class="Bio-Clock-description">
-                    <p class="Bio-subtitle">BioVitalAge CLock</p>
-                    <h3>Cos’è BioVitalAge Clock?</h3>
-                    <p class="description"> È un sistema che utilizza 
-                        l'intelligenza artificiale 
-                        per calcolare l'età biologica 
-                        e l’età di organi e apparati;
-                        valutando la capacità vitale 
-                        e la resilienza. Identifica 
-                        fattori di rischio e suggerisce
-                        interventi personalizzati per 
-                        migliorare la salute e rallentare
-                        l'invecchiamento​.</p>
-    
-                    <button class="button-style bio-btn">Scopri la Piattaforma</button>
-                </div>
-            </div>
+            <div class="col-md-12 d-flex flex-column align-items-center justify-content-center Home-content-Intro">
             
-            <div class="card-container bio-clock">
-                <div class="Card">
-                        <div class="Card-img">
-                            <img src="includes/images/etàBiologica.webp" alt="">
-                        </div>  
-                        <div class="Card-description">
-                            <h3>Che cos'è l'età Biologica?</h3>
-                            <p>
-                                L'età biologica rappresenta lo stato di salute 
-                                e il livello di invecchiamento del corpo, 
-                                diverso dall'età anagrafica. Si determina 
-                                valutando la funzione degli organi, i biomarcatori,
-                                lo stile di vita e la condizione fisica, stimando 
-                                quanto il corpo sia "giovane" o "vecchio" rispetto
-                                all'età reale.</p>
-                        </div>           
-                </div>
-                <div class="Card"> 
-                    <div class="Card-img">
-                        <img src="includes/images/capacitàVitale.webp" alt="">
-                    </div>   
-                        <div class="Card-description">
-                            <h3>Che cos'è la Capacità Vitale?</h3>
-                            <p>
-                                La capacità vitale o Vitality 
-                                è il risultato del funzionamento
-                                di diversi sistemi del corpo, e 
-                                si manifesta attraverso il livello 
-                                di energia, il metabolismo, la forza 
-                                muscolare e il modo in cui il corpo 
-                                reagisce allo stress e alle malattie.
-                            </p>
-                        </div>
-                           
-                </div>
-                <div class="Card">
-                        <div class="Card-img">
-                            <img src="includes/images/resilienza.webp" alt="">
-                        </div>  
-                        <div class="Card-description">
-                            <h3>Che cos'è la resilenza?</h3>
-                            <p>
-                                è la capacità del corpo di adattarsi
-                                e recuperare dopo stress, malattie 
-                                o traumi. Rappresenta la capacità di
-                                mantenere o ripristinare la salute
-                                nonostante le difficoltà, influenzata
-                                da fattori biologici, psicologici e 
-                                ambientali.
-                            </p>
-                        </div>
-                </div>
-            </div>
+                <h3 class="col-md-7 m-0 p-2">
+                    Tieni Traccia e Calcola la tua età Biologica con BioVitalAge:
+                    Organizza e gestisci i tuoi pazienti in modo efficiente
+                </h3>
 
-            <div class="bio-clock-content-container bio-clock-two">
-                <div class="bio-clock-image-container">
-                    <div class="container-hidden">
-                        <img src="includes/images/biovitalageutilize.webp" alt="">
-                    </div>
-                </div>
-
-                <div class="Bio-Clock-description">
-
-                    <h3>A cosa serve BioVitalAge Clock?</h3>
-                    <p class="description"> 
-                        Lo scopo è quello di fornire una 
-                        valutazione dello stato di salute del paziente,
-                        identificando, grazie all’aiuto dell’AI, 
-                        le aree critiche che necessitano di un 
-                        intervento rapido e le aree che, pur non 
-                        presentando criticità, devono essere potenziate. 
-
-                        BioVitalAge Clock identifica fattori 
-                        ambientali/comportamentali sia di 
-                        rischio che protettivi per un esito
-                         positivo del proprio invecchiamento. 
-                    </p>
-    
-                    <button class="button-style bio-btn">Scopri Vitalage Teraphy</button>
-                </div>
-            </div>
-   
-            <div class="bio-grid-container-section">
-                <div class="bio-grid-header">
-                    <h3>Integrazioni Avanzate</h3>
-                    <h5>Calcolo dell'età biologica specifica per organi e/o apparati, oltre quella generale:</h5>
-                </div>
-
-            </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <div class="Home__content-container-two container">
-       
-        <div class="Card">
-                <div class="Card-img">
-                    <img src="includes/images/etàBiologica.webp" alt="">
-                </div>  
-                <div class="Card-description">
-                    <h3>Che cos'è l'età Biologica?</h3>
-                    <p>
-                        L'età biologica rappresenta lo stato di salute 
-                        e il livello di invecchiamento del corpo, 
-                        diverso dall'età anagrafica. Si determina 
-                        valutando la funzione degli organi, i biomarcatori,
-                        lo stile di vita e la condizione fisica, stimando 
-                        quanto il corpo sia "giovane" o "vecchio" rispetto
-                        all'età reale.</p>
-                </div>           
-        </div>
-        <div class="Card">   
-                <div class="Card-description">
-                    <h3>Che cos'è la Capacità Vitale?</h3>
-                    <p>
-                        La capacità vitale o Vitality 
-                        è il risultato del funzionamento
-                        di diversi sistemi del corpo, e 
-                        si manifesta attraverso il livello 
-                        di energia, il metabolismo, la forza 
-                        muscolare e il modo in cui il corpo 
-                        reagisce allo stress e alle malattie.
-                    </p>
-                </div>
-                <div class="Card-img">
-                    <img src="includes/images/capacitàVitale.webp" alt="">
-                </div>     
-        </div>
-        <div class="Card">
-                <div class="Card-img">
-                    <img src="includes/images/resilienza.webp" alt="">
-                </div>  
-                <div class="Card-description">
-                    <h3>Che cos'è la resilenza?</h3>
-                    <p>
-                        è la capacità del corpo di adattarsi
-                        e recuperare dopo stress, malattie 
-                        o traumi. Rappresenta la capacità di
-                        mantenere o ripristinare la salute
-                        nonostante le difficoltà, influenzata
-                        da fattori biologici, psicologici e 
-                        ambientali.
-                    </p>
-                </div>
-        </div>
- 
-    </div>
- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <section class="BioVitalAge_Clock" id="BioVitalAge_Clock">
-        
-        <div class="BioVitalAge_image_presentation">
-            <img class="BioVitalAgeClock-image" src="https://longevity.technology/wp-content/uploads/2023/08/Clock.bio-launches-to-decode-rejuvenation-biology-across-the-human-genome.jpg" alt="">
-            
-            <div class="BioVitalAge__logo-container">
-                <img class="bio_logo" src="includes/images/Logo.png" alt="">
-                <p>CLOCK</p>
-            </div>
-        </div>
-            
-        <div class="Card bio">
-            <div class="Card-img">
-                <img src="includes/images/immagine1.webp" alt="">
-            </div>  
-
-            <div class="Card-description">
-                <h3>Cos’è BioVitalAge Clock?</h3>
-                <p>
-                    È un sistema che utilizza 
-                    l'intelligenza artificiale 
-                    per calcolare l'età biologica 
-                    e l’età di organi e apparati;
-                    valutando la capacità vitale 
-                    e la resilienza. Identifica 
-                    fattori di rischio e suggerisce
-                    interventi personalizzati per 
-                    migliorare la salute e rallentare
-                     l'invecchiamento​.
+                <p class="col-md-7 m-2 p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda animi quae explicabo ex inventore asperiores,
+                     nobis labore itaque sunt neque dicta,
+                    dolorum, doloribus ipsa nemo vitae dolorem 
+                    impedit nesciunt necessitatibus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda animi quae explicabo ex inventore asperiores,
+                     nobis labore itaque sunt neque dicta,
+                    dolorum, doloribus ipsa nemo vitae dolorem 
+                    impedit nesciunt necessitatibus?
                 </p>
-            </div>           
-        </div>
-
-        <div class="Card bio">
-            
-            <div class="Card-description">
-                <h3>A cosa serve BioVitalAge Clock?</h3>
-                <p>
-                    Lo scopo è quello di fornire una valutazione
-                    dello stato di salute del paziente, identificando,
-                    grazie all’aiuto dell’AI, le aree critiche 
-                    che necessitano di un intervento rapido e le aree che, 
-                    pur non presentando criticità, devono essere potenziate. 
-
-
-                    BioVitalAge Clock identifica fattori 
-                    ambientali/comportamentali sia di rischio 
-                    che protettivi per un esito positivo del 
-                    proprio invecchiamento.
-                </p>
-            </div>   
-            <div class="Card-img">
-                <img src="includes/images/screenshot1.png" alt="">
-            </div>         
-        </div>
-
-        <div class="BioVitalAge_integrazione">
-            <div class="integrazioni-description">
-                <h3>INTEGRAZIONI AVANZATE</h3>
-                <p>Calcolo Dell'età biologica specifica per organi e/o apparati,<span>oltre a quella generale:</span></p>
-                <ul>
-                    <li>Brain Age</li>
-                    <li>Mind Age</li>
-                    <li>Cardio Age</li>
-                    <li>Skeletal Muscle Age</li>
-                    <li>Skin Age</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="Biomarcatori-container">
-            <h3 class="Biomarcatori-tittle">BIOMARKERS DATA SOURCE</h3>
-
-            <div class="biomarcatori-parametri-container">
-                
-                <h3>BIOMARKERS OF AGING </h3>
-                
-                
-
-                <ul>
-                    <li>
-                        <img src="includes/images/icone/parametri.png" alt="">
-                        <p>Parametri clinici</p>
-                    </li>
-
-                    <li>
-                        <img src="includes/images/icone/laboratorio.png" alt="">
-                        <p>Parametri di laboratorio</p>
-                    </li>
-
-                    <li>
-                        <img src="includes/images/icone/fisiologici.png" alt="">
-                        <p>Parametri Fisiologici</p>
-                    </li>
-                    
-                    <li>
-                        <img src="includes/images/icone/diagnostici.png" alt="">
-                        <p>Dati di imaging diagnostico</p>
-                    </li>
-                    
-                    <li>
-                        <img src="includes/images/icone/werable.png" alt="">
-                        <p>Dati derivanti da dispositivi wearable</p>
-                    </li>
-
-
-                </ul>
             </div>
 
-            <div class="biomarcatori-parametri-container vital">
-                <h3>BIOMARKERS OF VITAL MEASURE</h3>
-                
-                
-                <ul>
-                    <li>
-                        <img src="includes/images/icone/respirazione.png" alt="">
-                        <p>Forza e funzione respiratoria</p>
-                    </li>
+            <div class="col-md-10 d-flex Home-content-container-piattaforma">
 
-                    <li>
-                        <img src="includes/images/icone/metabolismo.png" alt="">
-                        <p>Metabolismo</p>
-                    </li>
+                <div class="col-md-6 p-5 piattaforma-description">
+                    <h5>Introduzione Piattaforma</h5>
 
-                    <li>
-                        <img src="includes/images/icone/cardiovascolare.png" alt="">
-                        <p>Funzione Cardiovascolare</p>
-                    </li>
-                    
-                    <li>
-                        <img src="includes/images/icone/telomeri.png" alt="">
-                        <p>Telomeri</p>
-                    </li>
-                    
-                    <li>
-                        <img src="includes/images/icone/mitocondriale.png" alt="">
-                        <p>Funzione mitocondriale</p>
-                    </li>
-
-                    <li>
-                        <img src="includes/images/icone/sonno.png" alt="">
-                        <p>Qualità del Sonno</p>
-                    </li>
-
-                    <li>
-                        <img src="includes/images/icone/orologio.png" alt="">
-                        <p>Orologio di Metilazione</p>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="Card microbiota">
-                <div class="Card-img">
-                    <img src="https://www.uliveto.it/wp-content/uploads/2021/11/shutterstock_1873015870-1-1024x576.jpeg" alt="">
-                </div>  
+                    <h3>Titolo Placeholder</h3>
     
-                <div class="Card-description">
-                    <h3>Il Microbiota</h3>
                     <p>
-                        Analisi della composizione individuale per la valutazione dello stato di disbiosi (annoverato tra le cause di invecchiamento)
-    
-                       <span> Vantaggi: </span>
-    
-                        Risultati integrati con gli altri biomarcatori per un calcolo più preciso del biomicrobiotic age.
-                        Possibilità di implementare le ultime scoperte del settore all’interno del calcolatore, grazie a collaborazioni  con l’Università di Bari, centro di eccellenza nel campo della microbiologia.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                        amet soluta tempora quasi nam delectus necessitatibus,
+                         impedit voluptatum in ratione.
                     </p>
-                </div>           
-            </div>
-        </div>   
-    </section>
+                    <button class="button-style">Scopri di più</button>
+                </div>
 
-    <section class="BioVitalAge_Teraphy" id="BioVitalAge_Teraphy">
-        <div class="BioVitalAge_image_presentation">
-            <img class="BioVitalAgeClock-image" src="includes/images/teraphy.webp" alt="">
-            
-            <div class="BioVitalAge__logo-container">
-                <img class="bio_logo" src="includes/images/Logo.png" alt="">
-                <p>TERAPHY</p>
+                <div class="col-md-6 p-0 piattaforma-img">
+                    <img src="includes/images/piattaforma1.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-10 p-5 d-flex flex-column align-items-center justify-content-center Home-Content-container-scleta">
+                <h3>Perchè Scegliere BioVitalAge? </h3>
+                <p class="col-md-7 m-2 p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda animi quae explicabo ex inventore asperiores,
+                     nobis labore itaque sunt neque dicta,
+                    dolorum, doloribus ipsa nemo vitae dolorem 
+                    impedit nesciunt necessitatibus?
+                </p>
+            </div>
+
+            <div class="col-md-10 p-5 d-grid gap-4 align-items-center justify-content-center Home-Content-container-vantaggi" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="grid-container p-5">
+                    <img src="includes/images/icone/polmoni.png" alt="">
+                    <h3>Tittle Placeholder</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.
+                        Saepe quis obcaecati, quos 
+                        voluptatibus nostrum eum 
+                        pariatur nobis dolorum at 
+                        nemo voluptas inventore ut
+                        odio, minus cupiditate.
+                        Illum commodi dicta ex.</p>
+                </div>
+                
+                <div class="grid-container p-5">
+                    <img src="includes/images/icone/polmoni.png" alt="">
+                    <h3>Tittle Placeholder</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.
+                        Saepe quis obcaecati, quos 
+                        voluptatibus nostrum eum 
+                        pariatur nobis dolorum at 
+                        nemo voluptas inventore ut
+                        odio, minus cupiditate.
+                        Illum commodi dicta ex.</p>
+                </div>
+                
+                <div class="grid-container p-5">
+                    <img src="includes/images/icone/polmoni.png" alt="">
+                    <h3>Tittle Placeholder</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.
+                        Saepe quis obcaecati, quos 
+                        voluptatibus nostrum eum 
+                        pariatur nobis dolorum at 
+                        nemo voluptas inventore ut
+                        odio, minus cupiditate.
+                        Illum commodi dicta ex.</p>
+                </div>
+
+                <div class="grid-container p-5">
+                    <img src="includes/images/icone/polmoni.png" alt="">
+                    <h3>Tittle Placeholder</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.
+                        Saepe quis obcaecati, quos 
+                        voluptatibus nostrum eum 
+                        pariatur nobis dolorum at 
+                        nemo voluptas inventore ut
+                        odio, minus cupiditate.
+                        Illum commodi dicta ex.</p>
+                </div>
+
+                <div class="grid-container p-5">
+                    <img src="includes/images/icone/polmoni.png" alt="">
+                    <h3>Tittle Placeholder</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.
+                        Saepe quis obcaecati, quos 
+                        voluptatibus nostrum eum 
+                        pariatur nobis dolorum at 
+                        nemo voluptas inventore ut
+                        odio, minus cupiditate.
+                        Illum commodi dicta ex.</p>
+                </div>
+
+                <div class="grid-container p-5">
+                    <img src="includes/images/icone/polmoni.png" alt="">
+                    <h3>Tittle Placeholder</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.
+                        Saepe quis obcaecati, quos 
+                        voluptatibus nostrum eum 
+                        pariatur nobis dolorum at 
+                        nemo voluptas inventore ut
+                        odio, minus cupiditate.
+                        Illum commodi dicta ex.</p>
+                </div>
+
+            </div>
+
+          
+        </div>
+
+        <div class="col-md-12 p-5 d-flex-column justify-content-center align-items-center home-content-demo">
+            <div class="demo-descrizione">
+                <h3>Prova BioVitalAge</h3>
+                <p class="col-md-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et placeat praesentium inventore ratione. Eius quidem fuga nam expedita perspiciatis qui quos, consequuntur eveniet laborum nemo, obcaecati, exercitationem tempore iusto?</p>
+            </div>
+
+            <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
+                <button class="button-style" id="button-funz">Scopri le funzionalità della Piattaforma</button>
+                <button class="button-style">Inizia la prova GRATUITA!</button>
             </div>
         </div>
 
-        <div class="teraphy-container">
-            <p> 
-                <span class="first">B</span>io<span class="second">V</span>ital<span class="third">A</span>ge Clock non si limita a fornire un valore dell’età biologica,
-                ma propone percorsi terapeutici personalizzati basati sullo stato 
-                unico di ogni paziente. Integrando i dati raccolti sui vari sistemi
-                corporei, il sistema è in grado di generare piani di trattamento 
-                su misura che includono:
+        <div class="col-md-12 p-5 d-flex-column justify-content-center align-items-center Latest-News">
+
+            <h3>Leggi le ultime Notizie </h3>
+            <p class="col-md-6 p-2 subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quae sequi omnis voluptates esse laudantium quos, enim sunt corporis dolorum dolores obcaecati 
+                saepe voluptatibus molestias libero! Autem quas provident nihil aspernatur.
             </p>
 
-            <div class="teraphy-description-container">
-                <div class="img-container-teraphy">
-                    <img src="includes/images/immagine2.webp" alt="">
+
+            <div class="col-md-12 p-5 d-flex justify-content-center align-items-center card-container-news">
+                <div class="card-item col-md-4">
+                    <div class="card-image">
+                        <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                    </div>
+                    <div class="card-descrizione p-5">
+                        <div class="autore-description d-flex justify-content-center align-items-center">
+                            <div class="Container-autore d-flex ">
+                                <img src="includes/images/icone/autore.png" alt="" width="25px" height="25px">
+                                <p>By Nome Autore</p>
+                            </div>
+                            <div class="Container-Data d-flex ">
+                                <img src="includes/images/icone/data.png" alt="" width="25px" height="25px">
+                                <p>22, Ottobre 2024</p>
+                            </div>
+                        </div> 
+
+                        <h3>Titolo Blog</h3>
+                        <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                        <button class="button-style">Read more</button>
+                    </div>
                 </div>
-               
-
-                <ul>
-                    <li>Interventi Nutraceutici</li>
-                    <li>IV Therapy personalizzate</li>
-                    <li>Riabilitazione (Fisica e Neurocognitiva)</li>
-                </ul>
-            </div>
-
-
-        </div>
-
-
-
-    </section>
-
-    <section class="BioVitalAgePiattaforma" id="Piattaforma">
-        <div class="BioVitalAge_image_presentation">
-            <img class="BioVitalAgeClock-image" src="includes/images/platform.webp" alt="">
-            
-            <div class="BioVitalAge__logo-container">
-                <img class="bio_logo" src="includes/images/Logo.png" alt="">
-                <p>PLATFORM</p>
-            </div>
-        </div>
-
-        <div class="Home__content-container">
-            <div class="Card">
-                <div class="Card-img">
-                    <img src="includes/images/responsive.webp" alt="">
-                </div>  
-                <div class="Card-description">
-                    <h3>Com'è organizzata la Piattaforma?</h3>
-                    <p>
-                        Il BioVitalAge Clock e il BioVitalAge 
-                        Therapy risiedono all’interno di una 
-                        piattaforma, la quale sfrutta i Big Data,
-                        arricchendosi continuamente con nuovi 
-                        dati degli utenti. Questo approccio può
-                        rivelare pattern nascosti utili per 
-                        prevenzione e trattamento. 
-                    </p>
-                </div>           
-            </div>
-
-            <div class="Card">   
-                <div class="Card-description archi">
-                    <h3>Archiviazione Dati e Big Data Analysis</h3>
-                    <ul class="archiviazione">
-                        <li><span>Archiviazione sicura e centralizzata</span>dei dati nel database cloud Firebase Firestore</li>
-                        <li><span> Integrazione con sistemi di cartelle cliniche elettroniche </span>(EHR)</li>
-                        <li><span> Potenziale per sincronizzare i dati su diversi dispositivi</span>e facilitare l’accesso remoto</li>
-                    </ul>
+                <div class="card-item col-md-4">
+                    <div class="card-image">
+                        <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                    </div>
+                    <div class="card-descrizione p-5">
+                        <div class="autore-description d-flex justify-content-center align-items-center">
+                            <div class="Container-autore d-flex justify-content-centerc align-items-center">
+                                <img src="" alt="">
+                                By Nome Autore
+                            </div>
+                            <div class="Container-Data d-flex justify-content-centerc align-items-center">
+                                <img src="" alt="">
+                                22, Ottobre 2024
+                            </div>
+                        </div> 
+                        <h3>Titolo Blog</h3>
+                        <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                        <button class="button-style">Read more</button>
+                    </div>
                 </div>
-                <div class="Card-img">
-                    <img src="includes/images/archiviazione.webp" alt="">
-                </div>     
+                <div class="card-item col-md-4">
+                    <div class="card-image">
+                        <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                    </div>
+                    <div class="card-descrizione p-5">
+                        <div class="autore-description d-flex justify-content-center align-items-center">
+                            <div class="Container-autore d-flex justify-content-centerc align-items-center">
+                                <img src="" alt="">
+                                By Nome Autore
+                            </div>
+                            <div class="Container-Data d-flex justify-content-centerc align-items-center">
+                                <img src="" alt="">
+                                22, Ottobre 2024
+                            </div>
+                        </div> 
+                        <h3>Titolo Blog</h3>
+                        <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                        <button class="button-style">Read more</button>
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="Card">
-                <div class="Card-img">
-                    <img src="includes/images/ai.webp" alt="">
-                </div>  
-                <div class="Card-description">
-                    <h3>Affinamento dei Risultati</h3>
-                    <p>
-                        Uno dei pilastri della piattaforma è l’integrazione
-                        di algoritmi di intelligenza artificiale (AI) che 
-                        non solo analizzano i dati, ma  apprendono  e  
-                        migliorano  costantemente attraverso  ogni  interazione.
-                        Ogni  volta  che nuovi  dati  vengono  inseriti  
-                        o  elaborati,  l'AI affina i suoi modelli, rendendo i risultati e 
-                        i consigli sempre più accurati e personalizzati.
-                    </p>
-                </div>      
-            </div> 
+
+
         </div>
 
-        <h3 class="presentazione-tittle">PRESENTAZIONE PIATTAFORMA</h3>
 
-        <div class="Home__content-container">
-            <div class="Card">
-                <div class="Card-img">
-                    <img src="includes/images/piattaforma1.png" alt="">
-                </div>  
-                <div class="Card-description archi">
-                    <h3>Archiviazione Dati e Big Data Analysis</h3>
-                    <ul class="archiviazione">
-                        <li><span>Interfaccia utente intuitiva</span>sviluppata con tkinter per una navigazione semplice anche per utenti meno esperti.</li>
-                        <li><span>Funzione  di  ricerca  integrata </span>che  permette  di localizzare rapidamente esami specifici all'interno di una lista estesa, migliorando l’efficienza del lavoro.</li>
-                        <li><span>Analisi e Visualizzazione dei Dati</span>Introduzione di report grafici avanzati e strumenti di monitoraggio longitudinale per tenere traccia dei progressi del paziente nel tempo</li>
-                    </ul>
-                </div>      
-            </div>
-
-            <div class="Card">   
-                <div class="Card-description archi">
-                    <h3>Archiviazione Dati e Big Data Analysis</h3>
-                    <ul class="archiviazione">
-                        <li>Generazione automatica di report PDF personalizzati utilizzando modelli predefiniti in formato JPG.</li>
-                        <li>Inserimento dinamico dei dati del paziente nei template, rendendo facile la condivisione e la conservazione dei report.</li>
-                        <li>Report strutturati per fornire una panoramica chiara e immediata delle condizioni di salute del paziente.</li>
-                    </ul>
-                </div>  
-                <div class="Card-img">
-                    <img src="includes/images/piattaforma2.png" alt="">
-                </div>     
-            </div>
-        </div>
-    </section>
- -->
-
-
-
-    <!-- Da Implementare -->
-<!--     <section class="ChiSiamo" id="Contatti">
-        Coming Soon - Chi Siamo
     </section>
 
-    <section class="ChiSiamo" id="Contatti">
-        Coming Soon - Contatti
-    </section>
- -->
-   <!--  <footer>
-        test
-    </footer>
- -->
+    <!-- <footer>test</footer> -->
+
+        <!-- Bootstrap JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

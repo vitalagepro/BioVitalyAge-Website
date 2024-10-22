@@ -4,156 +4,32 @@
     font-family: sans-serif;
 }
 
+/*  font-family: system-ui; */
+
+
+
 :root{
-    --dark1: #0c042c;
-    --dark2: #0c214b;
-    --light1: #c3ccd4;
+  
+    --dark1: #0c042c; /* invariato */
+    --dark2: #0c214b; /* invariato */
+    --light1: #c3ccd4; /* invariato */
+    --neutral-gray: #b0b8c1; /* Nuovo colore neutro per bilanciare */
+    
+    --contrast-color: #3a255d; /* invariato */
+    --contrast-color-shadow: #3b255d2c; /* invariato */
+    --contrast-color2: #6a2dcc; /* invariato */
+    --positive-color: #2ac670; /* Aggiunto per segnali di successo/progressi */
+            
+    --tittle1: whitesmoke; /* invariato */
+    --tittle2: #2ac4dd; /* invariato */
 
-    --contrast-color: #3a255d;
-    --contrast-color-shadow: #3b255d2c;
-    --contrast-color2: #6a2dcc;
-        
-    --tittle1: whitesmoke;
-    --tittl2: #2ac4dd;
 }
 
-
-/* :root --Style Generic Button */
-.button-style{
-    height: 80%;
-    width: 50%;
-    background-color:  var(--contrast-color-shadow);
-    border: 2px solid var(--contrast-color2);
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 0.5px;
+p{
     color: var(--tittle1);
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-}
-.button-style::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    left: 0;
-    background-color: var(--contrast-color2);
-    z-index: -1;
-    transition: width 0.4s ease;
-}
-.button-style::after{
-    content: '';
-    width: 0%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    right: 0;
-    background-color: var(--dark2);
-    z-index: -1;
-    transition: width 0.4s ease;
-}
-.button-style:hover::before {
-    width: 0%; 
-}
-.button-style:hover::after {
-    width: 100%; 
-}
-.button-style:hover{
-    color: var(--tittle1); 
-    font-weight: bold
-}
-
-
-/* :root --Generic Card Style */
-.card-container{
-    width: 82%;
-    height: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.Card {
-    width: 30%;
-    height: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px; 
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
-    background-color: rgba(255, 255, 255, 0.05);  
-    overflow: hidden;
-}
-.Card-img {
-    width: 92%;
-    height: 50%;
-    overflow: hidden;
-    margin: 1rem auto 0rem auto;
-    border-radius: 12px;
-}
-.Card-img img {
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-    transition: transform 0.3s ease; 
-}
-.Card-img img:hover{
-    transform: scale(1.05); 
-}
-.Card-description{
-    height: 50%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.Card-description h3 {
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    color: var(--tittle1);
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    height: 20%;
-    padding-top: 20px;
-}
-.Card-description p {
-    max-width: 100%;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--light1);
-    line-height: 1.8rem;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
-    height: 80%;
-    margin-top: -1rem;
+    line-height: 1.5rem;
 }
-
-
-/* :root --Generic container style */
-.container{
-    height: 950px;
-    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
-}
-
-
-
-
-
-
-
-
-
-
 
 body{
     overflow-x: hidden;
@@ -165,111 +41,6 @@ body{
 
 
 
-/* Nav Bar style */
-.nav-bar{
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: background-color 1s ease-in-out;
-}
-.nav-bar-tittle{
-    color: var(--title-light-contrast-color);
-    font-size: 38px;
-}
-.nav-bar__logo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-    width: 20%;
-}
-.nav-bar__logo-container img{
-    width: 80%;
-    height: 100px;
-}
-.nav-bar__linkage{
-    width: 60%;
-    height: 5rem;  
-}
-.linkage-container{
-    width: 90%;
-    margin: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.linkage-container li{
-    list-style: none;
-    margin: 1rem;
-}
-.linkage-container li a{
-    color: var(--tittle1);
-    font-size: 18px;
-    text-decoration: none;
-}
-.linkage-container li a:hover{
-    cursor: pointer;
-    color: var(--tittl2);
-}
-.linkage-container li img{
-    width: 20px;
-    height: 20px;
-    transform: translate(5%, 15%);
-}
-.nav-bar__other-link{
-    width: 20%;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.nav-bar__other-link a{
-    margin-top: 0.5rem;
-    text-decoration: none;
-}
-.info-link{
-    max-width: 7.2rem;
-    color: var(--tittle1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-.info-link:hover{
-    color: var(--tittl2);
-}
-.info-link img{
-    width: 20px;
-    height: 20px;
-}
-.nav-bar-tittle{
-    color: var(--tittle1);
-    font-weight: bold;
-    font-style: italic;
-}
-.accedi{
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    height: 2.5rem;
-    width: 10rem;
-}
-.nav-bar.scrolled{
-    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
-}
-
-
-
-
-
 /* Home Section Style */
 .Home{
     width: 100%;
@@ -277,9 +48,9 @@ body{
     top: 0;
     left: 0;
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
-   /*  display: grid;
-    grid-template-rows: 1fr 1fr 1fr;  */
 }
+
+/* Home img container */
 .Home__img-container{
     width: 100%;
     display: flex;
@@ -312,21 +83,12 @@ body{
     text-align: center;
     transform: translate(-50%, -20%);
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: -0.05em;
     font-weight: 300;
 }
-.green{
-    color: green;
-}
-.yellow{
-    color: yellow;
-}
-.red{
-    color: red;
-}
 .button-container{
-    height: 4rem;
+    height: 6rem;
     width: 50%;
     margin: auto;
     padding: 20px 20px;
@@ -338,432 +100,191 @@ body{
 
 
 
-/* BioVitalAge Clock */
-.Bio_Vital_Age_Clock{
-    position: absolute;
-    top: 960px;
-    display: grid;
-    grid-template-rows: 950px 900px 850px;
-    height: 2700px;
-    width: 100%;
+/* Home content container style */
+
+/* Intro */
+
+.Home-content-container{
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
-
-.bio-clock-content-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.bio-clock-image-container{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-.container-hidden{
-    width: 60%;
-    height: 60%;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.bio-clock-image-container img{
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    border-radius: 20px;
-    box-shadow: 6px 8px 8px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease-in-out;
-    opacity: 0.8;
-}
-.bio-clock-image-container img:hover{
-    transform: scale(1.1);
-}
-.Bio-Clock-description{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-}
-.Bio-subtitle{
-    color: var(--tittl2);
-    padding: 20px 0px;
-    font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 1px;
-    font-style: italic;
-}
-.Bio-Clock-description h3{
-    padding: 20px 0px;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: var(--tittle1);
-}
-.description{
-    font-size: 18px;
-    color: var(--light1);
-    letter-spacing: 1px;
-    line-height: 2rem;
-    max-width: 60%;
-}
-.bio-btn{
-    width: 14rem;
-    height: 3rem;
-    margin-top: 1.5rem;
-}
-.bio-clock{
-    margin-top: -2rem;
-}
-.bio-clock-two{
-    transform: translate(0%, -20%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* BioVitlAge Clock Style */
-.BioVitalAge_Clock{
-    width: 100%;
-    background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
-    position: relative;
-}
-.BioVitalAge_image_presentation{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-}
-.BioVitalAgeClock-image{
-    width: 100%;
-    opacity: 0.6;
-    margin-top: -18rem;
-    transition: transform 0.8s ease-in-out;
-    z-index: 1;
-}
-.BioVitalAgeClock-image:hover{
-    transform: scale(1.1);
-}
-.BioVitalAge__logo-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.bio_logo{
-    height: 200px;
-}
-.BioVitalAge__logo-container p{
-    font-size: 45px;
-    font-weight: 900;
-    color: var(--tittle1);
-    margin-top: -2rem;
-}
-.BioVitalAge_integrazione {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-}
-.BioVitalAge_integrazione::before {
-    content: '';
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(includes/images/screenshot2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8; 
-    z-index: 0; 
-}
-.integrazioni-description {
-    position: relative;
-    width: 100%;
-    height: 80%;
-    padding: 20px;
-    color: var(--tittle1);
-    text-align: center;
-    z-index: 1;
-}
-.integrazioni-description h3 {
-    color: var(--tittle1);
-    font-size: 3rem;
-    letter-spacing: 4px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-.integrazioni-description p {
-    font-size: 1.5rem;
-    color: var(--tittl2);
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1.6;
-    max-width: 50%;
-    margin: 2rem auto;
-}
-.integrazioni-description p span {
-    color: var(--light1);
-}
-.integrazioni-description ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    padding: 0;
-    margin-top: 2rem;
-}
-.integrazioni-description li {
-    list-style: none;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); 
-    background-color: rgba(255, 255, 255, 0.05); 
-    color: var(--light1);
-    border-radius: 12px;
-    padding: 15px 20px;
-    font-size: 1.2rem;
-    width: calc(25% - 20px); 
-    margin: 10px;
-    font-weight: bolder;
-}
-.integrazioni-description li::before {
-    content: "➤";
-    margin-right: 8px;
-    color: var(--tittl2);
-    font-weight: bold;
-}
-.Biomarcatori-container {
-    position: relative;
-    height: 1850px;
-    margin-top: -2rem;
-    z-index: 1; 
-}
-.Biomarcatori-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(includes/images/background_circular.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.4; 
-    z-index: -1; 
-}
-.Biomarcatori-tittle,
-.biomarcatori-parametri-container {
-    position: relative; 
-    z-index: 2; 
-}
-.Biomarcatori-tittle{
-    text-align: center;
-    color: var(--light1);
-    font-size: 35px;
-    padding-top: 80px;
-    letter-spacing: 4px;
-    border-radius: 12px;
-    width: 50%;
-    margin: 2rem auto;
-    font-weight: 900;
-}
-.biomarcatori-parametri-container{
-    width: 100%;
-    height: 400px;
-    transform: translate(0%, 10%);
-    margin-bottom: 2rem;
-}
-.biomarcatori-parametri-container h3{
-    color: var(--tittl2);
-    font-style: italic;
-    font-size: 30px;
-    text-align: center;
-}
-.biomarcatori-parametri-container ul{
+.Home-content-Intro{
     width: 80%;
-    height: 80%;
-    margin: 2rem auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-.biomarcatori-parametri-container ul li {
-    position: relative;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); 
-    background-color: rgba(255, 255, 255, 0.05); 
-    height: 5rem;
-    width: 25%;
-    border-radius: 12px;
-    color: var(--light1);
-    font-size: 20px;
-}
-.vital{
-    height: 600px;
-}
-.Home-content-description span{
-    color: var(--tittl2);
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.microbiota{
-    position: absolute;
-    bottom: 7rem;
-    left: 50%;
-    transform: translate(-50%);
-    height: 25rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
-    background-color: rgba(255, 255, 255, 0.05); 
-}
-
-/* BiovitalAge Teraphy */
-.BioVitalAge_Teraphy {
-    height: 1300px;
-    background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
-}
-.teraphy-container {
-    background-color: rgba(255, 255, 255, 0.05); 
-    height: auto; 
-    width: 80%;
-    margin: 2rem auto;
-    border-radius: 8px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
-    padding: 2rem; 
-    width: 70%;
-}
-.teraphy-container p {
-    width: 90%;
     margin: auto;
-    font-size: 20px;
-    color: var(--light1);
+}
+.Home-content-Intro h3{
+    color: var(--tittle2);
     letter-spacing: 1px;
-    line-height: 1.6; 
-    text-align: justify; 
-}
-.teraphy-container .first {
-    color: green;
-}
-.teraphy-container .second {
-    color: yellow;
-}
-.teraphy-container .third {
-    color: red;
-}
-.teraphy-description-container {
-    display: flex;
-    margin-top: 0rem; 
-    justify-content: space-between;
-}
-.img-container-teraphy{
-    width: 50%;
-    height: auto; 
-    padding-top: 10px;
-    border-radius: 8px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img-container-teraphy img{
-    width: 80%;
-    height: 80%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    border-radius: 12px;
-}
-.teraphy-description-container img:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease; 
-}
-.teraphy-description-container ul {
-    width: 50%;
-    list-style-type: none; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    color: var(--tittl2); 
-    font-size: 25px; 
+    font-family: system-ui;
+    font-size: 30px;
     font-weight: bold;
-    line-height: 1.5; 
-    padding-left: 100px;
+    text-align: center;
 }
-.teraphy-description-container ul li {
-    margin-bottom: 2rem; 
-}
-.teraphy-description-container ul li::before {
-    content: "➤";
-    margin-right: 1rem;
-    color: var(--tittl2);
-    font-weight: bold;
-}
-.teraphy-description-container ul li:last-of-type{
-    max-width: 50%;
-}
-
-/*  Bio Vital Age Platform style */
-.BioVitalAgePiattaforma{
-    height: 3500px;
-    background: linear-gradient(to right, var(--dark2), var(--dark1), var(--dark2));
-}
-.archi h3{
-    margin-left: 2rem;
-    margin-bottom: -1rem;
-}
-.archiviazione{
-    width: 80%;
-    padding: 50px;
-}
-.archiviazione li{
-    color: var(--light1);
-    font-size: 18px;
+.Home-content-Intro p{
+    color: var(--tittle1);
     letter-spacing: 1px;
     line-height: 1.5rem;
-}
-.presentazione-tittle{
     text-align: center;
-    color: var(--tittle1);
-    font-size: 30px;
-    letter-spacing: 1px;
+}
+.Home-content-container-piattaforma{
+    margin: 4rem auto;
+}
+.piattaforma-description h5{
+    color: var(--neutral-gray);
+    font-size: 16px;
+    border: 1px solid var(--neutral-gray);
+    width: 12rem;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.piattaforma-description h3{
+    color: var(--tittle2);
+    font-size: 35px;
     font-weight: bold;
 }
+.piattaforma-description p{
+    margin-top: 1rem;
+    max-width: 90%;
+}
+.piattaforma-img img{
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+}
+.piattaforma-description .button-style{
+    height: 2.5rem;
+    margin-top: 1rem;
+    width: 14rem;
+}
+
+
+
+/*  Perchè Noi  */
+.Home-Content-container-scleta{
+    margin: 8rem auto 0rem auto;
+}
+.Home-Content-container-scleta h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+.Home-Content-container-scleta p{
+    text-align: center;
+    padding: 20px;
+}
+.Home-Content-container-vantaggi{
+    margin: -2rem auto auto auto;
+}
+.grid-container{
+    background-color: rgba(176, 184, 193, 0.2);
+}
+.grid-container h3{
+    color: var(--tittle2);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: system-ui;
+    margin-top: 1rem;
+}
+
+
+
+/* Demo */
+.home-content-demo{
+/*     background-color: rgba(106, 45, 204, 0.5); */
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 2rem;
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    height: 2.5rem;
+    width: 18rem;
+}
+#button-funz{
+    width: 23rem;
+    height: 2.5rem;
+}
+
+
+
+
+/* Latest News */
+.Latest-News{
+
+    margin-top: 4rem;
+}
+.Latest-News h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+.Latest-News .subtitle{
+    margin: auto;
+    text-align: center;
+}
+.card-container-news{
+    gap: 10px;
+}
+.card-item{
+    background-color: rgba(176, 184, 193, 0.2);
+
+}
+.card-item .card-image{
+    overflow: hidden;
+    height: 50%;
+}
+.card-item .card-image img{
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+.card-item .card-image img:hover{
+    transform: scale(1.1);
+}
+.card-item h3{
+    text-align: left;
+}
+
+.autore-description{
+    background-color: red;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,21 +1,3 @@
-const navBarLinkage = document.querySelectorAll('.linkage-container a');
-
-navBarLinkage.forEach(element => {
-    element.addEventListener('click', (e) => {
-        e.preventDefault(); 
-        let refer = element.getAttribute('refer');
-        let scrollSection = document.getElementById(refer);
-
-        if (scrollSection) {
-            scrollSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-
-
 const navbar = document.getElementById('navbar');
 const HomeContainer = document.getElementById('Home_Section');
 console.log(HomeContainer)
@@ -38,3 +20,7 @@ window.onscroll = function() {
 
 
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();

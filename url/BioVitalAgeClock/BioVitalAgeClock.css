@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --dark1: #0c042c;
+    --dark2: #0c214b;
+    --light1: #c3ccd4;
+
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c;
+    --contrast-color2: #6a2dcc;
+        
+    --tittle1: whitesmoke;
+    --tittl2: #2ac4dd;
+}
+
+
+body{
+    overflow-x: hidden;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+

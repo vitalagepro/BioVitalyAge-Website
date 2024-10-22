@@ -1,0 +1,246 @@
+:root{
+  
+    --dark1: #0c042c; /* invariato */
+    --dark2: #0c214b; /* invariato */
+    --light1: #c3ccd4; /* invariato */
+    --neutral-gray: #b0b8c1; /* Nuovo colore neutro per bilanciare */
+    
+    --contrast-color: #3a255d; /* invariato */
+    --contrast-color-shadow: #3b255d2c; /* invariato */
+    --contrast-color2: #6a2dcc; /* invariato */
+    --positive-color: #2ac670; /* Aggiunto per segnali di successo/progressi */
+            
+    --tittle1: whitesmoke; /* invariato */
+    --tittle2: #2ac4dd; /* invariato */
+
+}
+
+
+/* :root --Style Generic Button */
+.button-style{
+    height: 80%;
+    width: 50%;
+    background-color:  var(--contrast-color-shadow);
+    border: 2px solid var(--contrast-color2);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: var(--tittle1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.button-style::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    background-color: var(--contrast-color2);
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+.button-style::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background-color: var(--dark2);
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+.button-style:hover::before {
+    width: 0%; 
+}
+.button-style:hover::after {
+    width: 100%; 
+}
+.button-style:hover{
+    color: var(--tittle1); 
+    font-weight: bold
+}
+
+
+/* :root --Generic Card Style */
+/* .card-container{
+    width: 82%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Card {
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.05);  
+    overflow: hidden;
+}
+.Card-img {
+    width: 92%;
+    height: 50%;
+    overflow: hidden;
+    margin: 1rem auto 0rem auto;
+    border-radius: 12px;
+}
+.Card-img img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: transform 0.3s ease; 
+}
+.Card-img img:hover{
+    transform: scale(1.05); 
+}
+.Card-description{
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Card-description h3 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--tittle1);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    height: 20%;
+    padding-top: 20px;
+}
+.Card-description p {
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--light1);
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+    height: 80%;
+    margin-top: -1rem;
+} */
+
+
+/* :root --Generic container style */
+.container{
+    height: 950px;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+
+
+
+
+/* Nav Bar style */
+.nav-bar{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 1s ease-in-out;
+}
+.nav-bar__logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 20%;
+}
+.nav-bar__logo-container img{
+    width: 80%;
+    height: 100px;
+}
+.nav-bar__linkage{
+    width: 60%;
+    height: 5rem;  
+}
+.linkage-container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.linkage-container li{
+    list-style: none;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkage-container li a{
+    color: var(--tittle1);
+    font-size: 18px;
+    text-decoration: none;
+}
+.linkage-container li a:hover{
+    cursor: pointer;
+    color: var(--tittle2);
+}
+.linkage-container li img{
+    width: 20px;
+    height: 20px;
+}
+.nav-bar__other-link{
+    width: 20%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav-bar__other-link a{
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+.info-link{
+    max-width: 7.2rem;
+    color: var(--tittle1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.info-link:hover{
+    color: var(--tittle2);
+}
+.info-link img{
+    width: 20px;
+    height: 20px;
+}
+.nav-bar-tittle{
+    color: var(--tittle1);
+    font-weight: bold;
+    font-style: italic;
+}
+.accedi{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: 10rem;
+}
+.nav-bar.scrolled{
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
