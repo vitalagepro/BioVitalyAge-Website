@@ -24,14 +24,14 @@
 
 * h3{
     font-family: system-ui; 
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 400;
     font-variant: var(--tittle2);
     text-align: center;
     letter-spacing: 1px;
 }
 p{
-    color: var(--tittle1);
+    color: var(--light1);
     letter-spacing: 1px;
     line-height: 1.5rem;
 }
@@ -112,6 +112,8 @@ body{
 .Home-content-container{
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
+
+
 .Home-content-Intro{
     width: 80%;
     padding: 20px;
@@ -119,14 +121,14 @@ body{
 }
 .Home-content-Intro h3{
     color: var(--tittle2);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-family: system-ui;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
     text-align: center;
 }
 .Home-content-Intro p{
-    color: var(--tittle1);
+    color: var(--light1);
     letter-spacing: 1px;
     line-height: 1.5rem;
     text-align: center;
@@ -134,18 +136,24 @@ body{
 .Home-content-container-piattaforma{
     margin: 6rem auto;
 }
+.Home-content-container-piattaforma-two{
+    margin: 8rem auto;
+}
 .funzionalità{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    margin-left: 5rem;
 }
-.piattaforma-description h5{
+
+.marcatore{
     color: var(--neutral-gray);
-    font-size: 16px;
-    border: 1px solid var(--neutral-gray);
-    width: 12rem;
-    border-radius: 20px;
+    font-size: 12px;
+    font-weight: lighter;
+    border: 0.5px solid var(--neutral-gray);
+    width: 13rem;
+    border-radius: 4px;
     padding: 5px;
     text-align: center;
     margin-bottom: 1rem;
@@ -153,7 +161,7 @@ body{
 .piattaforma-description h3{
     color: var(--tittle2);
     font-size: 35px;
-    font-weight: bold;
+    font-weight: 400;
     text-align: left;
 }
 .piattaforma-description p{
@@ -162,14 +170,17 @@ body{
 }
 .piattaforma-img img{
     width: 100%;
-    height: auto;
+    height: 400px;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    opacity: 0.9;
 }
 .piattaforma-description .button-style{
     height: 2.5rem;
     margin-top: 1rem;
     width: 14rem;
 }
+
 
 
 
@@ -180,8 +191,8 @@ body{
 .Home-Content-container-scleta h3{
     text-align: center;
     color: var(--tittle2);
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
     font-family: system-ui;
 }
 .Home-Content-container-scleta p{
@@ -197,9 +208,10 @@ body{
 .grid-container h3{
     color: var(--tittle2);
     font-size: 35px;
-    font-weight: bold;
+    font-weight: 400;
     font-family: system-ui;
     margin-top: 1rem;
+    text-align: left;
 }
 
 
@@ -212,8 +224,8 @@ body{
 .demo-descrizione h3{
     text-align: center;
     color: var(--tittle2);
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
     font-family: system-ui;
 }
 .demo-descrizione p{
@@ -239,14 +251,13 @@ body{
 
 /* Latest News */
 .Latest-News{
-
     margin-top: 4rem;
 }
 .Latest-News h3{
     text-align: center;
     color: var(--tittle2);
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
     font-family: system-ui;
 }
 .Latest-News .subtitle{
@@ -300,9 +311,10 @@ body{
 }
 .faq-container h3{
     text-align: center;
+    font-size: 40px;
     padding: 5px;
     color: var(--tittle2);
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 2rem;
     font-family: system-ui;
 }
@@ -408,14 +420,10 @@ footer{
 .widget-contatti li p{
     padding: 5px;
 }
-
-
-
 .footer-copryright{
     background-color: var(--dark1);
     height: 4rem;
 }
-
 .footer-copryright p{
     padding-top: 8px;
     margin-left: 4rem;
