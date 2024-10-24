@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 :root{
@@ -20,10 +20,13 @@
             
     --tittle1: whitesmoke; 
     --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
 }
 
 * h3{
-    font-family: system-ui; 
+    font-family: "Raleway", sans-serif;
     font-size: 35px;
     font-weight: 400;
     font-variant: var(--tittle2);
@@ -34,6 +37,7 @@ p{
     color: var(--light1);
     letter-spacing: 1px;
     line-height: 1.5rem;
+    font-family: "Merriweather Sans", sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -88,6 +92,7 @@ body{
     width: 70%;
     height: 20%;
     margin-left: 50%;
+    font-family: "Quicksand", sans-serif;
     transform: translate(-50%, -30%);
     color: var(--tittle1);
 }
@@ -122,16 +127,25 @@ body{
 .Home-content-Intro h3{
     color: var(--tittle2);
     letter-spacing: 0.5px;
-    font-family: system-ui;
-    font-size: 40px;
-    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
     text-align: center;
+}
+.Home-content-Intro h3 span{
+    color: var(--tittle1);
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    font-weight: lighter;
+    padding-top: 8px;
 }
 .Home-content-Intro p{
     color: var(--light1);
     letter-spacing: 1px;
     line-height: 1.5rem;
     text-align: center;
+    margin-top: -1rem;
 }
 .Home-content-container-piattaforma{
     margin: 6rem auto;
@@ -146,7 +160,6 @@ body{
     align-items: flex-start;
     margin-left: 5rem;
 }
-
 .marcatore{
     color: var(--neutral-gray);
     font-size: 12px;
@@ -159,10 +172,13 @@ body{
     margin-bottom: 1rem;
 }
 .piattaforma-description h3{
-    color: var(--tittle2);
+    color: var(--tittle1);
     font-size: 35px;
     font-weight: 400;
     text-align: left;
+}
+.piattaforma-description h3 span{
+    color: var(--tittle2);
 }
 .piattaforma-description p{
     margin-top: 1rem;
@@ -192,7 +208,7 @@ body{
     text-align: center;
     color: var(--tittle2);
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: system-ui;
 }
 .Home-Content-container-scleta p{
@@ -201,18 +217,43 @@ body{
 }
 .Home-Content-container-vantaggi{
     margin: -2rem auto auto auto;
+    gap: 10px;
 }
 .grid-container{
     background-color: rgba(176, 184, 193, 0.2);
+    width: 30.2rem;
+    border-radius: 4px;
 }
 .grid-container h3{
-    color: var(--tittle2);
+    color: var(--tittle1);
     font-size: 35px;
     font-weight: 400;
     font-family: system-ui;
     margin-top: 1rem;
     text-align: left;
+    padding-bottom: 8px;
+
 }
+.img-container-grid{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
 
 
 
@@ -221,11 +262,19 @@ body{
     background-color: rgba(124, 81, 149, 0.2); 
     margin-top: 2rem;
 }
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
 .demo-descrizione h3{
     text-align: center;
     color: var(--tittle2);
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: system-ui;
 }
 .demo-descrizione p{
@@ -248,6 +297,39 @@ body{
 }
 
 
+.form-richiedi{
+    border-left: 5px solid var(--neutral-bg-color-contrast);
+}
+.form-richiedi h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    text-align: left;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+.form-richiedi input{
+    display: block;
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.form-richiedi select{
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.form-richiedi .privacy{
+    padding: 10px;
+}
+
+
 
 /* Latest News */
 .Latest-News{
@@ -257,7 +339,7 @@ body{
     text-align: center;
     color: var(--tittle2);
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: system-ui;
 }
 .Latest-News .subtitle{
@@ -265,42 +347,109 @@ body{
     text-align: center;
 }
 .card-container-news{
+    margin: 2rem auto auto auto;
+    height: 45rem;
     gap: 10px;
 }
 .card-item{
     background-color: rgba(176, 184, 193, 0.2);
-
+    border-radius: 4px;
 }
 .card-item .card-image{
     overflow: hidden;
-    height: 50%;
 }
 .card-item .card-image img{
-    height: 400px;
+    height: auto;
     transition: transform 0.3s ease-in-out;
 }
 .card-item .card-image img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+.colonna1{
+    height: 100%;
+}
+#First-news{
+    height: 100%;
+}
+#First-news .card-image{
+    height: 60%;
+}
+#recent-news img{
+    width: 100%;
+    height: auto;
+}
+.colonna2{
+    height: 100%; 
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.colonna2 .card-image{
+    height: 100%;
+    width: 45%;
+}
+.colonna2 .card-image img{
+    width: 400px;
+    height: auto;
 }
 .card-item h3{
     text-align: left;
-    font-family: system-ui;
+    color: var(--tittle1);
+    font-weight: 400;
+    font-size: 35px;
+    padding-bottom: 8px;
+}
+.card-descrizione{
+    padding: 20px;
 }
 .autore-description{
     width: 70%;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    gap: 18px;
+}
+.Container-autore,
+.Container-Data{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
 }
 .container-btn-notizie{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card-item .button-style{
-    padding: 8px;
+.colonna2 .arrow-button{
+    padding-top: 0px;
 }
+
+
+
+
+
 #notizie{
     width: 20rem;
-    padding: 10px;
+    padding: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

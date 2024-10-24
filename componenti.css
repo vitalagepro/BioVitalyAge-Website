@@ -105,9 +105,23 @@
 
 
 
-
-
-
+/* Arrov button */
+.arrow-button{
+    font-size: 15px;
+    border: none;
+    color: var(--tittle2);
+    font-weight: bold;
+    background: none;
+    padding-top: 6px;
+    letter-spacing: 0.5px;
+}
+.arrow-button::after{
+    content: '➜';
+    margin-left: 0.5rem;
+}
+.arrow-button:hover{
+    color: var(--tittle1);
+}
 
 
 
