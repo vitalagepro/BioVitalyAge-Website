@@ -6,9 +6,15 @@
     <title>Home Page - Vitaly Age</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="componenti.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="app.js" defer></script>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Js -->
+    <script src="app.js" defer></script>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,14 +104,14 @@
                     <button class="button-style">Scopri di più</button>
                 </div>
 
-                <div class="col-md-6 p-0 piattaforma-img">
+                <div class="col-md-6 p-0 piattaforma-img translate-img">
                     <img src="includes/images/piattaforma1.png" alt="">
                 </div>
             </div>
 
             <div class="col-md-10 d-flex Home-content-container-piattaforma-two">
 
-                <div class="col-md-6 p-0 piattaforma-img">
+                <div class="col-md-6 p-0 piattaforma-img translate-img">
                     <img src="includes/images/piattaforma2.png" alt="">
                 </div>
 
@@ -426,7 +432,7 @@
                 <div class="col-md-5 colonna1">
                     <div class="card-item" id="First-news">
                         <div class="card-image" id="recent-news">
-                            <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
                         </div>
                         <div class="card-descrizione">
                             <div class="autore-description">
@@ -450,7 +456,7 @@
 
                     <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
                         <div class="card-image">
-                            <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
                         </div>
                         <div class="card-descrizione p-5">
                             <div class="autore-description d-flex justify-content-between align-items-center">
@@ -471,7 +477,7 @@
                     
                     <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
                         <div class="card-image">
-                            <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
                         </div>
                         <div class="card-descrizione p-5">
                             <div class="autore-description d-flex justify-content-between align-items-center">
@@ -492,7 +498,7 @@
 
                     <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
                         <div class="card-image">
-                            <img src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
                         </div>
                         <div class="card-descrizione p-5">
                             <div class="autore-description d-flex justify-content-between align-items-center">
@@ -529,11 +535,11 @@
 
                 <div class="accordion-item col-md-8" id="accordion-item">
                   <h2 class="accordion-header" id="accordion-header" >
-                    <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-btn p-4" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
                         Il Gestionale funziona solo tramite Internet?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Minima magni possimus laboriosam quod dignissimos, autem 
@@ -545,7 +551,7 @@
 
                 <div class="accordion-item col-md-8" id="accordion-item">
                     <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false">
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false">
                         Il Gestionale funziona solo tramite Internet?
                       </button>
                     </h2>
@@ -555,10 +561,10 @@
                       </div>
                     </div>
                 </div>
-  
+
                 <div class="accordion-item col-md-8" id="accordion-item">
                     <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetree" aria-expanded="false" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetree" aria-expanded="false" >
                         Il Gestionale funziona solo tramite Internet?
                       </button>
                     </h2>
@@ -571,7 +577,7 @@
   
                 <div class="accordion-item col-md-8" id="accordion-item">
                     <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" >
                         Il Gestionale funziona solo tramite Internet?
                       </button>
                     </h2>
@@ -584,7 +590,7 @@
   
                 <div class="accordion-item col-md-8" id="accordion-item">
                     <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" >
                         Il Gestionale funziona solo tramite Internet?
                       </button>
                     </h2>
@@ -595,9 +601,6 @@
                     </div>
                 </div>
   
-
-
-
             </div>
 
             <p style="text-align: center; margin-top: 2rem; margin-bottom: -2rem;">Hai dubbi?</p>
@@ -608,18 +611,23 @@
            
         </div>
 
-
         <footer>
             <div class="footer-header-container">
 
             
-                <div class="row w-80 footer-header">
+                <div class="footer-header">
 
-                    <div class="col-md-5 p-5 widget-logo">
+
+                    <div class="col-md-3 p-2 widget-logo">
+
+
                         <div class="col-md-12 logo-container">
                             <img src="includes/images/Logo.png" alt="">
                         </div>
-                        <div class="col-md-8 p-2 social-container d-flex">
+
+                        <p class="col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <div class="col-md-10 p-2 social-container d-flex">
                         
                                 <div class="col-md-2 p-1 facebook">
                                     <a href="#"><img src="includes/images/icone/facebook.png" alt="" width="35px" height="35px"></a>
@@ -640,8 +648,8 @@
                     </div>
 
 
-                    <div class="col-md-4 p-5 widget-link">
-                        <h3>Link Utili</h3>
+                    <div class="col-md-2 p-2 widget-link">
+                        <h3>Products</h3>
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">BioVitalAge Clock</a></li>
@@ -652,8 +660,19 @@
                         </ul>
                     </div>
 
+                    <div class="col-md-2 p-2 widget-link">
+                        <h3>Link Utili</h3>
+                        <ul>
+                            <li><a href="">Area Accesso</a></li>
+                            <li><a href="">Ultime Notizie</a></li>
+                            <li><a href="">Aggiornamenti</a></li>
+                            <li><a href="">Informativa Privacy</a></li>
+                            <li><a href="">Supporto clienti</a></li>
+                        </ul>
+                    </div>
 
-                    <div class="col-md-3 p-5 widget-contatti">
+
+                    <div class="col-md-2 p-2 widget-contatti">
                         <h3>Contattaci</h3>
                         <ul>
                             <li><img src="includes/images/icone/email.png" alt="" width="30px" height="30px"><p>info@gmail.com</p></li>
@@ -665,8 +684,8 @@
 
             </div>  
 
-            <div class="row footer-copryright ">
-                <div class="footer-copryright-container d-flex justify-content-center align-items-center">
+            <div class="footer-copryright ">
+                <div class="footer-copryright-container d-flex justify-content-between align-items-center">
                     <p>© 2024 Nome Azienda Srl – All content reserved</p>
 
                     <div class="link-copyright">

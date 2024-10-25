@@ -32,6 +32,12 @@
     font-variant: var(--tittle2);
     text-align: center;
     letter-spacing: 1px;
+    opacity: 0;
+}
+@keyframes fade-in {
+    to {
+        opacity: 1; /* Rende l'elemento visibile alla fine dell'animazione */
+    }
 }
 p{
     color: var(--light1);
@@ -47,8 +53,6 @@ body{
     width: 0px;
 }
 
-
-
 /* Home Section Style */
 .Home{
     width: 100%;
@@ -57,7 +61,6 @@ body{
     left: 0;
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
-
 
 /* Home img container */
 .Home__img-container{
@@ -108,16 +111,14 @@ body{
     gap: 10px;
 }
 
-
-
-
 /* Home content container style */
-
 /* Intro */
 .Home-content-container{
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
-
+.Home__subtitle-container{
+    animation-name: fade-in;
+}
 
 .Home-content-Intro{
     width: 80%;
@@ -198,8 +199,6 @@ body{
 }
 
 
-
-
 /*  Perchè Noi  */
 .Home-Content-container-scleta{
     margin: 8rem auto 0rem auto;
@@ -254,9 +253,6 @@ body{
 }
 
 
-
-
-
 /* Demo */
 .home-content-demo{
     background-color: rgba(124, 81, 149, 0.2); 
@@ -295,8 +291,6 @@ body{
     width: 24rem;
     padding: 8px;
 }
-
-
 .form-richiedi{
     border-left: 5px solid var(--neutral-bg-color-contrast);
 }
@@ -328,7 +322,6 @@ body{
 .form-richiedi .privacy{
     padding: 10px;
 }
-
 
 
 /* Latest News */
@@ -432,23 +425,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Domande */
 .faq-container{
     margin: auto;
@@ -458,7 +434,7 @@ body{
     font-size: 40px;
     padding: 4px;
     color: var(--tittle2);
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 2rem;
     font-family: system-ui;
 }
@@ -471,9 +447,6 @@ body{
     width: 18rem;
     padding: 8px;
 }
-
-
-
 .accordion{
     display: flex;
     flex-direction: column;
@@ -490,35 +463,42 @@ body{
     background-color: var(--neutral-bg-color-contrast);
     border: none;
 }
-#accordion-item h2 button{
+.accordion-btn{
     background-color: var(--neutral-bg-color);
     border: none;
     color: var(--tittle1);
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    position: relative;
 }
-.accordion-button:focus {
+.accordion-btn::after {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    border-radius: 40px;
+    background-color: var(--circle-color-shadow);
+    box-shadow: 10px 10px 10px 5px var(--circle-color-shadow-two);
+    width: 30px;
+    height: 30px;
+}
+.accordion-btn:focus {
     box-shadow: 0 0 0 1px var(--tittle2) !important;
+    border-radius: 4px 4px 0px 0px;
 }
-
-
-/* Nascondi la freccia predefinita di Bootstrap nell'accordion */
-.accordion-button::after {
-    content: none; /* Rimuove la freccia */
+.accordion-btn.active::after {
+    content: '-';
 }
-
-
-
 .accordion-body{
     background-color: var(--contrast-color-shadow);
     color: var(--tittle1);
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -532,7 +512,16 @@ footer{
     height: 30rem;
 }
 .footer-header{
-    height: 30rem;
+    padding: 10px;
+    height: 28rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.widget-logo p{
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
 }
 .logo-container img{
     width: 300px;
@@ -541,6 +530,16 @@ footer{
 .social-container{
     margin-top: -1rem;
     margin-left: 0.5rem;
+}
+.social-container div a img{
+    transition: transform 0.3s ease-in-out;
+}
+.social-container div a img:hover{
+    transform: scale(1.2);
+}
+.widget-link,
+.widget-contatti{
+    margin-top: 1.2rem;
 }
 .widget-link h3,
 .widget-contatti h3{
@@ -563,7 +562,7 @@ footer{
 }
 .widget-link ul li,
 .widget-contatti ul li{
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     margin-left: -1.5rem;
     list-style: none;
     padding: 5px;
@@ -586,11 +585,17 @@ footer{
     padding: 5px;
 }
 .widget-contatti ul li p:last-of-type{
-    max-width: 50%;
+    max-width: 75%;
 }
 .footer-copryright{
     background-color: var(--dark1);
     height: 4rem;
+    width: 100%;
+}
+.footer-copryright-container{
+    width: 72%;
+    height: 100%;
+    margin: auto;
 }
 .footer-copryright p{
     padding-top: 15px;
@@ -605,7 +610,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     height: 100%;
 }
 .link-copyright a{
@@ -616,15 +621,53 @@ footer{
 }
 
 
+/* Animation */
+.Home__subtitle-container img {
+    animation: fade-in 1s ease-in forwards;
+}
+.Home__subtitle-container h3 {
+    animation: fade-in 1s ease-in forwards;
+    animation-delay: 0.5s;
+}
+.Home__subtitle-container .button-container button {
+    animation: fade-in 1s ease-in forwards;
+}
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
 
+@keyframes translate {
+    from{
+        margin-top: -2rem;
+    }
+    to{
+        margin-top: 0rem;
+    }
+}
 
+@keyframes scale {
+    from {
+        transform: scale(1.1);
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 1; /* Fully visible */
+    }
+}
 
+.scale-img {
+    transform: scale(1.1);
+    opacity: 0;
+    transition: opacity 0.5s; 
+}
 
-
-
-
-
-
-
-
+.scale-animate {
+    animation: scale 2s forwards; 
+}
