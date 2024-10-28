@@ -1,20 +1,39 @@
 const navbar = document.getElementById('navbar');
-const HomeContainer = document.getElementById('Home_Section');
 
+window.onscroll = function () {
+    let HomeContainer;
 
-window.onscroll = function() {
-        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    if (document.getElementById('Home_Section')) {
+        HomeContainer = document.getElementById('Home_Section');
+    } else {
+        HomeContainer = document.getElementById('Home_Section_secondary');
+    }
+
+  
+    if (HomeContainer) {
+        let check = HomeContainer.getAttribute('id');
+        let halfPageHeight = 0;
 
         const pageHeight = HomeContainer.offsetHeight;
-        const halfPageHeight = parseInt((pageHeight * 25) / 100)
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        if (String(check) == 'Home_Section'){
+            halfPageHeight = parseInt((pageHeight * 25) / 100);
+            
+        }else{
+            halfPageHeight = parseInt((pageHeight * 5) / 100);
+        }
+       
 
-    
-        if (scrollPosition > halfPageHeight ) {
+        if (scrollPosition > halfPageHeight) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+    }
 };
+
+
+
 
 document.querySelectorAll('.accordion-btn').forEach(button => {
     button.addEventListener('click', function() {
