@@ -160,7 +160,7 @@ body{
     border-radius: 50px;
 }
 .card-container-etaBiologica p span{
-    color: var(--tittl2); 
+    color: var(--tittle2); 
     font-style: italic;
 }
 
@@ -204,104 +204,133 @@ body{
 
 
 
+
+
 .Funzionalità-title{
     margin: auto; 
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .Funzionalità-title h3{
     color: var(--tittle2);
     font-size: 35px;
     font-weight: 700;
+    padding: 12px;
 }
-.ElenzoFunzionalità-Carousel-container{
-    margin: auto;
+.btn-container-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
-.footer-carousel{
-    height: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-.pagination-container{
-    height: 4rem;
-    padding: 15px;
-}
-.container-card-carousel{
-    border-radius: 4px;
-    background-color: rgba(176, 184, 193, 0.2);
-    margin: auto;
-}
-#button-left,
-#button-right{
+.btn-container-carousel button{
+    height: 2.5rem;
     width: 4rem;
     border: none;
-    height: 2.5rem;
+    border-radius: 8px;
+    background-color: var(--contrast-color2);
+    color: var(--tittle1);
 }
-#first,
-#extreme{
+
+
+
+
+/* Carosello Funzionalità */
+.ElenzoFunzionalità-Carousel-container {
+    margin: auto;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding: 10px;
+}
+.card-carousel-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll; 
+    padding-bottom: 20px;
+    width: 100%;
+}
+.card-carousel-container::-webkit-scrollbar {
+    height: 0.6rem; 
+}
+.card-carousel-container::-webkit-scrollbar-track {
     background-color: var(--neutral-bg-color);
-    height: 2rem;
-    width: 2rem;
-    text-align: center;
-    padding: 2px;
-    color: var(--tittle1);
     border-radius: 4px;
 }
-#placeholder{
-    color: var(--tittle1);
-    width: 2rem;
-    margin-left: 1rem;
-}
-#current{
-    background-color: var(--neutral-bg-color-contrast);
-    height: 2rem;
-    width: 2rem;
-    padding: 2px;
-    color: var(--contrast-color);
-    text-align: center;
-    color: var(--tittle1);
-    border: 2px solid var(--contrast-color2);
+.card-carousel-container::-webkit-scrollbar-thumb {
+    background-color: var(--contrast-color2); 
     border-radius: 4px;
+
 }
-#carousel-tittle{
-    color: var(--tittle1);
-    font-size: 35px;
-    font-weight: 400;
+.card-carousel {
+    background-color: var(--neutral-bg-color);
+    height: 460px;
+    min-width: 450px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.img-card-carousel-container{
+    width: 100%;
+    height: 40%;
+}
+.img-card-carousel-container img{
+    width: 100%;
+    height: auto;
+}
+.card-carousel-description{
+    height: 60%;
+    width: 100%;
+    padding: 15px;
+}
+.card-carousel-description h3{
     text-align: left;
-    padding-bottom: 10px;
-    opacity: 0;
-}
-#carousel-tittle span{
-    color: var(--tittle2);
+    color: var(--tittle1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 
 
 
-.elencoFunzionalità{
-    background-color: var(--neutral-bg-color-contrast);
-    margin: auto;
-    border-radius: 4px;
-    height: 700px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.elencoFunzionalità h3{
-    color: var(--tittle2);
-    font-size: 35px;
-    font-weight: 700;
-}
-.elencoFunzionalità p{
-    text-align: center;
-}
-.elencoFunzionalità ul{
-    margin: auto;
-    width: 60%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 4px;
-    height: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
