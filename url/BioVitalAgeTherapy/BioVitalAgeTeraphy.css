@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+/* Home Section Style */
+.Home{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+.Home_Section-tittle{
+    position: relative;
+    height: 300px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://eu-images.contentstack.com/v3/assets/blt0090d6170c12be15/bltb00bca630c207de6/66506ccdbaad82112674d9d9/blog-jmc-articolo-medicina-digitale.jpg?width=1920&height=906&format=jpg&quality=50);
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle2);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 1;
+} 
+
+#teraphy{
+    margin: auto;
+}
+.marcatore{
+    color: var(--neutral-gray);
+    font-size: 12px;
+    font-weight: lighter;
+    border: 0.5px solid var(--neutral-gray);
+    width: 13rem;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#teraphy h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+span{
+    color: var(--tittle2);
+}
+#percorsi{
+    height: 3rem;
+    width: 15rem;
+}
+.integrazioneAi-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 2rem;
+}
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 16rem;
+}
+#button-funz{
+    width: 24rem;
+    padding: 8px;
+}
+.form-richiedi{
+    border-left: 5px solid var(--neutral-bg-color-contrast);
+}
+.form-richiedi h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    text-align: left;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+}
+.form-richiedi input{
+    display: block;
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.form-richiedi select{
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.form-richiedi .privacy{
+    padding: 10px;
+}
+
+
+.applicazioni-container{
+    background-image: url(https://eu-images.contentstack.com/v3/assets/blt0090d6170c12be15/bltb00bca630c207de6/66506ccdbaad82112674d9d9/blog-jmc-articolo-medicina-digitale.jpg?width=1920&height=906&format=jpg&quality=50);
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.content-container{
+    z-index: 1;
+    gap: 15px;
+}
+.cards{
+    background-color: rgba(176, 184, 193, 0.4);
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.img-container-grid{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-left: -0.5rem;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.cards h3{
+    text-align: left;
+    color: var(--tittle1);
+}
+.tittle-terapy{
+    position: absolute;
+    top: 8rem;
+    color: var(--tittle2);
+    font-size: 35px;
+    z-index: 1;
+    font-weight: bold;
+}
