@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+/* Home Section Style */
+.Home{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+.Home_Section-tittle{
+    position: relative;
+    height: 500px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.alessandrorotondo.com/wp-content/uploads/2024/05/AI-medicina-cover.jpg);
+    background-position: 0% 20%;
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle2);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 1;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+} 
+#subtitle{
+    text-align: left;
+    max-width: 37%;
+    color: var(--tittle1);
+    z-index: 1;
+    padding: 10px;
+    margin-left: 2rem;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+.img-container img{
+    width: 100%;
+    height: auto;
+}
+.img-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.img-container-description{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(1px);
+}
+.img-container-description h3{
+    text-align: left;
+    color: var(--tittle1);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+.img-container-description p{
+    color: aliceblue;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tittle-news{
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    margin: auto auto -2rem auto;
+}
+.tittle-news h3,
+.tittle-news-two h3{
+    color: var(--tittle2);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+}
+.tittle-news-two{
+    margin: auto;
+    padding: 60px 40px 0px 45px;
+}
+
+
+.ultime-notizie-container{
+    gap: 10px;  
+    padding: 0px 50px 10px 50px;
+    margin: auto;
+}
+#first{
+    background-image: url(https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#second{
+    background-image: url(https://knowhow.distrelec.com/wp-content/uploads/2022/09/Top-10-Healthcare-Tech-1920x800.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-notizie{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.card-notizie h3{
+    color: var(--tittle1);
+    text-align: left;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+}
+.card-notizie p{
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+}
+.card-notizie button{
+    backdrop-filter: blur(1px);
+    z-index: 1;
+}
+
+
+.Aggiornamenti{
+    margin: -2rem auto 4rem auto;
+    gap: 10px;
+}
+.card-etaBiologica{
+    background-color: rgba(176, 184, 193, 0.2);
+    border-radius: 4px;
+}
+.card-etaBiologica h3{
+    text-align: left;
+    color: var(--tittle1);
+}
+.img-container-etaBiologica{
+    background-color: rgba(42, 196, 221,0.05);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+.img-container-circle{
+    background-color: rgba(42, 196, 221,0.15);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.container-blog-presentation:last-of-type{
+    padding-bottom: 20px;
+}
+
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 2rem;
+}
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: center;
+    color: var(--tittle1);
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 16rem;
+}

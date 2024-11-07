@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+    --dark1: #0c042c; 
+    --dark2: #0c214b; 
+    --light1: #c3ccd4; 
+
+    --neutral-gray: #b0b8c1;
+    --neutral-bg-color: rgba(176, 184, 193, 0.2);
+    --neutral-bg-color-contrast: rgba(124, 81, 149, 0.2); 
+    
+    --contrast-color: #3a255d;
+    --contrast-color-shadow: #3b255d2c; 
+    --contrast-color2: #6a2dcc; 
+    --positive-color: #2ac670; 
+            
+    --tittle1: whitesmoke; 
+    --tittle2: #2ac4dd; 
+
+    --circle-color-shadow: rgba(42, 196, 221,0.15);
+    --circle-color-shadow-two: rgba(42, 196, 221,0.05)
+}
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+/* Home Section Style */
+.Home{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+}
+.Home_Section-tittle{
+    position: relative;
+    height: 300px;
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.zerounoweb.it/wp-content/uploads/2022/02/14154452/shutterstock_1653839683.jpg);
+    background-position: 0% 30%;
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.Home_Section-tittle h3{
+    margin-top: 5rem;
+    color: var(--tittle2);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    text-align: left;
+    font-weight: 700;
+    max-width: 40%;
+    opacity: 0;
+    z-index: 1;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+} 
+
+
+.home-content-demo{
+    background-color: rgba(124, 81, 149, 0.2); 
+    margin-top: 0rem;
+}
+.demo-descrizione{
+    margin-left: -1rem;
+}
+.demo-descrizione h5{
+    padding: 10px;
+    text-align: left;
+    color: var(--tittle1);
+    font-size: 30px;
+}
+.demo-descrizione h3{
+    text-align: center;
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+.demo-descrizione h4{
+    text-align: center;
+    color: var(--tittle1);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: system-ui;
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+}
+.demo-descrizione p{
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    margin: auto;
+}
+.telefono-container{
+    gap: 10px;
+}
+.button-container-demo{
+    margin-top: 2rem;
+    gap: 10px;
+}
+.home-content-demo .button-style{
+    padding: 8px;
+    width: 16rem;
+}
+#button-funz{
+    width: 24rem;
+    padding: 8px;
+}
+.form-richiedi{
+    border-left: 5px solid var(--neutral-bg-color-contrast);
+}
+.form-richiedi h3{
+    color: var(--tittle1);
+    font-size: 35px;
+    text-align: left;
+    padding: 10px;
+    font-family: system-ui;
+    letter-spacing: 1px;
+}
+.form-richiedi input{
+    display: block;
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    outline-color: var(--contrast-color2);
+    border: none;
+}
+.form-richiedi select{
+    width: 30rem;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+.form-richiedi .privacy{
+    padding: 10px;
+}
+
+
+
+
+.container-demo{
+    margin-top: -1.5rem;
+    height: 400px;
+    position: relative;
+    background-image: url(https://img.zerounoweb.it/wp-content/uploads/2022/02/14154452/shutterstock_1653839683.jpg);
+    background-position: 0% 85%;
+}
+.description-demo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15rem;
+        z-index: 1;
+}
+.description-demo button{
+    height: 2.5rem;
+}
+.description-demo h3{
+    color: var(--tittle2);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: system-ui;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+.description-demo p{
+    text-align: center;
+    padding: 10px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+}
