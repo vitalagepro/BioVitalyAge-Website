@@ -113,6 +113,10 @@ body{
     color: aliceblue;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
+.container-blog-presentation{
+    margin-top: 2rem;
+}
+
 
 .tittle-news{
     padding: 60px 40px 40px 40px;
