@@ -83,6 +83,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation-name: fade-in;
 
 }
 .Home__subtitle-container img{
@@ -113,19 +114,41 @@ body{
     gap: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Home content container style */
 /* Intro */
 .Home-content-container{
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
-.Home__subtitle-container{
-    animation-name: fade-in;
-}
+
 
 .Home-content-Intro{
-    width: 80%;
-    padding: 20px;
+    width: 100%;
+    padding: 0px;
     margin: auto;
+    position: relative;
+}
+.backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.backdrop img{
+    width: 100%;
+    height: auto;
 }
 .Home-content-Intro h3{
     color: var(--tittle2);
@@ -139,7 +162,7 @@ body{
     color: var(--tittle1);
     display: block;
     font-family: "Raleway", sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: lighter;
     padding-top: 8px;
 }
@@ -151,7 +174,7 @@ body{
     margin-top: -1rem;
 }
 .Home-content-container-piattaforma{
-    margin: 6rem auto;
+    margin: 4rem auto;
 }
 .Home-content-container-piattaforma-two{
     margin: 8rem auto;
@@ -189,9 +212,9 @@ body{
 }
 .piattaforma-img img{
     width: 100%;
-    height: 400px;
+    height: 420px;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     opacity: 0.9;
 }
 .piattaforma-description .button-style{
