@@ -47,47 +47,60 @@
     </nav>
 
     <section class="Home">
-
+        
         <div class="Home__img-container" id="Home_Section">
             <img src="includes/images/HomeImage1.webp" alt="">
             <img src="includes/images/HomeImafe2.webp" alt="">
             <div class="Home__subtitle-container">
                 <img src="includes/images/Logo.png" alt="">
                 <h3>
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur facere aut vitae 
+                    <span>Tieni Traccia e Calcola la tua età Biologica con BioVitalAge,</span>
+                    Organizza e gestisci i tuoi pazienti in modo efficiente
                 </h3>
                 <div class="button-container">
-                    <button class="button-style">Scopri la Piattaforma</button>
-                    <button class="button-style-active">Prova la demo ora</button>
+                    <button class="button-style" onclick="window.location = 'url/BioVitalAgeClock/BioVitalAgeClock.html';">Scopri la Piattaforma</button>
+                    <button class="button-style-active" onclick="window.location = 'url/contattaci/contattaci.html';">Prova la demo ora</button>
                 </div>
             </div>
         </div>
 
-        <div class="w-100 m-0 p-5 Home-content-container">
+        <div class="contenitore-video">
+            <div class="backdrop d-flex justify-content-center align-items-center">
 
-            <div class="col-md-12 d-flex flex-column align-items-center justify-content-center Home-content-Intro">
+                <div class="col-md-5 d-flex flex-column align-items-center justify-content-center Home-content-Intro">
 
-                <h3 class="col-md-5 m-4 p-2">
-                    Tieni Traccia e Calcola la tua età Biologica con BioVitalAge:
-                    <span>Organizza e gestisci i tuoi pazienti in modo efficiente</span>
-                </h3>
+                    <h3 class="col-md-12 m-4 p-2">
+                        BioVitalAge, molto più di un semplice gestionale medico:
+                        <span>Un software innovativo che sfrutta l'intelligenza artificale</span>
+                    </h3>
+    
+                    <p class="col-md-12 p-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Assumenda animi quae explicabo ex inventore asperiores,
+                         nobis labore itaque sunt neque dicta,
+                        dolorum, doloribus ipsa nemo vitae dolorem 
+                        impedit nesciunt necessitatibus?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                
+                </div>
 
-                <p class="col-md-6 p-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Assumenda animi quae explicabo ex inventore asperiores,
-                     nobis labore itaque sunt neque dicta,
-                    dolorum, doloribus ipsa nemo vitae dolorem 
-                    impedit nesciunt necessitatibus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </p>
             </div>
+            <video autoplay muted loop>
+                <source src="includes/images/video.mp4" type="video/mp4">
+                Il tuo browser non supporta i video HTML5.
+            </video>
+        </div>
+
+        <div class="w-100 m-0 p-5 Home-content-container">
+            
 
             <div class="col-md-10 d-flex Home-content-container-piattaforma">
 
-                <div class="col-md-6 p-0 piattaforma-description">
+                <div class="col-md-6 piattaforma-description">
                     <p class="marcatore">Introduzione alla Piattaforma</p>
 
-                    <h3>Il Software <span>Ideale</span> per te</h3>
+                    <h3>BioVitalAge, il Software <span>Ideale</span> per te</h3>
     
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -101,18 +114,18 @@
                         amet soluta tempora quasi nam delectus necessitatibus,
                          impedit voluptatum in ratione.
                     </p>
-                    <button class="button-style">Scopri di più</button>
+                    <button class="button-style" onclick="window.location = 'url/BioVitalAgeClock/BioVitalAgeClock.html';">Scopri di più</button>
                 </div>
 
                 <div class="col-md-6 p-0 piattaforma-img translate-img">
-                    <img src="includes/images/piattaforma1.png" alt="">
+                    <img src="includes/images/Piattaforma1.jpg" alt="">
                 </div>
             </div>
 
             <div class="col-md-10 d-flex Home-content-container-piattaforma-two">
 
                 <div class="col-md-6 p-0 piattaforma-img translate-img">
-                    <img src="includes/images/piattaforma2.png" alt="">
+                    <img src="includes/images/platform3.jpg" alt="">
                 </div>
 
                 <div class="col-md-6 p-0 piattaforma-description funzionalità">
@@ -138,10 +151,9 @@
                 
             </div>
 
-
             <div class="col-md-10 p-5 d-flex flex-column align-items-center justify-content-center Home-Content-container-scleta">
                 <h3>Perchè Scegliere BioVitalAge? </h3>
-                <p class="col-md-7 m-2 p-2">
+                <p class="col-md-6 m-2 p-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Assumenda animi quae explicabo ex inventore asperiores,
                      nobis labore itaque sunt neque dicta,
@@ -275,6 +287,222 @@
           
         </div>
 
+        <div class="col-md-12 faq-container">
+            <h3>Le domande più frequenti</h3>
+
+           <!--  <p class="col-md-6" style="margin: 2rem auto; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda, saepe labore earum ad voluptatem expedita impedit eos exercitationem? Possimus nesciunt tenetur sint necessitatibus architecto totam earum, nostrum modi odit!</p> -->
+
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item col-md-5" id="accordion-item">
+                  <h2 class="accordion-header" id="accordion-header" >
+                    <button class="accordion-btn p-4" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                        Il Gestionale funziona solo tramite Internet?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Minima magni possimus laboriosam quod dignissimos, autem 
+                        nisi distinctio exercitationem veritatis, quisquam a consectetur. 
+                        Saepe illum amet sed, obcaecati tempora nihil? Vero?
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item col-md-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false">
+                        Il Gestionale funziona solo tramite Internet?
+                      </button>
+                    </h2>
+                    <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item col-md-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetree" aria-expanded="false" >
+                        Il Gestionale funziona solo tramite Internet?
+                      </button>
+                    </h2>
+                    <div id="collapsetree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
+                      </div>
+                    </div>
+                </div>
+  
+                <div class="accordion-item col-md-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" >
+                        Il Gestionale funziona solo tramite Internet?
+                      </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
+                      </div>
+                    </div>
+                </div>
+  
+                <div class="accordion-item col-md-5" id="accordion-item">
+                    <h2 class="accordion-header" id="accordion-header" >
+                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" >
+                        Il Gestionale funziona solo tramite Internet?
+                      </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
+                      </div>
+                    </div>
+                </div>
+  
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem; margin-bottom: -2rem;">Hai ancora dubbi?</p>
+
+            <div class="col-md-12 p-5 container-btn-domanda">
+                <button class="button-style" onclick="window.location = 'url/contattaci/contattaci.html';" id="domanda">Contattaci</button>
+            </div>
+           
+        </div>
+
+        <div class="col-md-12 p-5 d-flex-column justify-content-center align-items-center Latest-News">
+
+            <h3>Leggi le ultime Notizie </h3>
+            <p class="col-md-6 p-2 subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quae sequi omnis voluptates esse laudantium quos, enim sunt corporis dolorum dolores obcaecati 
+                saepe voluptatibus molestias libero! Autem quas provident nihil aspernatur.
+            </p>
+
+            <div class="col-md-10 p-3 d-flex justify-content-center align-items-start card-container-news">
+
+                <div class="col-md-5 colonna1">
+                    <div class="card-item" id="First-news">
+                        <div class="card-image" id="recent-news">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                        </div>
+                        <div class="card-descrizione">
+                            <div class="autore-description">
+                                <div class="Container-autore">
+                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                                    <p>By Nome Autore</p>
+                                </div>
+                                <div class="Container-Data">
+                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
+                                    <p>22, Ottobre 2024</p>
+                                </div>
+                            </div>
+                            <h3>Titolo Blog</h3>
+                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto del più recente blog caricato sul sito. Questo sarà il blog che cadrà più facilmente all'occhio dell'utente.</p>
+                            <button class="arrow-button">Leggi di più</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7 colonna2">
+
+                    <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
+                        <div class="card-image">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                        </div>
+                        <div class="card-descrizione p-5">
+                            <div class="autore-description d-flex justify-content-between align-items-center">
+                                <div class="Container-autore d-flex" style="gap:5px">
+                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                                    <p>By Nome Autore</p>
+                                </div>
+                                <div class="Container-Data d-flex" style="gap:5px">
+                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
+                                    <p>22, Ottobre 2024</p>
+                                </div>
+                            </div>
+                            <h3>Titolo Blog</h3>
+                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                            <button class="arrow-button">Leggi di più</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
+                        <div class="card-image">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                        </div>
+                        <div class="card-descrizione p-5">
+                            <div class="autore-description d-flex justify-content-between align-items-center">
+                                <div class="Container-autore d-flex" style="gap:5px">
+                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                                    <p>By Nome Autore</p>
+                                </div>
+                                <div class="Container-Data d-flex" style="gap:5px">
+                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
+                                    <p>22, Ottobre 2024</p>
+                                </div>
+                            </div>
+                            <h3>Titolo Blog</h3>
+                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                            <button class="arrow-button">Leggi di più</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
+                        <div class="card-image">
+                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
+                        </div>
+                        <div class="card-descrizione p-5">
+                            <div class="autore-description d-flex justify-content-between align-items-center">
+                                <div class="Container-autore d-flex" style="gap:5px">
+                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                                    <p>By Nome Autore</p>
+                                </div>
+                                <div class="Container-Data d-flex" style="gap:5px">
+                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
+                                    <p>22, Ottobre 2024</p>
+                                </div>
+                            </div>
+                            <h3>Titolo Blog</h3>
+                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                            <button class="arrow-button">Leggi di più</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 p-5 container-btn-notizie">
+                <button class="button-style" id="notizie" onclick="window.location = 'url/Innovation/innovation.html';">Leggi tutte le notizie</button>
+            </div>
+           
+        
+        </div>      
+
+        <div class="col-md-12 d-flex justify-content-center align-items-center container-blog-presentation">
+            
+            <div class="col-md-6 img-container">
+                <div class="backdrop"></div>
+                <img src="https://img.freepik.com/foto-premium/team-medico-con-maschere-chirurgiche-che-lavora-in-un-laboratorio-high-tech_899027-2499.jpg" alt="">
+                <div class="img-container-description">
+                    <h3>Il Nostro Team</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit dolorem id eligendi non possimus accusantium natus, odio repudiandae deleniti provident aut libero quod dolorum dolore vero quisquam inventore debitis?</p>
+                    <button class="arrow-button" onclick="window.location = 'url/Industries/industries.html';">Scopri di più</button>
+                </div>
+            </div>
+            <div class="col-md-6 img-container">
+                <div class="backdrop"></div>
+                <img src="https://t4.ftcdn.net/jpg/02/00/14/63/360_F_200146338_NTWg7HF65p5z6IUIXzxJbkJ5zlEt3gnG.jpg" alt="">
+                <div class="img-container-description">
+                    <h3>Corporation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit dolorem id eligendi non possimus accusantium natus, odio repudiandae deleniti provident aut libero quod dolorum dolore vero quisquam inventore debitis?</p>
+                    <button class="arrow-button" onclick="window.location = 'url/Corporation/corporation.html';">Scopri di più</button>
+                </div>
+            </div>
+        </div>
+
+
         <div class="col-md-12 p-5 d-flex justify-content-center align-items-center home-content-demo">
             <div class="col-md-5 p-5 demo-descrizione">
                 <h3>Prova BioVitalAge</h3>
@@ -287,7 +515,7 @@
                     eveniet laborum nemo, obcaecati, exercitationem tempore iusto?
                 </p>
                 <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
-                    <button class="button-style">Inizia la prova GRATUITA!</button>
+                    <button class="button-style" onclick="window.location = 'url/contattaci/contattaci.html';">Inizia la prova GRATUITA!</button>
                 </div>
             </div>
 
@@ -416,199 +644,6 @@
                   <button class="button-style">Invia</button>
             </div>
             
-        </div>
-
-        <div class="col-md-12 p-5 d-flex-column justify-content-center align-items-center Latest-News">
-
-            <h3>Leggi le ultime Notizie </h3>
-            <p class="col-md-6 p-2 subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quae sequi omnis voluptates esse laudantium quos, enim sunt corporis dolorum dolores obcaecati 
-                saepe voluptatibus molestias libero! Autem quas provident nihil aspernatur.
-            </p>
-
-            <div class="col-md-10 p-3 d-flex justify-content-center align-items-start card-container-news">
-
-                <div class="col-md-5 colonna1">
-                    <div class="card-item" id="First-news">
-                        <div class="card-image" id="recent-news">
-                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
-                        </div>
-                        <div class="card-descrizione">
-                            <div class="autore-description">
-                                <div class="Container-autore">
-                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
-                                    <p>By Nome Autore</p>
-                                </div>
-                                <div class="Container-Data">
-                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
-                                    <p>22, Ottobre 2024</p>
-                                </div>
-                            </div>
-                            <h3>Titolo Blog</h3>
-                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto del più recente blog caricato sul sito. Questo sarà il blog che cadrà più facilmente all'occhio dell'utente.</p>
-                            <button class="arrow-button">Leggi di più</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-7 colonna2">
-
-                    <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
-                        <div class="card-image">
-                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
-                        </div>
-                        <div class="card-descrizione p-5">
-                            <div class="autore-description d-flex justify-content-between align-items-center">
-                                <div class="Container-autore d-flex" style="gap:5px">
-                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
-                                    <p>By Nome Autore</p>
-                                </div>
-                                <div class="Container-Data d-flex" style="gap:5px">
-                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
-                                    <p>22, Ottobre 2024</p>
-                                </div>
-                            </div>
-                            <h3>Titolo Blog</h3>
-                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
-                            <button class="arrow-button">Leggi di più</button>
-                        </div>
-                    </div>
-                    
-                    <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
-                        <div class="card-image">
-                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
-                        </div>
-                        <div class="card-descrizione p-5">
-                            <div class="autore-description d-flex justify-content-between align-items-center">
-                                <div class="Container-autore d-flex" style="gap:5px">
-                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
-                                    <p>By Nome Autore</p>
-                                </div>
-                                <div class="Container-Data d-flex" style="gap:5px">
-                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
-                                    <p>22, Ottobre 2024</p>
-                                </div>
-                            </div>
-                            <h3>Titolo Blog</h3>
-                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
-                            <button class="arrow-button">Leggi di più</button>
-                        </div>
-                    </div>
-
-                    <div class="card-item d-flex justify-content-center align-items-center" style="height: 32.5%;">
-                        <div class="card-image">
-                            <img class="scale-img" src="https://uiparadox.co.uk/templates/nova-care/assets/media/blog/blog-1.png" alt="">
-                        </div>
-                        <div class="card-descrizione p-5">
-                            <div class="autore-description d-flex justify-content-between align-items-center">
-                                <div class="Container-autore d-flex" style="gap:5px">
-                                    <img src="includes/images/icone/autore.png" alt="" width="20px" height="20px">
-                                    <p>By Nome Autore</p>
-                                </div>
-                                <div class="Container-Data d-flex" style="gap:5px">
-                                    <img src="includes/images/icone/data.png" alt="" width="20px" height="20px">
-                                    <p>22, Ottobre 2024</p>
-                                </div>
-                            </div>
-                            <h3>Titolo Blog</h3>
-                            <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
-                            <button class="arrow-button">Leggi di più</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 p-5 container-btn-notizie">
-                <button class="button-style" id="notizie">Leggi tutte le notizie</button>
-            </div>
-           
-        
-        </div>      
-
-        <div class="col-md-10 p-5 faq-container">
-            <h3>Le domande più frequenti</h3>
-
-            <p class="col-md-6" style="margin: 2rem auto; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex assumenda, saepe labore earum ad voluptatem expedita impedit eos exercitationem? Possimus nesciunt tenetur sint necessitatibus architecto totam earum, nostrum modi odit!</p>
-
-            <div class="accordion" id="accordionExample">
-
-                <div class="accordion-item col-md-8" id="accordion-item">
-                  <h2 class="accordion-header" id="accordion-header" >
-                    <button class="accordion-btn p-4" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
-                        Il Gestionale funziona solo tramite Internet?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Minima magni possimus laboriosam quod dignissimos, autem 
-                        nisi distinctio exercitationem veritatis, quisquam a consectetur. 
-                        Saepe illum amet sed, obcaecati tempora nihil? Vero?
-                    </div>
-                  </div>
-                </div>
-
-                <div class="accordion-item col-md-8" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false">
-                        Il Gestionale funziona solo tramite Internet?
-                      </button>
-                    </h2>
-                    <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
-                      </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item col-md-8" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetree" aria-expanded="false" >
-                        Il Gestionale funziona solo tramite Internet?
-                      </button>
-                    </h2>
-                    <div id="collapsetree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
-                      </div>
-                    </div>
-                </div>
-  
-                <div class="accordion-item col-md-8" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" >
-                        Il Gestionale funziona solo tramite Internet?
-                      </button>
-                    </h2>
-                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
-                      </div>
-                    </div>
-                </div>
-  
-                <div class="accordion-item col-md-8" id="accordion-item">
-                    <h2 class="accordion-header" id="accordion-header" >
-                      <button class="accordion-btn p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" >
-                        Il Gestionale funziona solo tramite Internet?
-                      </button>
-                    </h2>
-                    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni possimus laboriosam quod dignissimos, autem nisi distinctio exercitationem veritatis, quisquam a consectetur. Saepe illum amet sed, obcaecati tempora nihil? Vero?
-                      </div>
-                    </div>
-                </div>
-  
-            </div>
-
-            <p style="text-align: center; margin-top: 2rem; margin-bottom: -2rem;">Hai dubbi?</p>
-
-            <div class="col-md-12 p-5 container-btn-domanda">
-                <button class="button-style" id="domanda">Contattaci</button>
-            </div>
-           
         </div>
 
         <footer>

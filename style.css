@@ -36,7 +36,7 @@
 }
 @keyframes fade-in {
     to {
-        opacity: 1; /* Rende l'elemento visibile alla fine dell'animazione */
+        opacity: 1;
     }
 }
 p{
@@ -52,6 +52,8 @@ body{
 ::-webkit-scrollbar{
     width: 0px;
 }
+
+
 
 /* Home Section Style */
 .Home{
@@ -73,7 +75,7 @@ body{
 }
 .Home__img-container img{
     width: 50%;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 .Home__subtitle-container{
     width: 50%;
@@ -102,6 +104,7 @@ body{
     transform: translate(-50%, -30%);
     color: var(--tittle1);
 }
+
 .button-container{
     height: 6rem;
     width: 50%;
@@ -130,25 +133,31 @@ body{
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
 
-
-.Home-content-Intro{
-    width: 100%;
-    padding: 0px;
-    margin: auto;
+/* Contenitore Video */
+.contenitore-video{
     position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
 }
 .backdrop{
+    background-color: rgba(0,0,0,0.5);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow: hidden;
+    z-index: 2;
 }
-.backdrop img{
+.Home-content-Intro{
     width: 100%;
-    height: auto;
+    padding: 0px;
+    margin: auto;
+    position: relative;
 }
 .Home-content-Intro h3{
     color: var(--tittle2);
@@ -162,7 +171,7 @@ body{
     color: var(--tittle1);
     display: block;
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: lighter;
     padding-top: 8px;
 }
@@ -171,31 +180,52 @@ body{
     letter-spacing: 1px;
     line-height: 1.5rem;
     text-align: center;
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
+
+
+
+
+/* .backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.backdrop img{
+    width: 100%;
+    height: auto;
+}
+
+ */
+
+
+ 
 .Home-content-container-piattaforma{
-    margin: 4rem auto;
+    margin: 1rem auto;
 }
 .Home-content-container-piattaforma-two{
-    margin: 8rem auto;
+    margin: 8rem auto 0rem auto;
 }
 .funzionalità{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 5rem;
+    margin-left: 5.5rem;
 }
 .marcatore{
-    color: var(--neutral-gray);
-    font-size: 12px;
-    font-weight: lighter;
-    border: 0.5px solid var(--neutral-gray);
-    width: 13rem;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 1rem;
+    color: var(--tittle2);
+    font-size: 20px;
+}
+.piattaforma-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .piattaforma-description h3{
     color: var(--tittle1);
@@ -214,19 +244,29 @@ body{
     width: 100%;
     height: 420px;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
-    border-radius: 8px;
+    border-radius: 4px;
     opacity: 0.9;
 }
-.piattaforma-description .button-style{
+.piattaforma-description:first-of-type .button-style{
     height: 2.5rem;
     margin-top: 1rem;
     width: 14rem;
 }
+.funzionalità .button-style{
+    height: 2.5rem;
+    margin-top: 1rem;
+    width: 18rem;
+}
+
+
+
+
+
 
 
 /*  Perchè Noi  */
 .Home-Content-container-scleta{
-    margin: 8rem auto 0rem auto;
+    margin: 6rem auto 0rem auto;
 }
 .Home-Content-container-scleta h3{
     text-align: center;
@@ -247,6 +287,9 @@ body{
     background-color: rgba(176, 184, 193, 0.2);
     width: 30.2rem;
     border-radius: 4px;
+}
+.grid-container:hover{
+    background-color: var(--neutral-bg-color-contrast);
 }
 .grid-container h3{
     color: var(--tittle1);
@@ -278,10 +321,15 @@ body{
 }
 
 
+
+
+
+
+
 /* Demo */
 .home-content-demo{
     background-color: rgba(124, 81, 149, 0.2); 
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 .demo-descrizione{
     margin-left: -1rem;
@@ -349,10 +397,49 @@ body{
 }
 
 
-/* Latest News */
-.Latest-News{
-    margin-top: 4rem;
+
+
+
+
+/* Team E Corporation */
+.img-container img{
+    width: 100%;
+    height: auto;
 }
+.img-container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.img-container-description{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(1px);
+}
+.img-container-description h3{
+    text-align: left;
+    color: var(--tittle2);
+}
+.img-container-description p{
+    color: aliceblue;
+}
+.container-blog-presentation{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+/* Latest News */
+
 .Latest-News h3{
     text-align: center;
     color: var(--tittle2);
@@ -453,11 +540,12 @@ body{
 /* Domande */
 .faq-container{
     margin: auto;
+    background-color: var(--neutral-bg-color-contrast);
 }
 .faq-container h3{
     text-align: center;
     font-size: 40px;
-    padding: 4px;
+    padding-top: 30px;
     color: var(--tittle2);
     font-weight: 700;
     margin-bottom: 2rem;
@@ -477,19 +565,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 8px;
+    padding-top: 20px;
     padding-bottom: 8px;
 }
 #accordion-item{
-    background-color: var(--neutral-bg-color);
-    border: 1px solid var(--neutral-bg-color);
+    background: none;
+    border: none;
+  
 }
 #accordion-item h2{
-    background-color: var(--neutral-bg-color-contrast);
+    background-color: var(--neutral-bg-color);
     border: none;
 }
 .accordion-btn{
-    background-color: var(--neutral-bg-color);
+    background: none;
     border: none;
     color: var(--tittle1);
     font-size: 18px;
@@ -523,6 +612,7 @@ body{
 .accordion-body{
     background-color: var(--contrast-color-shadow);
     color: var(--tittle1);
+    border: 1px solid var(--neutral-bg-color);
 }
 
 
