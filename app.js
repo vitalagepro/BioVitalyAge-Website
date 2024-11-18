@@ -20,7 +20,8 @@ window.onscroll = function () {
             halfPageHeight = parseInt((pageHeight * 25) / 100);
             
         }else{
-            halfPageHeight = parseInt((pageHeight * 5) / 100);
+            halfPageHeight = parseInt((pageHeight * 1) / 100);
+            console.log(halfPageHeight)
         }
        
 

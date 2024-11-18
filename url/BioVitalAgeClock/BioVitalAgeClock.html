@@ -46,7 +46,7 @@
 
         <div class="Home_Section-tittle">
             <div class="backdrop"></div>
-            <h3>Calcola L'età Biologica con BioVitalAge Clock</h3>
+            <h3>BioVitalAge Clock</h3>
         </div>
 
         <div class="col-md-10 p-5 d-flex justify-content-center align-items-center home_section-presentation">
@@ -55,11 +55,14 @@
             </div>
 
             <div class="col-md-7 p-5 home_presentation-description">
-                <h3><span>BioVitalyAge Clock - Software Gestionale innovativo:</span> che sfrutta l'intelligenza artificiale per il calcolo dell'età biologica</h3>
+                <p class="marcatore">Introduzione Piattaforma</p>
+
+                <h3>BioVitalyAge Clock - Software Gestionale <span>innovativo</span>: che sfrutta l'intelligenza artificiale per il calcolo dell'età biologica</h3>
             
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sequi debitis veritatis repellendus fugiat maiores at labore neque quia amet eveniet, expedita dicta corporis beatae earum, eaque officia aliquid accusantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sequi debitis veritatis repellendus fugiat maiores at labore neque quia amet eveniet, expedita dicta corporis beatae earum, eaque officia aliquid accusantium.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam iusto iste? Perferendis, aperiam inventore? Velit quaerat debitis vitae! Dolorum doloribus dolore suscipit fugiat! Expedita fugit culpa inventore dolore voluptate!</p> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam iusto iste? Perferendis, aperiam inventore? Velit quaerat debitis vitae! Dolorum doloribus dolore suscipit fugiat! Expedita fugit culpa inventore dolore voluptate!</p> 
+                
+                <button class="button-style" id="percorsi" onclick="window.location = '../contattaci/contattaci.html';">Prova la Demo</button>
             </div>
         </div>
 
@@ -67,7 +70,7 @@
 
             <p class="marcatore">spiegazione età biologica</p>
 
-            <h3>Che cos'è l'<span>età biologica</span>?</h3>
+            <h3>Che cos'è l'<span>età biologica</span></h3>
         </div>
 
         <div class="col-md-12 p-2 d-flex justify-content-center align-items-center card-container-etaBiologica">
@@ -166,7 +169,7 @@
             <div class="col-md-6 p-5 integrazioneAi-description-two">
                 <p class="marcatore">tecnologia e medicina</p>
 
-                <h3>I <span>Biomarcatori</span></h3>
+                <h3>Che cosa sono i <span>Biomarcatori</span></h3>
 
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -183,8 +186,47 @@
             </div>
         </div>
 
+        <!-- Modale -->
+        <div id="videoModal" class="video-modal">
+            <div class="video-modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <iframe id="youtubeVideo" width="560" height="315" 
+                        src="" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
 
-        <div class="col-md-9 p-2 d-flex justify-content-between align-items-center Funzionalità-title">   
+        <div class="contenitore-video">
+            <div class="backdrop d-flex justify-content-center align-items-center">
+
+                <div class="col-md-5 d-flex flex-column align-items-center justify-content-center Home-content-Intro">
+
+                    <h3 class="col-md-12 m-4 p-2 titoloVideo">
+                        BioVitalAge, molto più di un semplice gestionale medico
+                    </h3>
+    
+                    <p class="col-md-10 p-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, dolore libero.
+                    </p>
+                    
+                    <button class="playButton" id="playButton">
+                        <img src="../../includes/images/icone/play.png" alt="Play" style="width: 45px; height: 45px;">
+                    </button>
+                    
+                </div>
+
+            </div>
+            <video autoplay muted loop>
+                <source src="../../includes/images/videoDimostrativo.mp4" type="video/mp4">
+                Il tuo browser non supporta i video HTML5.
+            </video>
+        </div>
+
+       <!-- Primo carosello -->
+        <div class="col-md-9 p-2 d-flex justify-content-between align-items-center Funzionalità-title">
             <h3 class="col-md-8">Le Funzioni Innovative della Piattaforma</h3>
             <div class="col-md-2 btn-container-carousel">
                 <button><</button>
@@ -208,7 +250,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -226,7 +267,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -244,7 +284,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -262,7 +301,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -280,7 +318,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -298,24 +335,22 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="col-md-9 p-2 d-flex justify-content-between align-items-center Funzionalità-title">   
-            <h3 class="col-md-8">Tutte le Funzionalità del software</h3>
-            <div class="col-md-2 btn-container-carousel">
+            <h3 class="col-md-8">Tutte le Funzionalità della Piattaforma</h3>
+            <div class="col-md-2 btn-container-carousel-2">
                 <button><</button>
                 <button>></button>
             </div>
         </div>
 
         <!-- Carousel Da finire -->
-        <div class="col-md-9 p-3 ElenzoFunzionalità-Carousel-container" id="carousel-Funzionalità">
+        <div class="col-md-9 p-3 ElenzoFunzionalità-Carousel-container" id="carousel-Funzionalità-2">
             <div class="card-carousel-container">
                 <div class="card-carousel">
                     <div class="img-card-carousel-container">
@@ -330,7 +365,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -348,7 +382,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -366,7 +399,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -384,7 +416,24 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card-carousel">
+                    <div class="img-card-carousel-container">
+                        <img src="https://img.digital4.biz/wp-content/uploads/2024/02/Shutterstock_1970907203-1.jpg" alt="">
+                    </div>
+                    <div class="card-carousel-description">
+                        <p class="marcatore" id="carousel-marcatore">tecnologia e medicina</p>
+        
+                        <h3 id="carousel-tittle">Titolo <span>placeholder</span></h3>
+            
+                        <p id="carousel-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
+                            amet soluta tempora quasi nam delectus necessitatibus,
                         </p>
                     </div>
                 </div>
@@ -402,7 +451,6 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
@@ -420,10 +468,10 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                             Omnis quaerat officia ipsa id quae reiciendis ducimus quos possimus dolorum
                             amet soluta tempora quasi nam delectus necessitatibus,
-                            impedit voluptatum in ratione.
                         </p>
                     </div>
                 </div>
+               
             </div>
         </div>
 
@@ -446,7 +494,7 @@
                     amet soluta tempora quasi nam delectus necessitatibus,
                      impedit voluptatum in ratione.
                 </p>
-                <button class="button-style" id="percorsi">Scopri di più</button>
+                <button class="button-style" id="percorsi" onclick="window.location = '../BioVitalAgeTherapy/BioVitalAgeTeraphy.html';">Scopri di più</button>
             </div>
 
             <div class="col-md-6 p-5 integrazioneAi-img-container">
@@ -466,6 +514,7 @@
                     </div>
                 </div>
                 <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
 
                 <button class="arrow-button">Scopri di più</button>
             </div>
@@ -477,6 +526,7 @@
                     </div>
                 </div>
                 <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
 
                 <button class="arrow-button">Scopri di più</button>
             </div>
@@ -488,6 +538,8 @@
                     </div>
                 </div>
                 <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
+
                 <button class="arrow-button">Scopri di più</button>
             </div>
 
@@ -498,6 +550,7 @@
                     </div>
                 </div>
                 <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
             
                 <button class="arrow-button">Scopri di più</button>
             </div>
@@ -509,6 +562,7 @@
                     </div>
                 </div>
                 <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
                
                 <button class="arrow-button">Scopri di più</button>
             </div>
@@ -520,6 +574,7 @@
                     </div>
                 </div>
                 <h3>Tittle Placeholder</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores soluta pariatur necessitatibus nulla eveniet impedit ab repudiandae autem!</p>
                
                 <button class="arrow-button">Scopri di più</button>
             </div>
@@ -538,7 +593,7 @@
                     eveniet laborum nemo, obcaecati, exercitationem tempore iusto?
                 </p>
                 <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
-                    <button class="button-style">Inizia la prova GRATUITA!</button>
+                    <button class="button-style" onclick="window.location = '../../url/contattaci/contattaci.html';" >Inizia la prova GRATUITA!</button>
                 </div>
             </div>
         </div>

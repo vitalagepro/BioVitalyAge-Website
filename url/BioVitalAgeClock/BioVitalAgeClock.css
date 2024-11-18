@@ -25,7 +25,6 @@
     --circle-color-shadow-two: rgba(42, 196, 221,0.05)
 }
 
-
 body{
     overflow-x: hidden;
     position: relative;
@@ -59,14 +58,14 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 }
 .Home_Section-tittle h3{
     margin-top: 5rem;
-    color: var(--tittle2);
+    color: var(--tittle1);
     letter-spacing: 0.5px;
     font-family: "Raleway", sans-serif;
     font-size: 45px;
@@ -74,7 +73,7 @@ body{
     text-align: center;
     max-width: 40%;
     opacity: 0;
-    z-index: 1;
+    z-index: 3;
 } 
 .home_section-presentation{
    margin: auto;
@@ -93,6 +92,7 @@ body{
     padding-bottom: 20px;
     opacity: 0;
 }
+
 .home_presentation-description h3 span,
 .home_section-etaBilogica h3 span,
 .Home-content-container-integrazioneAi span,
@@ -100,7 +100,6 @@ body{
 .Funzionalità-title span{
     color: var(--tittle2);
 }
-
 .home_section-etaBilogica h3,
 .Home-content-container-integrazioneAi h3,
 .Home-content-container-integrazioneAitwo h3,
@@ -116,19 +115,113 @@ body{
 
 
 
+
+/* Contenitore Video */
+.contenitore-video{
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+.backdrop{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.Home-content-Intro{
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+    position: relative;
+}
+.Home-content-Intro h3{
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 80%;
+}
+.Home-content-Intro h3 span{
+    color: var(--tittle1);
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-top: 8px;
+}
+.Home-content-Intro p{
+    color: var(--light1);
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+.playButton{
+    background-color: var(--neutral-bg-color);
+    border: 4px solid var(--tittle2);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+
+
+
+
+/* Stile per la modale */
+.video-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.video-modal-content {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+
+
+
+
+
 .home_section-etaBilogica{
     margin: -1rem auto 0rem auto;
 }
 .marcatore{
-    color: var(--neutral-gray);
-    font-size: 12px;
-    font-weight: lighter;
-    border: 0.5px solid var(--neutral-gray);
-    width: 13rem;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 1rem;
+    color: var(--tittle2);
+    font-size: 20px;
 }
 .card-container-etaBiologica{
     flex-wrap: wrap;
@@ -206,23 +299,27 @@ body{
 
 
 
-.Funzionalità-title{
+.Funzionalità-title,
+.Funzionalità-title-2{
     margin: auto; 
     margin-top: 2rem;
 }
-.Funzionalità-title h3{
+.Funzionalità-title h3,
+.Funzionalità-title-2 h3{
     color: var(--tittle2);
     font-size: 35px;
     font-weight: 700;
     padding: 12px;
 }
-.btn-container-carousel{
+.btn-container-carousel,
+.btn-container-carousel-2{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.btn-container-carousel button{
+.btn-container-carousel button,
+.btn-container-carousel-2 button{
     height: 2.5rem;
     width: 4rem;
     border: none;
@@ -230,6 +327,7 @@ body{
     background-color: var(--contrast-color2);
     color: var(--tittle1);
 }
+
 
 
 
@@ -270,7 +368,7 @@ body{
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -283,53 +381,20 @@ body{
     height: auto;
 }
 .card-carousel-description{
-    height: 60%;
+    height: 50%;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
+}
+.card-carousel-description .marcatore{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
 }
 .card-carousel-description h3{
     text-align: left;
     color: var(--tittle1);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -376,6 +441,9 @@ body{
     width: 29.5rem;
     border-radius: 4px;
 }
+.grid-container:hover{
+    background-color: var(--neutral-bg-color-contrast);
+}
 .grid-container h3{
     color: var(--tittle1);
     font-size: 35px;
@@ -412,7 +480,6 @@ body{
 .home-content-demo{
     background-color: rgba(124, 81, 149, 0.2); 
     margin-top: 2rem;
-    margin-bottom: 4rem;
 }
 .demo-descrizione{
     margin-left: -1rem;
