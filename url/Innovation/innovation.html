@@ -53,7 +53,8 @@
 
         <div class="col-md-12 d-flex justify-content-center align-items-center container-blog-presentation">
             <div class="col-md-6 img-container">
-                <img src="https://img.freepik.com/foto-premium/laptop-sul-tavolo-cuore-sullo-schermo-il-concetto-di-medicina-e-tecnologia-moderna_607202-8032.jpg" alt="">
+                <div class="backdrop"></div>
+                <img class="scale-img" src="https://img.freepik.com/foto-premium/laptop-sul-tavolo-cuore-sullo-schermo-il-concetto-di-medicina-e-tecnologia-moderna_607202-8032.jpg" alt="">
                 <div class="img-container-description">
                     <h3>Titolo PlaceHolder</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit dolorem id eligendi non possimus accusantium natus, odio repudiandae deleniti provident aut libero quod dolorum dolore vero quisquam inventore debitis?</p>
@@ -61,7 +62,8 @@
                 </div>
             </div>
             <div class="col-md-6 img-container">
-                <img src="https://img.freepik.com/fotos-premium/modelo-de-icone-de-computador-e-acesso-a-internet-representa-a-transmissao-de-informacoes-de-servicos-financeiros-de-negocios-usando-tecnologia_233554-1003.jpg" alt="">
+                <div class="backdrop"></div>
+                <img class="scale-img" src="https://img.freepik.com/fotos-premium/modelo-de-icone-de-computador-e-acesso-a-internet-representa-a-transmissao-de-informacoes-de-servicos-financeiros-de-negocios-usando-tecnologia_233554-1003.jpg" alt="">
                 <div class="img-container-description">
                     <h3>Titolo PlaceHolder</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit dolorem id eligendi non possimus accusantium natus, odio repudiandae deleniti provident aut libero quod dolorum dolore vero quisquam inventore debitis?</p>
@@ -70,58 +72,162 @@
             </div>
         </div>
 
-        <div class="col-md-11 tittle-news">
+        <div class="col-md-10 tittle-news">
             <h3>Latest News</h3>
+            <select name="filtri">
+                <option value="1">Tutti i blog</option>
+                <option value="1">Ordina per data crescente</option>
+                <option value="1">Ordina per data decrescente</option>
+                <option value="1">Ordina per autore</option>
+                <option value="1">Ordina per i più letti</option>
+            </select>
         </div>
 
-        <div class="col-md-11 d-flex justify-content-center align-items-center ultime-notizie-container">
-            <div class="col-md-4 p-5 card-notizie" id="first">
-                <div class="backdrop"></div>
-                <h3>Titolo Placeholder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sequi molestiae velit voluptatem assumenda obcaecati praesentium laboriosam excepturi iste dicta iusto distinctio suscipit, accusamus debitis quos recusandae est numquam!</p>
-                <button class="arrow-button">Scopri di più</button>
+        <div class="col-md-10 d-flex justify-content-center align-items-center ultime-notizie-container">
+ 
+            <div class="col-md-4 card-notizie" id="first">
+                <div class="card-image">
+                    <img class="scale-img" src="https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg" alt="">
+                </div>
+                <div class="card-descrizione p-5">
+                    <div class="autore-description d-flex justify-content-between align-items-center">
+                        <div class="Container-autore d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                            <p>By Nome Autore</p>
+                        </div>
+                        <div class="Container-Data d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/data.png" alt="" width="20px" height="20px">
+                            <p>22, Ottobre 2024</p>
+                        </div>
+                    </div>
+                    <h3>Titolo Blog</h3>
+                    <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                    <button class="arrow-button">Leggi di più</button>
+                </div>
             </div>
-            <div class="col-md-4 p-5 card-notizie" id="first">
-                <div class="backdrop"></div>
-                <h3>Titolo Placeholder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sequi molestiae velit voluptatem assumenda obcaecati praesentium laboriosam excepturi iste dicta iusto distinctio suscipit, accusamus debitis quos recusandae est numquam!</p>
-                <button class="arrow-button">Scopri di più</button>
+
+            <div class="col-md-4 card-notizie" id="first">
+                <div class="card-image">
+                    <img class="scale-img" src="https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg" alt="">
+                </div>
+                <div class="card-descrizione p-5">
+                    <div class="autore-description d-flex justify-content-between align-items-center">
+                        <div class="Container-autore d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                            <p>By Nome Autore</p>
+                        </div>
+                        <div class="Container-Data d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/data.png" alt="" width="20px" height="20px">
+                            <p>22, Ottobre 2024</p>
+                        </div>
+                    </div>
+                    <h3>Titolo Blog</h3>
+                    <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                    <button class="arrow-button">Leggi di più</button>
+                </div>
             </div>
-            <div class="col-md-4 p-5 card-notizie" id="first">
-                <div class="backdrop"></div>
-                <h3>Titolo Placeholder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sequi molestiae velit voluptatem assumenda obcaecati praesentium laboriosam excepturi iste dicta iusto distinctio suscipit, accusamus debitis quos recusandae est numquam!</p>
-                <button class="arrow-button">Scopri di più</button>
+
+            <div class="col-md-4 card-notizie" id="first">
+                <div class="card-image">
+                    <img class="scale-img" src="https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg" alt="">
+                </div>
+                <div class="card-descrizione p-5">
+                    <div class="autore-description d-flex justify-content-between align-items-center">
+                        <div class="Container-autore d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                            <p>By Nome Autore</p>
+                        </div>
+                        <div class="Container-Data d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/data.png" alt="" width="20px" height="20px">
+                            <p>22, Ottobre 2024</p>
+                        </div>
+                    </div>
+                    <h3>Titolo Blog</h3>
+                    <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                    <button class="arrow-button">Leggi di più</button>
+                </div>
             </div>
         </div>
 
-        <div class="col-md-11 d-flex justify-content-center align-items-center ultime-notizie-container">
-            <div class="col-md-4 p-5 card-notizie" id="second">
-                <div class="backdrop"></div>
-                <h3>Titolo Placeholder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sequi molestiae velit voluptatem assumenda obcaecati praesentium laboriosam excepturi iste dicta iusto distinctio suscipit, accusamus debitis quos recusandae est numquam!</p>
-                <button class="arrow-button">Scopri di più</button>
+        <div class="col-md-10 d-flex justify-content-center align-items-center ultime-notizie-container">
+ 
+            <div class="col-md-4 card-notizie" id="first">
+                <div class="card-image">
+                    <img class="scale-img" src="https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg" alt="">
+                </div>
+                <div class="card-descrizione p-5">
+                    <div class="autore-description d-flex justify-content-between align-items-center">
+                        <div class="Container-autore d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                            <p>By Nome Autore</p>
+                        </div>
+                        <div class="Container-Data d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/data.png" alt="" width="20px" height="20px">
+                            <p>22, Ottobre 2024</p>
+                        </div>
+                    </div>
+                    <h3>Titolo Blog</h3>
+                    <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                    <button class="arrow-button">Leggi di più</button>
+                </div>
             </div>
-            <div class="col-md-4 p-5 card-notizie" id="second">
-                <div class="backdrop"></div>
-                <h3>Titolo Placeholder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sequi molestiae velit voluptatem assumenda obcaecati praesentium laboriosam excepturi iste dicta iusto distinctio suscipit, accusamus debitis quos recusandae est numquam!</p>
-                <button class="arrow-button">Scopri di più</button>
+
+            <div class="col-md-4 card-notizie" id="first">
+                <div class="card-image">
+                    <img class="scale-img" src="https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg" alt="">
+                </div>
+                <div class="card-descrizione p-5">
+                    <div class="autore-description d-flex justify-content-between align-items-center">
+                        <div class="Container-autore d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                            <p>By Nome Autore</p>
+                        </div>
+                        <div class="Container-Data d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/data.png" alt="" width="20px" height="20px">
+                            <p>22, Ottobre 2024</p>
+                        </div>
+                    </div>
+                    <h3>Titolo Blog</h3>
+                    <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                    <button class="arrow-button">Leggi di più</button>
+                </div>
             </div>
-            <div class="col-md-4 p-5 card-notizie" id="second">
-                <div class="backdrop"></div>
-                <h3>Titolo Placeholder</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sequi molestiae velit voluptatem assumenda obcaecati praesentium laboriosam excepturi iste dicta iusto distinctio suscipit, accusamus debitis quos recusandae est numquam!</p>
-                <button class="arrow-button">Scopri di più</button>
+
+            <div class="col-md-4 card-notizie" id="first">
+                <div class="card-image">
+                    <img class="scale-img" src="https://img.freepik.com/fotos-premium/computadora-portatil-fondo-azul-fondo-azul-nube-palabras_862543-164.jpg" alt="">
+                </div>
+                <div class="card-descrizione p-5">
+                    <div class="autore-description d-flex justify-content-between align-items-center">
+                        <div class="Container-autore d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/autore.png" alt="" width="20px" height="20px">
+                            <p>By Nome Autore</p>
+                        </div>
+                        <div class="Container-Data d-flex" style="gap:5px">
+                            <img src="../../includes/images/icone/data.png" alt="" width="20px" height="20px">
+                            <p>22, Ottobre 2024</p>
+                        </div>
+                    </div>
+                    <h3>Titolo Blog</h3>
+                    <p>Piccola Descrizione del blog che va a dare un accenno a quel che sarà il contenuto</p>
+                    <button class="arrow-button">Leggi di più</button>
+                </div>
             </div>
         </div>
 
+        <div class="col-md-2 p-4 d-flex justify-content-center align-items-center pagination">
+            <button id="active">1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
 
-        <div class="col-md-11 tittle-news-two">
+
+
+        <div class="col-md-10 tittle-news-two">
             <h3>Latest Platform Update</h3>
         </div>
 
-        <div class="col-md-11 p-5 d-flex justify-content-center align-items-center Aggiornamenti">
+        <div class="col-md-10 p-5 d-flex justify-content-center align-items-center Aggiornamenti">
 
             <div class="p-5 d-flex-column justify-content-center align-items-center card-etaBiologica">
                 <div class="img-container-etaBiologica">
@@ -175,6 +281,7 @@
 
         <div class="col-md-12 d-flex justify-content-center align-items-center container-blog-presentation">
             <div class="col-md-6 img-container">
+                <div class="backdrop"></div>
                 <img src="https://img.freepik.com/foto-premium/team-medico-con-maschere-chirurgiche-che-lavora-in-un-laboratorio-high-tech_899027-2499.jpg" alt="">
                 <div class="img-container-description">
                     <h3>Il Nostro Team</h3>
@@ -183,6 +290,7 @@
                 </div>
             </div>
             <div class="col-md-6 img-container">
+                <div class="backdrop"></div>
                 <img src="https://t4.ftcdn.net/jpg/02/00/14/63/360_F_200146338_NTWg7HF65p5z6IUIXzxJbkJ5zlEt3gnG.jpg" alt="">
                 <div class="img-container-description">
                     <h3>Corporation</h3>
@@ -191,23 +299,6 @@
                 </div>
             </div>
         </div>
-
-        
-        <!-- <div class="col-md-12 p-5 d-flex justify-content-center align-items-center home-content-demo" style="margin-bottom: 1.5rem;">
-            <div class="col-md-5 p-5 demo-descrizione">
-                <h3>Contattaci</h3>
-                <p class="col-md-8">
-                    Lorem ipsum dolor, sit amet consectetur 
-                    adipisicing elit. In et placeat praesentium
-                    inventore ratione. Eius quidem fuga nam
-                    expedita perspiciatis qui quos, consequuntur 
-                    eveniet laborum nemo, obcaecati, exercitationem tempore iusto?
-                </p>
-                <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
-                    <button class="button-style">I nostri contatti</button>
-                </div>
-            </div>            
-        </div> -->
 
 
         <footer>

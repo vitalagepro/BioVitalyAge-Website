@@ -407,7 +407,7 @@ video{
 
 /* Teraphy */
 #percorsi{
-    height: 2.5rem;
+    height: 3rem;
     margin-top: 1rem;
     width: 16rem;
 }
@@ -507,7 +507,7 @@ video{
     gap: 10px;
 }
 .home-content-demo .button-style{
-    padding: 8px;
+    padding: 10px;
     width: 18rem;
 }
 #button-funz{
@@ -544,4 +544,7 @@ video{
 }
 .form-richiedi .privacy{
     padding: 10px;
+}
+.button-style{
+    height: 3rem;
 }

@@ -96,7 +96,7 @@ const scalator = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('scale-animate');
-            scalator.unobserve(entry.target); // Stop observing after it has scaled
+            scalator.unobserve(entry.target); 
         }  
     });
 }, {
@@ -106,3 +106,4 @@ const scalator = new IntersectionObserver((entries) => {
 ImgToScale.forEach(img => {
     scalator.observe(img); 
 });
+

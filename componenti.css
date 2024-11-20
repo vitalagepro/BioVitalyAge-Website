@@ -34,6 +34,8 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    height: 3rem;
+    width: 16rem;
 }
 .button-style::before{
     content: '';
@@ -86,6 +88,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    height: 3rem;
 }
 .button-style-active::before{
     content: '';
@@ -229,7 +232,7 @@
 .accedi{
     margin-left: 1rem;
     margin-top: 0.5rem;
-    height: 2.5rem;
+    height: 2.8rem;
     width: 10rem;
 }
 .nav-bar.scrolled{
@@ -361,7 +364,10 @@ footer{
 }
 
 
-
+.marcatore{
+    color: var(--tittle2);
+    font-size: 18px;
+}
 
 
 
