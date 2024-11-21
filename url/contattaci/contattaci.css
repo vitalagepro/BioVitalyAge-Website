@@ -52,8 +52,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(https://img.zerounoweb.it/wp-content/uploads/2022/02/14154452/shutterstock_1653839683.jpg);
+    background-image: url(https://prevenzione-salute.com/wp-content/uploads/2023/05/medico-che-suggerisce-un-programma-ospedaliero-al-paziente-scaled-1-1030x740.jpeg);
     background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .backdrop{
     position: absolute;
@@ -106,9 +108,10 @@ body{
     padding: 20px;
 }
 .card-description h3{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--tittle2);
     padding-top: 10px;
+    font-weight: lighter;
 }
 .card-container-info .img-container{
     background-color: var(--neutral-bg-color);
@@ -227,7 +230,7 @@ body{
 
 
 #map{
-    height: 500px;
+    height: 400px;
     margin-top: -1.5rem;
     margin-bottom: 1.5rem;
     z-index: 1;

@@ -62,7 +62,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -77,22 +77,24 @@ body{
     max-width: 40%;
     opacity: 0;
     z-index: 1;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 } 
 
 
 .customers-container {
+    background-color: var(--neutral-bg-color-contrast);
+}
+.contenitore-cards{
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 6px;
     flex-wrap: wrap;
-    margin: auto;
 }
 .card-customer {
     position: relative;
-    height: 18rem;
-    width: 18rem;
+    height: 17.2rem;
+    width: 17.2rem;
     overflow: hidden;
 }
 .card-customer .backdrop {
@@ -121,25 +123,41 @@ body{
 .card-customer:hover .backdrop {
     opacity: 1;
 }
-
-
-
-.tittle{
-    color: var(--tittle2);
+.customers-container h3,
+.container-feedback h3{
+    padding-bottom: 30px;
+    color: var(--tittle1);
     font-family: "Raleway", sans-serif;
     font-size: 30px;
     font-weight: 700;
-    margin-top: 2rem;
-    padding-top: 40px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    max-width: 30%;
-    margin: auto;
 }
-.subtitle{
-    margin: auto;
-    padding-top: 10px;
+
+
+.contenitore-presentazione-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+span{
+    color: var(--tittle2);
+}
+.contenitore-presentazione-description h3{
+    color: var(--tittle1);
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
     text-align: left;
+    max-width: 80%;
+    padding-bottom: 10px;
+}
+.contenitore-presentazione{
+    margin: 0rem auto;
+}
+
+.container-feedback{
+    margin-top: 4rem;
 }
 .img-container-grid{
     background-color: rgba(42, 196, 221,0.05);
@@ -163,7 +181,8 @@ body{
 .feedbeck-container{
     margin: auto auto 4rem auto;
     gap: 10px;
-
+    padding-left: 38px;
+    padding-right: 38px;
 }
 .card-feedback{
     text-align: center;
@@ -172,15 +191,20 @@ body{
 }
 .card-feedback h3{
     color: var(--tittle2);
-    font-style: italic;
     padding-top: 5px;
 }
-
+.card-feedback p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-feedback p:last-of-type{
+    margin-top: -2rem;
+}
 
 
 .home-content-demo{
     background-color: rgba(124, 81, 149, 0.2); 
-    margin-top: -1rem;
+
     position: relative;
     overflow: hidden;
 }
