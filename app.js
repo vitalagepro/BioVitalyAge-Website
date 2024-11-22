@@ -35,6 +35,18 @@ window.onscroll = function () {
 
 
 
+function myFunction(x) {
+    x.classList.toggle("change");
+
+    const backdrop = document.querySelector('.MobileNavBar-backdrop');
+    const navBarMobile = document.getElementById('navBarMobile');
+
+    backdrop.classList.toggle('active');
+    navBarMobile.classList.toggle('active');
+}
+
+
+
 
 document.querySelectorAll('.accordion-btn').forEach(button => {
     button.addEventListener('click', function() {

@@ -116,6 +116,7 @@ body{
 .card-container-info .img-container{
     background-color: var(--neutral-bg-color);
     border-radius: 8px;
+    height: 70px;
 }
 
 
