@@ -313,7 +313,8 @@ body{
     height: 2.8rem;
     width: 10rem;
 }
-.nav-bar.scrolled{
+.nav-bar.scrolled,
+.nav-bar-mobile.scrolled{
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
 
@@ -639,13 +640,23 @@ footer{
     }
     .button-style,
     .button-style-active{
-        width: 12rem;
+        width: 8rem;
         height: 2rem;
-        font-size: 16px;
+        font-size: 14px;
     }
     .Home{
         overflow: hidden;
     }
+
+    * p{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 1rem;
+    }
+    .marcatore {
+        font-size: 14px;
+    }
+
 }
 
 /* Smartphone medi (481px-768px) */

@@ -1,4 +1,6 @@
 const navbar = document.getElementById('navbar');
+const navbarMobile = document.getElementById('navBarMobile');
+
 
 window.onscroll = function () {
     let HomeContainer;
@@ -9,7 +11,6 @@ window.onscroll = function () {
         HomeContainer = document.getElementById('Home_Section_secondary');
     }
 
-  
     if (HomeContainer) {
         let check = HomeContainer.getAttribute('id');
         let halfPageHeight = 0;
@@ -21,14 +22,14 @@ window.onscroll = function () {
             
         }else{
             halfPageHeight = parseInt((pageHeight * 1) / 100);
-            console.log(halfPageHeight)
         }
        
-
         if (scrollPosition > halfPageHeight) {
             navbar.classList.add('scrolled');
+            navbarMobile.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+            navbarMobile.classList.remove('scrolled');
         }
     }
 };
