@@ -307,9 +307,14 @@ video{
     height: 48rem;
     gap: 10px;
 }
+
 .card-item{
     background-color: rgba(176, 184, 193, 0.2);
     border-radius: 4px;
+    height: 32.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-item .card-image{
     overflow: hidden;
@@ -326,9 +331,11 @@ video{
 }
 #First-news{
     height: 100%;
+    flex-direction: column;
 }
 #First-news .card-image{
     height: 60%;
+    margin-top: -0.5rem;
 }
 #recent-news img{
     width: 100%;
@@ -364,14 +371,12 @@ video{
     width: 70%;
     display: flex;
     padding-top: 10px;
-    align-items: center;
     gap: 18px;
 }
 .Container-autore,
 .Container-Data{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     gap: 8px;
 }
 .container-btn-notizie{
@@ -387,6 +392,9 @@ video{
     padding: 8px;
     height: 3rem;
 }
+
+
+
 
 
 /* Demo */
@@ -464,7 +472,6 @@ video{
 /* Smartphone piccoli (320px-480px) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
-    
 
     /* Container home presentation */
     .Home__img-container{
@@ -504,7 +511,6 @@ video{
         width: 9rem;
         padding: 3px;
     }
-
 
 
     /* Container video */
@@ -571,7 +577,7 @@ video{
         flex-direction: column;
     }
     .grid-container{
-        width: 18rem;
+        width: 100%;
     }
     .grid-container h3{
         font-size: 20px;
@@ -580,7 +586,6 @@ video{
     .grid-container .arrow-button{
         padding-bottom: 10px;
     }
-
 
 
     /* Domande Faq */
@@ -595,24 +600,121 @@ video{
     .accordion{
         padding: 0px 15px 0px 15px;
     }
-    #domanda{
-        width: 14rem;
-    }
     .accordion-btn{
         font-size: 14px;
     }
     .accordion-btn::after{
         right: 0.6rem;
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
     }
     .accordion-body{
         font-size: 14px;
     }
+    #domanda{
+        width: 8rem;
+        height: 2rem;
+        padding: 0px;
+    }
+    #notizie{
+        width: 12rem;
+        height: 2rem;
+        padding: 0;
+    }
 
 
     /* Latest news */
+    .card-container-news{
+        height: 78rem;
+    }
+    .Latest-News h3{
+        font-size: 22px;
+        margin-top: 3rem;
+    }
+    .Latest-News .subtitle{
+        display: none;
+    }   
+    .colonna1{
+        display: none;
+    }
+    .card-item{
+        width: 90%;
+        flex-direction: column;
+        height: 26rem;
+    }
+    .card-item .card-image{
+        width: 100%;
+    }
+    .card-item .card-image img{
+        width: 100%;
+    }
+    .card-descrizione{
+        padding: 12px;
+        height: 50%;
+    }
+    .autore-description{
+        width: 100%;
+        gap: 5px;
+        padding-top: 5px;
+    }
+    .Container-Data,
+    .Container-autore{
+        gap: 12px;
+    }
+    .card-descrizione h3{
+        margin-top: 0rem;
+    }
 
 
+    /* Content blog */
+    .container-blog-presentation{
+        flex-direction: column;
+    }
 
+
+    /* Form Richiedi */
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione{
+        margin-top: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .demo-descrizione h5{
+        font-size: 18px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .button-container-demo .button-style{
+        width: 12rem;
+        padding: 0px;
+        margin-top: -1rem;
+    }
+    .form-richiedi{
+        border: none;
+        margin-top: 2rem;
+    }
+    .form-richiedi h3{
+        font-size: 20px;
+    }
+    .form-richiedi input{
+        width: 100%;
+        height: 2rem;
+    }
+    .form-richiedi select{
+        width: 100%;
+        height: 2.5rem;
+    }
+    .form-richiedi .privacy{
+        padding: 5px;
+    }
+    .form-richiedi .button-style{
+        padding: 0;
+        width: 8rem;
+    }
 
 }
 

@@ -647,7 +647,6 @@ footer{
     .Home{
         overflow: hidden;
     }
-
     * p{
         font-size: 14px;
         letter-spacing: 0.5px;
@@ -656,6 +655,31 @@ footer{
     .marcatore {
         font-size: 14px;
     }
+
+
+    
+    .img-container img{
+        width: 100%;
+    }
+    .img-container {
+        height: 180px;
+    }
+    .img-container-description{
+        width: 80%;
+        top: 60%;
+    }
+    .img-container-description h3{
+        font-size: 20px;
+        color: var(--tittle1);
+    }
+    .img-container-description p{
+        display: none;
+    }
+    .container-blog-presentation{
+        margin-top: 0rem;
+    }
+
+
 
 }
 
