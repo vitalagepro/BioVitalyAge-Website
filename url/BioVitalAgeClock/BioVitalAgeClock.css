@@ -37,13 +37,6 @@ body{
 
 
 /* Home Section Style */
-.Home{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
-}
 .Home_Section-tittle{
     position: relative;
     height: 300px;
@@ -75,6 +68,8 @@ body{
     opacity: 0;
     z-index: 3;
 } 
+
+
 .home_section-presentation{
    margin: auto;
    flex-wrap: wrap;
@@ -435,6 +430,9 @@ video{
 .Home-Content-container-vantaggi{
     margin: -2rem auto auto auto;
     gap: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 .grid-container{
     background-color: rgba(176, 184, 193, 0.2);
@@ -547,4 +545,202 @@ video{
 }
 .button-style{
     height: 3rem;
+}
+
+#mobile-version{
+    display: none;
+}
+iframe{
+    width: 860px;
+    height: 415px;
+}
+#playButton img{
+    height: 45px;
+    width: 45px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 150px;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+        min-width: 100%;
+    } 
+    .home_presentation-img_container img{
+        height: 220px;
+        border-radius: 4px;
+    }
+    #desktop{
+        display: none;
+    }  
+    #mobile-version{
+        display: block;
+        font-size: 20px;
+    }
+    .home_presentation-description p:last-of-type{
+        display: none;
+    }
+    .mobile-adapter{
+        margin-top: -1rem;
+    }
+    #percorsi{
+        height: 2rem;
+        width: 10rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+    .marcatore{
+        font-size: 14px;
+    }
+    .home_section-etaBilogica h3{
+        font-size: 20px;
+        margin-bottom: -0.5rem;
+    }
+    .img-container-circle img{
+        width: 25px;
+        height: 25px;
+    }
+    .Home-content-container-integrazioneAi{
+        flex-direction: column;
+    }
+    .Home-content-container-integrazioneAi h3,
+    .Home-content-container-integrazioneAitwo h3{
+        font-size: 20px;
+    }
+    .integrazioneAi-img-container{
+        border-radius: 4px;
+    }
+    .Home-content-container-integrazioneAitwo{
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* Video container */
+    .contenitore-video{
+        height: 270px;
+    }
+    video{
+        width: 150%;
+    }
+    .Home-content-Intro h3{
+        font-size: 20px;
+    }
+    .Home-content-Intro p{
+        display: none;
+    }
+    .playButton{
+        height: 40px;
+        width: 40px;
+    }
+    #playButton img{
+        width: 25px;
+        height: 25px;
+    }
+    iframe{
+        width: 260px;
+        height: 200px;
+    }
+
+
+    /* Caroselli */
+    .Funzionalità-title{
+        flex-direction: column;
+    }
+    .Funzionalità-title h3,
+    .Funzionalità-title-2 h3{
+        font-size: 22px;
+    }
+    .btn-container-carousel,
+    .btn-container-carousel-2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        padding-left: 14px;
+    }
+    .btn-container-carousel button,
+    .btn-container-carousel-2 button{
+        height: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .ElenzoFunzionalità-Carousel-container {
+        height: 405px;
+    }
+    .card-carousel {
+        background-color: var(--neutral-bg-color);
+        height: 340px;
+        min-width: 290px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .card-carousel-description{
+        height: 60%;
+        padding: 15px;
+        width: 100%;
+        transform: translate(0%, -5%);
+    }
+
+    /* Teraphy */
+    #teraphy{
+        margin-top: 1rem;
+    }
+    #teraphy .integrazioneAi-img-container img{
+        border-radius: 4px;
+        margin-top: -1rem;
+    }
+
+    /* Scelta */
+   .Home-Content-container-scleta{
+        margin: 0rem auto 1rem auto;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 22px;
+    }
+    .Home-Content-container-scleta p{
+        display: none;
+    }
+    .Home-Content-container-vantaggi{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container{
+        width: 100%;
+    }
+    .grid-container h3{
+        font-size: 20px;
+        padding-bottom: 0;
+    } 
+    .grid-container .arrow-button{
+        padding-bottom: 10px;
+    }
+    .img-container-circle img{
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Demo */
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .demo-descrizione h5{
+        font-size: 18px;
+    }
+    .button-container-demo .button-style{
+        width: 12rem;
+        height: 2rem;
+        padding: 0;
+    }
+    .button-container-demo{
+        margin-bottom: 2rem;
+    }
+
 }
