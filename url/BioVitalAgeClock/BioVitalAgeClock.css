@@ -563,7 +563,7 @@ iframe{
 
     .Home_Section-tittle{
         height: 150px;
-        background-position: 50% 20%;
+        background-size: cover;
     }
     .Home_Section-tittle h3{
         margin-top: 2rem;
