@@ -38,13 +38,6 @@ body{
 
 
 /* Home Section Style */
-.Home{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
-}
 .Home_Section-tittle{
     position: relative;
     height: 300px;
@@ -76,10 +69,10 @@ body{
     opacity: 0;
     z-index: 1;
 } 
-#teraphy{
+.Home-content-container-integrazioneAi{
     margin: auto;
 }
-#teraphy h3{
+.Home-content-container-integrazioneAi h3{
     color: var(--tittle1);
     font-size: 35px;
     font-weight: 400;
@@ -229,4 +222,128 @@ span{
 }
 .cards:hover {
     background-color: var(--contrast-color-shadow);
+}
+
+#teraphy-adjust,
+#teraphy-adjust-two{
+    margin-top: -3rem;
+}
+.integrazioneAi-img-container img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .Home_Section-tittle{
+        height: 150px;
+        background-position: 50% 20%;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+        min-width: 100%;
+    } 
+    .home_presentation-img_container img{
+        height: 220px;
+        border-radius: 4px;
+    }
+    #teraphy{
+        flex-direction: column-reverse;
+    }
+    .Home-content-container-integrazioneAi h3{
+        font-size: 20px;
+        margin-bottom: -0.5rem;
+    }
+    .integrazioneAi-img-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    #teraphy-adjust,
+    #teraphy-adjust-two{
+        margin-top: 0rem;
+    }
+    #teraphy-adjust,
+    #teraphy-adjust-two{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    #teraphy .button-style{ 
+        height: 2rem;
+        width: 12rem;
+        margin-top: 0rem;
+    }
+    #percorsi{
+        width: 12rem;
+        height: 2rem;
+        margin-top: 0rem;
+    }
+    #teraphy-adjust-two{
+        flex-direction: column-reverse;
+    }
+    
+
+    .applicazioni-container{
+        height: 360px;
+        margin-top: 2rem;
+    }
+    .tittle-terapy{
+       font-size: 20px;
+       padding-left: 16px;
+       max-width: 80%;
+       margin: 0;
+    }
+    .applicazioni-container .marcatore{
+        padding-left: 16px;
+        padding-top: 20px;
+    }
+    .cards h3{
+        font-size: 20px;
+    }
+    .content-container{
+        margin-top: 0.5rem;
+        overflow-y: auto;
+    }
+
+
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .demo-descrizione .button-style{
+        height: 2rem;
+        width: 12rem;
+        padding: 0;
+        margin-top: -0.5rem;
+    }
+
+    .form-richiedi{
+        border: none;
+        margin-top: 1rem;
+    }
+    .form-richiedi h3{
+        font-size: 20px;
+        padding: 0;
+    }
+    .form-richiedi input{
+        width: 100%;
+        height: 2.5rem;
+        font-size: 16px;
+    }
+    .form-richiedi select{
+        height: 2.5rem;
+        width: 100%;
+        font-size: 16px;
+    }
+    .privacy{
+        margin-left: -0.5rem;
+        margin-bottom: 0rem;
+    }
+    .form-richiedi .button-style{
+        padding: 0;
+        height: 2rem;
+        width: 10rem;
+    }
 }

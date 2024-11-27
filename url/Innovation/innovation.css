@@ -36,13 +36,6 @@ body{
 
 
 /* Home Section Style */
-.Home{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
-}
 .Home_Section-tittle{
     position: relative;
     height: 500px;
@@ -246,6 +239,11 @@ body{
 }
 
 
+
+
+
+
+
 .home-content-demo{
     background-color: rgba(124, 81, 149, 0.2); 
     margin-top: 2rem;
@@ -279,6 +277,10 @@ body{
     padding: 8px;
     width: 16rem;
 }
+.img-container-circle img{
+    width: 30px;
+    height: 30px;
+}
 
 
 .scale-animate {
@@ -293,5 +295,102 @@ body{
     to {
         transform: scale(1.0);
         opacity: 1; 
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-position: 20% 40%;
+    }
+    .Home_Section-tittle h3{
+        font-size: 20px;
+        min-width: 15rem;
+        margin-top: 2rem;
+    }
+    #subtitle{
+        display: none;
+    }
+
+    .container-blog-presentation{
+        flex-direction: column;
+    }
+    .tittle-news{
+        flex-direction: column;
+        padding: 16px;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .tittle-news h3{
+        font-size: 20px;
+        min-width: 15rem;
+        padding-bottom: 10px;
+    }
+    .tittle-news select{
+        height: 2.5rem;
+    }
+
+    .ultime-notizie-container{
+        flex-direction: column;
+        margin: 0;
+        padding: 5px 16px 5px 16px;
+    }
+    .card-notizie{
+        height: 20rem;
+        width: 100%;
+    }
+    .card-image{
+        height: 50%;
+        width: 100%;
+    }
+    .card-image img{
+        width: 100%;
+        height: auto;
+        margin-top: -1rem;
+    }
+    
+    .card-descrizione{
+       height: 55%;
+       margin: 0;
+
+    }
+    .card-descrizione h3{
+        margin-top: 0.5rem;
+    }
+    .card-descrizione p{
+        margin-bottom: 0rem;
+    }
+    .card-descrizione .arrow-button{
+        padding-bottom: 10px;
+    }
+    .pagination button{
+        height: 2.5rem;
+        padding: 0;
+    }
+
+   
+    .tittle-news-two{
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .tittle-news-two h3{
+        padding: 10px 0px 10px 16px;
+        margin: 0;
+        font-size: 20px;
+        min-width: 15rem;
+    }
+    .Aggiornamenti{
+        margin: 0;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .img-container-circle img{
+        width: 25px;
+        height: 25px;
     }
 }
