@@ -104,6 +104,12 @@ body{
     color: aliceblue;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
+.container-blog-presentation{
+    transform: translate(0%,-8%);
+}
+.container-blog-presentation:last-of-type{
+    transform: translate(0%, 0%);
+}
 .container-blog-presentation .img-container{
     position: relative;
 }
@@ -317,7 +323,9 @@ body{
 
     .container-blog-presentation{
         flex-direction: column;
+        transform: translate(0%, 0%);
     }
+    
     .tittle-news{
         flex-direction: column;
         padding: 16px;
@@ -346,6 +354,7 @@ body{
     .card-image{
         height: 50%;
         width: 100%;
+        overflow: hidden;
     }
     .card-image img{
         width: 100%;
@@ -356,7 +365,11 @@ body{
     .card-descrizione{
        height: 55%;
        margin: 0;
-
+       background-color: var(--neutral-bg-color-contrast);
+    }
+    .autore-description{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
     .card-descrizione h3{
         margin-top: 0.5rem;
@@ -393,4 +406,8 @@ body{
         width: 25px;
         height: 25px;
     }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Stili per i tablet */
 }

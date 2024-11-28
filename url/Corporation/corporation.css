@@ -153,7 +153,7 @@ span{
     padding-bottom: 10px;
 }
 .contenitore-presentazione{
-    margin: 0rem auto;
+    margin: 2rem auto;
 }
 
 .container-feedback{
@@ -271,6 +271,8 @@ span{
     } 
     .contenitore-presentazione{
         flex-direction: column-reverse;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .contenitore-presentazione h3{
         font-size: 20px;
@@ -286,7 +288,7 @@ span{
         margin-bottom: 0.5rem;
     }
     .container-feedback{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .container-feedback h3{
         text-align: left;
@@ -298,6 +300,7 @@ span{
     .feedbeck-container{
         flex-direction: column;
         padding: 16px;
+        margin-bottom: 1.5rem;
     }
     .card-feedback{
         height: 20rem;
@@ -341,4 +344,9 @@ span{
         width: 12rem;
     }
 
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Stili per i tablet */
 }

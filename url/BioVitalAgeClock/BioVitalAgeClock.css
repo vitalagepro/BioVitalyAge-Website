@@ -571,7 +571,7 @@ iframe{
         min-width: 100%;
     } 
     .home_presentation-img_container img{
-        height: 220px;
+        height: auto;
         border-radius: 4px;
     }
     #desktop{
@@ -595,17 +595,21 @@ iframe{
     }
     .marcatore{
         font-size: 14px;
+        margin-bottom: 0.5rem;
     }
     .home_section-etaBilogica h3{
         font-size: 20px;
-        margin-bottom: -0.5rem;
+        margin-bottom: -1.5rem;
     }
+   
     .img-container-circle img{
         width: 25px;
         height: 25px;
     }
     .Home-content-container-integrazioneAi{
         flex-direction: column;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .Home-content-container-integrazioneAi h3,
     .Home-content-container-integrazioneAitwo h3{
@@ -744,4 +748,7 @@ iframe{
         margin-bottom: 2rem;
     }
 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
 }

@@ -325,5 +325,21 @@ body{
         font-size: 20px;
         max-width: 80%;
     }
- 
+    
+    .demo-descrizione{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .container-demo{
+        background-size: cover;
+    }
+   
+   
+
+    
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Stili per i tablet */
 }

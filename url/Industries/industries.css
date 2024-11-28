@@ -126,10 +126,12 @@ video{
 }
 
 .contenitore-presentazione{
-    margin: 0rem auto;
+    margin: 0rem auto 2rem auto;
 }
+
 #correzione{
     margin-top: -3rem;
+    margin-bottom: 4rem;
 }
 .contenitore-presentazione-description{
     display: flex;
@@ -225,6 +227,7 @@ span{
     }
     .contenitore-video{
         height: 270px;
+        margin-bottom: 1.5rem;
     }
     .contenitore-description{
         margin: auto;
@@ -234,7 +237,6 @@ span{
     }
     .contenitore-description p{
         min-width: 18rem;
-
     }
     .desktop{
         display: none;
@@ -244,6 +246,7 @@ span{
     }
     .contenitore-presentazione{
         flex-direction: column;
+        margin-bottom: 1.5rem;
     }
     .contenitore-presentazione-description h3{
         font-size: 20px
@@ -253,6 +256,7 @@ span{
     }
     #correzione{
         margin-top: 0;
+        margin-bottom: 1.5rem;
         flex-direction: column-reverse;
     }
 
@@ -279,6 +283,10 @@ span{
 
 
 
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    /* Stili per i tablet */
+}
 
 
 
