@@ -160,8 +160,6 @@ body{
 
 }
 .form-richiedi input{
-    display: block;
-    width: 30rem;
     padding: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -170,7 +168,6 @@ body{
     border: none;
 }
 .form-richiedi select{
-    width: 30rem;
     padding: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -189,7 +186,9 @@ body{
     padding-top: 15px;
 }
 
-
+.container-input{
+    padding: 5px;
+}
 
 
 .container-demo{
@@ -235,4 +234,96 @@ body{
     margin-top: -1.5rem;
     margin-bottom: 1.5rem;
     z-index: 1;
+}
+.img-containers{
+    background-color: var(--neutral-bg-color);
+    border-radius: 4px;
+    padding: 15px;
+}
+.img-containers img{
+    width: 40px;
+    height: 40px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 150px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+    } 
+
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione{
+        padding-top: 20px;
+    }
+    .demo-descrizione h5{
+        font-size: 18px;
+        padding-left: 16px;
+    }
+    .demo-descrizione h3{
+        font-size: 20px;
+    }
+
+    .img-containers{
+        background-color: var(--neutral-bg-color);
+        border-radius: 4px;
+        padding: 15px;
+    }
+    .img-containers img{
+        width: 25px;
+        height: 25px;
+    }
+    .card-description h3{
+        font-size: 18px;
+        margin: 0;
+    }
+    .card-container-info{
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 16px;
+    }
+    .demo-descrizione p{
+        padding-left: 16px;
+    }
+
+    .form-richiedi{
+        margin-top: 1rem;
+        border: none;
+    }
+    .form-richiedi h5{
+        font-size: 18px;
+    }
+    .form-richiedi h3{
+        font-size: 20px;
+    }
+    .container-input:last-of-type{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .container-input select{
+        margin-top: 0rem;
+    }
+    .container-input input{
+        font-size: 16px;
+        height: 2.5rem;
+    }
+    .form-richiedi .button-style{
+        padding: 0;
+        width: 12rem;
+        margin-top: 0.5rem;
+        margin-bottom:2rem;
+    }
+    .description-demo h3{
+        font-size: 20px;
+        max-width: 80%;
+    }
+ 
 }

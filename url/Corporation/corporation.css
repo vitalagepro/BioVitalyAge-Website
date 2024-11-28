@@ -254,3 +254,91 @@ span{
     z-index: 1;
     filter: blur(2px);
 }
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .Home_Section-tittle{
+        height: 150px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 25px;
+        min-width: 100%;
+        text-align: center;
+    } 
+    .contenitore-presentazione{
+        flex-direction: column-reverse;
+    }
+    .contenitore-presentazione h3{
+        font-size: 20px;
+    }
+    .customers-container h3{
+        font-size: 22px;
+        padding: 10px 0px 20px 2px;
+        text-align: left;
+    }
+    .card-customer{
+        width: 100%;
+        height: 12rem;
+        margin-bottom: 0.5rem;
+    }
+    .container-feedback{
+        margin-top: 2rem;
+    }
+    .container-feedback h3{
+        text-align: left;
+        font-size: 22px;
+        padding-left: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .feedbeck-container{
+        flex-direction: column;
+        padding: 16px;
+    }
+    .card-feedback{
+        height: 20rem;
+    }
+
+    @media only screen and (min-width: 370px) and (max-width: 480px){
+        .card-feedback{
+            height: 18rem;
+        }
+        .card-customer{
+            height: 18rem;
+        }
+    }
+
+
+    .card-feedback p:last-of-type{
+        display: none;
+    }
+    .card-feedback h3:last-of-type{
+        text-align: center;
+        font-weight: lighter;
+        margin: 0;
+        padding: 0;
+    }
+
+    .home-content-demo{
+        margin-top: 0rem;
+    }
+    .demo-descrizione{
+        margin-left: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 22px;
+    }
+    .button-container-demo{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .home-content-demo .button-style{
+        padding: 0px;
+        width: 12rem;
+    }
+
+}
