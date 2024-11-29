@@ -480,6 +480,10 @@ footer{
 .social-container{
     margin-top: -1rem;
     margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .social-container div a img{
     transition: transform 0.3s ease-in-out;
@@ -754,11 +758,96 @@ footer{
     .link-copyright{
         display: none;
     }
+
+    .social-container{
+        justify-content: flex-start;
+    }
 }
 
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Stili per i tablet */
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar-mobile{
+        display: flex;
+    }
+    .menu-container{
+        display: block;
+    }
+    .nav-barMobile__logo-container{
+        width: 14rem;
+        padding: 0;
+    }
+    .linkage-containerMobile{
+        padding-left: 100px;
+    }
+
+    
+    .button-style,
+    .button-style-active{
+        width: 12rem;
+        height: 2.5rem;
+        font-size: 16px;
+    }
+    .Home{
+        overflow: hidden;
+    }
+    * p{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 1rem;
+    }
+    .marcatore {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .footer-header-container{
+  
+        padding: 0;
+    }
+    .footer-header{
+
+        width: 100%;
+    }
+    .logo-container img{
+        width: 200px;
+        height: auto;
+    }
+    .widget-logo p{
+        margin-left: 0.8rem;
+    }
+    .social-container{
+        flex-direction: column;
+    }
+
+    .widget-link{
+        margin-left: 2rem;
+    }
+    #adjust-tablet{
+        margin-left: -1rem;
+    }
+    .widget-contatti{
+        margin-left: -2rem;
+    }
+    .widget-link h3,
+    .widget-contatti h3{
+        font-size: 20px;
+    }
+    .widget-link ul li,
+    .widget-contatti ul li{
+        margin-top: 1rem;
+
+        padding: 5px;
+    }
+    .footer-copryright-container{
+        width: 96%;
+    }
+    .footer-copryright-container p{
+        margin-left: 1rem;
+    }
 }
 
 
