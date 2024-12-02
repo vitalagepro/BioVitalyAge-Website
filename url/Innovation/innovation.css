@@ -409,5 +409,76 @@ body{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Stili per i tablet */
+    .Home_Section-tittle{
+        height: 400px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    .Home_Section-tittle p{
+        display: none;
+    }
+    .container-blog-presentation{
+        transform: translate(0%, -14.8%);
+    }
+    .container-blog-presentation .img-container{
+        height: 220px;
+    }
+    .img-container-description p{
+        display: none;
+    }
+    .img-container-description .arrow-button{
+        color: var(--tittle1);
+    }
+
+
+    .card-notizie{
+        height: 30rem;
+        width: 100%;
+    }
+    .card-image{
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .card-image img{
+        width: 200%;
+        height: auto;
+        margin-top: -1rem;
+        margin-left: -8rem;
+    }
+    .card-descrizione{
+       height: 55%;
+       margin: 0;
+       background-color: var(--neutral-bg-color-contrast);
+    }
+    .autore-description{
+        margin-bottom: 0.5rem;
+        flex-direction: column;
+    }
+    .card-descrizione h3{
+        margin-top: 0.5rem;
+    }
+    .card-descrizione p{
+        margin-bottom: 0rem;
+    }
+    .card-descrizione .arrow-button{
+        padding-bottom: 10px;
+    }
+
+    .tittle-news-two h3{
+        font-size: 25px;
+        min-width: 20rem;
+    }
+
+    
+    .Aggiornamenti{
+        flex-direction: column;
+    }
+    .card-etaBiologica h3{
+        font-size: 20px;
+    }
+
 }

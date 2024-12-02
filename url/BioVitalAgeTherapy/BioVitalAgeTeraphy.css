@@ -351,5 +351,65 @@ span{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Stili per i tablet */
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+        min-width: 100%;
+    } 
+    .Home-content-container-integrazioneAi{
+        flex-direction: column-reverse;
+    }
+    #teraphy-adjust{
+        flex-direction: column;
+    } 
+    .tittle-terapy{
+        font-size: 25px;
+    }
+    .cards h3{
+        font-size: 20px;
+    }
+    .applicazioni-container{
+        height: 450px;
+    }
+    .applicazioni-container .marcatore{
+        padding-top: 4rem;
+    }
+    .content-container{
+        margin-top: -2rem;
+    }
+    .home-content-demo{
+        flex-direction: column;
+    }
+    .demo-descrizione h3{
+        font-size: 28px;
+    }
+    .demo-descrizione h5{
+        font-size: 20px;
+    }
+    .form-richiedi{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-richiedi h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .privacy{
+        text-align: center;
+        max-width: 88%;
+        margin-left: 0.5rem;
+    }
+    .button-container-demo .button-style{
+        margin-top: 0rem;
+    }
+
+
 }
