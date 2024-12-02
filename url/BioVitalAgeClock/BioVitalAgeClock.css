@@ -354,7 +354,6 @@ video{
 .card-carousel-container::-webkit-scrollbar-thumb {
     background-color: var(--contrast-color2); 
     border-radius: 4px;
-
 }
 .card-carousel {
     background-color: var(--neutral-bg-color);
@@ -428,15 +427,17 @@ video{
     padding: 20px;
 }
 .Home-Content-container-vantaggi{
-    margin: -2rem auto auto auto;
+    margin: auto;
     gap: 10px;
     display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
 }
 .grid-container{
     background-color: rgba(176, 184, 193, 0.2);
-    width: 29.5rem;
+    width: 100%;
     border-radius: 4px;
 }
 .grid-container:hover{
@@ -751,4 +752,99 @@ iframe{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+        min-width: 100%;
+    } 
+    .home_section-presentation{
+        flex-direction: column;
+    }
+    .home_section-etaBilogica{
+        margin-top: 1rem;
+        margin-left: 2.2rem;
+        margin-bottom: -3rem;
+    }
+    .card-etaBiologica{
+        width: 100%;
+    }
+
+
+    .Home-content-container-integrazioneAi{
+        flex-direction: column-reverse;
+    }
+    .Home-content-container-integrazioneAitwo{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .contenitore-video{
+        height: 400px;
+    }
+    .Home-content-Intro H3{
+        font-size: 28px;
+        min-width: 30rem;
+    }
+    .Home-content-Intro p{
+        min-width: 30rem;
+    }
+    .playButton{
+        height: 60px;
+        width: 60px;
+    }
+    iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+
+    .Funzionalità-title{
+        padding: 50px;
+        flex-direction: column;
+    }
+    .Funzionalità-title h3{
+        font-size: 28px
+    }
+
+    .btn-container-carousel,
+    .btn-container-carousel-2{
+        transform: translate(-240%, 0%);
+    }
+    .card-carousel-container{
+        padding: 0px;
+        width: 94%;
+    }
+    .card-carousel{
+        height: 30rem;
+        margin-bottom: 1rem;
+    }
+
+    .Home-Content-container-vantaggi{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Home-Content-container-scleta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 28px;
+        max-width: 60%;
+    }
+    .Home-Content-container-vantaggi h3{
+        font-size: 25px;
+    }
+    .home-content-demo h3{
+        font-size: 28px;
+    }
+    
+    
+
+
+    
 }
