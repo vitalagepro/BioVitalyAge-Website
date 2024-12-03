@@ -285,7 +285,57 @@ span{
 
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Stili per i tablet */
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    .contenitore-video{
+        height: 400px;
+    }
+    .contenitore-description h3{
+        font-size: 28px;
+    }
+    .contenitore-description p{
+        min-width: 30rem;
+    }
+    .contenitore-presentazione{
+        flex-direction: column;
+    }
+    .contenitore-presentazione h3{
+        font-size: 28px;
+    }
+    .contenitore-presentazione .button-style{
+        width: 14rem;
+    }
+    #correzione{
+        flex-direction: column-reverse;
+    }
+
+
+    .home-content-demo{
+        height: 25rem;
+    }
+    .demo-descrizione {
+        margin-left: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 30px;
+    }
+    .demo-descrizione p{
+        max-width: 50%;
+    }
+    .button-container-demo{
+        flex-direction: column;
+    }
+
+    .backdrop{
+        display: none;
+    }
 }
 
 

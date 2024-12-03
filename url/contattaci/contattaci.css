@@ -341,5 +341,28 @@ body{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Stili per i tablet */
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    
+    .home-content-demo h3{
+        font-size: 28px;
+    }
+    .home-content-demo h5{
+        font-size: 20px;
+    }
+    .demo-descrizione h3{
+        font-size: 25px;
+    }
+    .description-demo h3{
+        font-size: 28px;
+    }
+
+
+
 }

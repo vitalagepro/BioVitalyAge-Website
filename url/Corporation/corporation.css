@@ -348,5 +348,57 @@ span{
 
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Stili per i tablet */
+
+    .Home_Section-tittle{
+        height: 220px;
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+    } 
+    .contenitore-presentazione{
+        flex-direction: column-reverse;
+    }
+    .contenitore-presentazione h3{
+        font-size: 28px;
+    }   
+    .contenitore-cards{
+        gap: 13px;
+    }
+    .card-customer {
+        position: relative;
+        height: 17.2rem;
+        width: 49%;
+        overflow: hidden;
+    }
+    .feedbeck-container{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .card-feedback{
+        min-width: 49%;
+    }
+
+    .home-content-demo{
+        height: 25rem;
+    }
+    .demo-descrizione {
+        margin-left: 0rem;
+    }
+    .demo-descrizione h3{
+        font-size: 30px;
+    }
+    .demo-descrizione p{
+        max-width: 50%;
+    }
+    .button-container-demo{
+        flex-direction: column;
+    }
+
+    .backdrop{
+        display: none;
+    }
+
+   
 }
