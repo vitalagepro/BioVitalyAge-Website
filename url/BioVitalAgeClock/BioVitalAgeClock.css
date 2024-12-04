@@ -848,3 +848,11 @@ iframe{
 
     
 }
+
+
+@media (min-width: 1024px) and (max-width: 1399px) {}
+
+@media (min-width: 1400px) and (max-width: 1700px) {}
+
+
+

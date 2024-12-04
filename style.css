@@ -486,7 +486,6 @@ video{
 
 
 
-
 /* Media query per smartphone */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -772,7 +771,6 @@ video{
 
 }
 
-
 /* Media query per tablet */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
@@ -915,11 +913,118 @@ video{
 
 }
 
+@media (min-width: 1024px) and (max-width: 1399px) {
 
+    .Home__img-container{
+        height: 700px;
+    }
+    .Home__subtitle-container{
+        width: 70%;
+        height: 50%;
+    }
+    .button-container{
+        margin-top: 3.5rem;
+        width: 90%;
+    }
+    .button-container .button-style,
+    .button-container .button-style-active{
+        width: 15rem;
+    }
+    .Home-content-container-piattaforma,
+    .Home-content-container-piattaforma-two{
+        flex-direction: row;
+    }
+    .Home-content-container-piattaforma h3,
+    .Home-content-container-piattaforma-two h3{
+        font-size: 25px;
+    }
+    .piattaforma-description p:last-of-type{
+        display: none;
+    }
+    .funzionalità{
+        margin-left: 3rem;
+    }
 
+    .contenitore-video{
+        height: 450px;
+    }
+    .Home-content-Intro h3{
+        font-size: 26px;
+        min-width: 25rem;
+    }
+    .Home-content-Intro p{
+        display: none;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 28px;
+    }
 
+    .faq-container h3{
+        font-size: 28px;
+    }
+    .Latest-News h3{
+        font-size: 28px
+    }
+    .colonna1{
+        display: none;
+    }
+    .container-blog-presentation{
+        height: 280px;
+    }
+    .img-container-description p{
+        display: none;
+    }
+    .img-container-description .arrow-button{
+        color: var(--tittle1);
+    }
+    .container-blog-presentation .img-container{
+        height: 100%;
+    }
+    .img-container-description{
+        margin-top: 2rem;
+    }
 
+    .form-richiedi input,
+    .form-richiedi select{
+        width: 100%;
+    }
 
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+
+    .Home__img-container{
+        height: 900px;
+    }
+    .Home__subtitle-container{
+        width: 70%;
+        height: 50%;
+    }
+
+    .contenitore-video{
+        height: 500px;
+    }
+    .Home-content-Intro h3{
+        font-size: 26px;
+        min-width: 25rem;
+    }
+    .Home-content-Intro p{
+        display: none;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 28px;
+    }
+    @media (min-width: 1400px) and (max-width: 1500px){
+        .card-container-news .colonna1{
+            overflow: hidden;
+        }
+    }
+}
+@media (min-width: 1800px) {
+    .card-container-news {
+        max-width: 85%; 
+    } 
+}
 
 
 
