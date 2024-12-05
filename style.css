@@ -772,7 +772,7 @@ video{
 }
 
 /* Media query per tablet */
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
 
     .Home__img-container{
         height: 500px;
@@ -913,6 +913,7 @@ video{
 
 }
 
+/* Media query per laptop */
 @media (min-width: 1024px) and (max-width: 1399px) {
 
     .Home__img-container{
@@ -990,7 +991,6 @@ video{
     }
 
 }
-
 @media (min-width: 1400px) and (max-width: 1700px) {
 
     .Home__img-container{

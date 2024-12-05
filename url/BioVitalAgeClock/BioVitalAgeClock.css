@@ -330,7 +330,7 @@ video{
 /* Carosello Funzionalità */
 .ElenzoFunzionalità-Carousel-container {
     margin: auto;
-    height: 550px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -357,7 +357,7 @@ video{
 }
 .card-carousel {
     background-color: var(--neutral-bg-color);
-    height: 460px;
+    height: 31rem;
     min-width: 450px;
     border-radius: 4px;
     display: flex;
@@ -365,6 +365,7 @@ video{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    margin-bottom: 1rem;
 }
 .img-card-carousel-container{
     width: 100%;
@@ -751,7 +752,7 @@ iframe{
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
 
     .Home_Section-tittle{
         height: 220px;
@@ -850,9 +851,141 @@ iframe{
 }
 
 
-@media (min-width: 1024px) and (max-width: 1399px) {}
+@media (min-width: 1024px) and (max-width: 1399px) {
 
-@media (min-width: 1400px) and (max-width: 1700px) {}
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 28px;
+        min-width: 100%;
+    } 
+    .home_presentation-description h3{
+        font-size: 25px;
+    }
+    .home_presentation-description p:last-of-type{
+        display: none;
+    }
+    .home_section-etaBilogica{
+        margin-top: 1rem;
+    }
+    .home_section-etaBilogica h3{
+        font-size: 25px;
+    }
+    .marcatore{
+        font-size: 20px;
+    }
+    .card-etaBiologica{
+        width: 30%;
+        height: 25rem;
+        overflow: scroll;
+    }
+    .img-container-circle img{
+        width: 30px;
+    }
+    .Home-content-container-integrazioneAi{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .Home-content-container-integrazioneAitwo{
+        margin-bottom: 2rem;
+    }
+    .Home-content-container-integrazioneAi h3{
+        font-size: 25px;
+    }
+    .Home-content-container-integrazioneAi p:last-of-type{
+        display: none;
+    }
+    .Home-content-container-integrazioneAitwo h3{
+        font-size: 25px;
+    }
+    .contenitore-video{
+        height: 400px;
+    }
+    .Home-content-Intro h3{
+        font-size: 25px;
+    }
+    .playButton img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .Funzionalità-title h3{
+        font-size: 25px;
+    }
+    .card-carousel{
+        height: 30rem;
+    }
+    .card-carousel-description{
+        margin-bottom: 1rem;
+    }
+    .Home-Content-container-scleta h3{
+        font-size: 28px;
+    }
+    .Home-Content-container-vantaggi{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Home-Content-container-vantaggi h3{
+        font-size: 25px;
+    }
+    .demo-descrizione h3{
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+        min-width: 100%;
+    } 
+    .home_presentation-description h3{
+        font-size: 28px;
+    }
+    .home_section-presentation{
+        min-width: 95%;
+    }
+    .home_section-presentation p:last-of-type{
+        display: none;
+    }
+
+    .home_section-etaBilogica{
+        min-width: 82%;
+    }
+    .card-container-etaBiologica{
+        flex-wrap: nowrap;
+        max-width: 88%;
+    }
+    .Home-content-container-integrazioneAi,
+    .Home-content-container-integrazioneAitwo{
+        min-width: 95%;
+    }
+    .Home-content-container-integrazioneAi p:last-of-type{
+        display: none;
+    }
+    
+    .Funzionalità-title{
+        min-width: 85%;
+    }
+    .ElenzoFunzionalità-Carousel-container{
+        min-width: 85%;
+    }
+    .Home-Content-container-vantaggi{
+        min-width: 84%;
+    }
+
+    .demo-descrizione{
+        min-width: 60%;
+    }
+
+
+}
 
 
 

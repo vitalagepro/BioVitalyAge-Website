@@ -350,7 +350,7 @@ span{
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
 
     .Home_Section-tittle{
         height: 220px;
@@ -412,4 +412,63 @@ span{
     }
 
 
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+        min-width: 100%;
+    } 
+
+    .Home-content-container-integrazioneAi h3{
+        font-size: 25px;
+    }
+    .Home-content-container-integrazioneAi p:last-of-type{
+        display: none;
+    }
+    .Home-content-container-integrazioneAi{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .marcatore{
+        font-size: 20px;
+    }
+
+    .tittle-terapy{
+        font-size: 25px;
+    }
+    .backdrop .marcatore{
+        margin-top: 2rem;
+    }
+    .cards h3{
+        font-size: 25px;
+    }
+
+    .form-richiedi input{
+        width: 100%;
+    }
+    .form-richiedi select{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .Home-content-container-integrazioneAi{
+        min-width: 95%;
+    }
+
+    .tittle-terapy{
+        min-width: 88%;
+    }
+    .marcatore{
+        min-width: 88%;
+    }
+    .content-container {
+        min-width: 88%;
+    }
 }

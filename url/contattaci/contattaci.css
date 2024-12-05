@@ -80,8 +80,9 @@ body{
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 } 
 .home-content-demo{
-    background-color: rgba(124, 81, 149, 0.2); 
+    background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
     margin-top: 0rem;
+   
 }
 .demo-descrizione h5{
     padding-left: 20px;
@@ -245,6 +246,9 @@ body{
     height: 40px;
 }
 
+.description-demo{
+    height: 100%;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -359,3 +363,48 @@ body{
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .Home_Section-tittle{
+        background-size: cover;
+    }
+    .Home_Section-tittle h3{
+        margin-top: 2rem;
+        font-size: 30px;
+    } 
+    .demo-descrizione h5{
+        font-size: 20px;
+    }
+    .demo-descrizione h3{
+        font-size: 25px;
+    }
+    .form-richiedi h5{
+        font-size: 20px;
+    }
+    .form-richiedi h3{
+        font-size: 25px;
+    }
+    .description-demo p{
+        max-width: 70%;
+    }
+    .description-demo h3{
+        font-size: 28px;
+    }
+
+}
+@media (min-width: 1400px) and (max-width: 1700px){
+    .description-demo h3{
+        font-size: 28px;
+    }
+    .demo-descrizione h5{
+        font-size: 24px;
+    }
+    .demo-descrizione h3{
+        font-size: 28px;
+    }
+    .form-richiedi h5{
+        font-size: 24px;
+    }
+    .form-richiedi h3{
+        font-size: 28px;
+    }
+}

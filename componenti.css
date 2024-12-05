@@ -764,7 +764,7 @@ footer{
         justify-content: flex-start;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
     .nav-bar{
         display: none;
     }
@@ -850,7 +850,7 @@ footer{
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1399px) {
+@media (min-width: 1024px) and (max-width: 1399px) {
 
     .nav-bar{
         display: none;
