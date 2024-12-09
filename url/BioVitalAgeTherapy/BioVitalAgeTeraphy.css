@@ -472,3 +472,11 @@ span{
         min-width: 88%;
     }
 }
+
+
+@media (min-width: 2560px) {
+    .privacy{
+        max-width: 60%;
+    }
+}
+

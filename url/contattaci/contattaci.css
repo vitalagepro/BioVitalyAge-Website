@@ -198,6 +198,8 @@ body{
     position: relative;
     background-image: url(https://img.zerounoweb.it/wp-content/uploads/2022/02/14154452/shutterstock_1653839683.jpg);
     background-position: 0% 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .description-demo{
         position: absolute;
@@ -408,3 +410,4 @@ body{
         font-size: 28px;
     }
 }
+

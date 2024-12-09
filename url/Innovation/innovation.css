@@ -545,3 +545,11 @@ body{
         height: 40rem;
     }
 }
+
+
+
+@media (min-width: 2560px) {
+    .card-notizie{
+        height: 40rem;
+    }
+}

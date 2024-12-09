@@ -1027,6 +1027,11 @@ video{
 }
 
 
+@media (min-width: 2560px) {
+    .privacy{
+        max-width: 60%;
+    }
+}
 
 
 

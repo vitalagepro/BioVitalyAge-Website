@@ -395,3 +395,9 @@ span{
 }
 
 
+@media (min-width: 2560px) {
+    .home-content-demo .backdrop{
+        margin-left: 40rem;
+        margin-top: 10rem;
+    }
+}

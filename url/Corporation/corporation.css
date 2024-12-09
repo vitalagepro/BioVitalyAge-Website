@@ -458,3 +458,19 @@ span{
         min-width: 80%;
     }
 }
+
+
+@media (min-width: 2560px) {
+    .home-content-demo .backdrop{
+        margin-left: 45rem;
+        margin-top: 13rem;
+    }
+    .customers-container{
+        height: 35rem;
+    }
+    .card-customer{
+        width: 24rem;
+        height: 100%;
+    }
+    
+}

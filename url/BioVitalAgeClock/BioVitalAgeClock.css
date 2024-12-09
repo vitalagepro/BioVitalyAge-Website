@@ -988,4 +988,9 @@ iframe{
 }
 
 
+@media (min-width: 2560px) {
+    .card-etaBiologica{
+        width: 25.5%;
+    }
+}
 
