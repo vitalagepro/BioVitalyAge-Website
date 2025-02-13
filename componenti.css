@@ -310,7 +310,7 @@ body{
     margin-left: 1rem;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
-    height: 2.8rem;
+    height: 2.4rem;
     width: 10rem;
 }
 .nav-bar.scrolled,
@@ -381,6 +381,7 @@ body{
     color: var(--tittle1); 
     font-weight: bold
 }
+
 
 
 
