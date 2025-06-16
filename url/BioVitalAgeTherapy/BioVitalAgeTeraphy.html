@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Vitaly Age</title>
+    <title>BVA - Terapia</title>
     <link rel="stylesheet" href="BioVitalAgeTeraphy.css">
+    <link rel="shortcut icon" href="/BioVitalyAge-Website/includes/images/icone/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../componenti.css">
 
+    <!-- Import CDN -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Js -->
     <script src="../../app.js" defer></script>
     <script src="app.js" defer></script>
+    <script src="/BioVitalyAge-Website/includes/components/components-loader.js" defer"></script>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,50 +29,8 @@
 </head>
 <body>
 
-    <div class="MobileNavBar-backdrop">
-        <ul class="linkage-containerMobile">
-            <li><a href="../../index.html">Home Page</a></li>
-            <li><a href="../BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a></li>
-            <li><a href="BioVitalAgeTeraphy.html">BioVitalAge Therapy</a></li>
-            <li><a href="../../url/Innovation/innovation.html">Innovation</a></li>
-            <li><a href="../../url/Industries/industries.html">Industries</a></li>
-            <li><a href="../../url/Corporation/corporation.html">Corporation</a></li>
-            <li><a href="../../url/contattaci/contattaci.html">Contattaci</a></li>      
-        </ul> 
-    </div>
-    
-    <nav class="nav-bar-mobile" id="navBarMobile">
-        <div class="nav-barMobile__logo-container">
-            <img src="../../includes/images/Logo.png">
-        </div>
-    </nav>
-    
-    <div class="menu-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-
-    <nav class="nav-bar" id="navbar">
-        <div class="nav-bar__logo-container">
-            <img src="../../includes/images/Logo.png">
-        </div>
-
-        <div class="nav-bar__linkage">
-            <ul class="linkage-container">
-                <li><a href="../../index.html">Home Page</a> <img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="BioVitalAgeTeraphy.html">BioVitalAge Therapy</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/Innovation/innovation.html">Innovation</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/Industries/industries.html">Industries</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/Corporation/corporation.html">Corporation</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-            </ul>
-        </div>
-        <div class="nav-bar__other-link">
-            <a href="../../url/contattaci/contattaci.html" class="info-link">Contattaci<img src="../../includes/images/navBarArrow.png" alt=""></a>
-            <a href="http://biovitalageplatformdeployed-env.eba-exhbgdpt.us-east-1.elasticbeanstalk.com/" class="button-style accedi" style="text-align: center; padding-top: 6px;">Accedi</a>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
 
     <section class="Home" id="Home_Section_secondary">
 
@@ -89,7 +54,7 @@ scientificamente validati, Biovitalage Therapy aiuta a vivere più a lungo e in 
                 </p>
                 <p>
                 </p>
-                <button class="button-style" id="percorsi" onclick="window.location ='../../url/contattaci/contattaci.html'">Richiedi Informazioni</button>
+                <button class="button" id="percorsi" onclick="window.location ='../../url/contattaci/contattaci.html'">Richiedi Informazioni</button>
             </div>
 
             <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-img-container">
@@ -118,7 +83,7 @@ migliorare il benessere generale.
                 <p>
                    
                 </p>
-                <button class="button-style" id="percorsi" onclick="window.location ='../../url/Innovation/innovation.html'">Scopri le ultime notizie</button>
+                <button class="button" id="percorsi" onclick="window.location ='../../url/Innovation/innovation.html'">Scopri le ultime notizie</button>
             </div>
         </div>
 
@@ -142,7 +107,7 @@ anticipare potenziali squilibri e fornire strategie preventive mirate.
 personalizzato e sempre aggiornato alle esigenze di ogni individuo, per massimizzare i benefici e
 favorire una longevità in salute.
                 </p>
-                <button class="button-style" id="percorsi" onclick="window.location ='../BioVitalAgeClock/BioVitalAgeClock.html'">Scopri BioVitalAge Clock</button>
+                <button class="button" id="percorsi" onclick="window.location ='../BioVitalAgeClock/BioVitalAgeClock.html'">Scopri BioVitalAge Clock</button>
             </div>
 
             <div class="col-12 col-md-12 col-lg-6 p-3 p-md-5 integrazioneAi-img-container">
@@ -206,7 +171,7 @@ capacità fisiche e mentali, contribuendo a migliorare la qualità della vita e 
                     eveniet laborum nemo, obcaecati, exercitationem tempore iusto?
                 </p>
                 <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
-                    <button class="button-style" onclick="window.location = 'url/contattaci/contattaci.html';">I nostri Contatti</button>
+                    <button class="button" onclick="window.location = 'url/contattaci/contattaci.html';">I nostri Contatti</button>
                 </div>
             </div>
 
@@ -333,7 +298,36 @@ capacità fisiche e mentali, contribuendo a migliorare la qualità della vita e 
                 </p>
                 
                
-                <button class="button-style">Invia</button>
+                <button class="button">
+                    <span class="button__icon-wrapper">
+                        <svg
+                          viewBox="0 0 14 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="button__icon-svg"
+                          width="10"
+                        >
+                          <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+          
+                        <svg
+                          viewBox="0 0 14 15"
+                          fill="none"
+                          width="10"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="button__icon-svg button__icon-svg--copy"
+                        >
+                          <path
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    Invia
+                </button>
             </div>
         </div>
 

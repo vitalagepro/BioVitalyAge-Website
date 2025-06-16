@@ -26,8 +26,7 @@
     animation-name: fade-in;
 }
 .Home__subtitle-container img{
-    width: 70%;
-    height: 50%;
+    width: 100%;
     transform: translate(-50%);
     margin-left: 50%;
     opacity: 1;
@@ -80,6 +79,7 @@ video{
     width: 100%;
     height: 100%;
     z-index: 2;
+    transition: all 0.2s ease-in-out;
 }
 .Home-content-Intro{
     width: 100%;
@@ -144,7 +144,8 @@ video{
 }
 .piattaforma-img img{
     width: 100%;
-    height: 420px;
+    object-fit: contain;
+    height: max-content;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
     border-radius: 4px;
     opacity: 0.9;
@@ -504,11 +505,9 @@ video{
     .Home__subtitle-container{
         top: 45%;
         width: 100%;
-        height: 45%;
     }
     .Home__subtitle-container img{
         width: 100%;
-        height: 50%;
         padding: 0px 20px 20px 20px;
     }
     .Home__subtitle-container h3{
@@ -587,7 +586,9 @@ video{
         width: 12rem;
     }
     .piattaforma-img img{
-        height: 200px;
+        object-fit: contain;
+        width: 100%;
+        height: max-content;
     }
     .piattaforma-description p{
         max-width: 100%;
@@ -786,8 +787,7 @@ video{
         height: 80%;
     }
     .Home__subtitle-container img{
-        width: 50%;
-        height: 40%;
+        width: 100%;
     }
     .Home__subtitle-container h3{
         width: 80%;

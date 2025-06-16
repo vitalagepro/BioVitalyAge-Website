@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Vitaly Age</title>
+    <title>BVA - Industrie</title>
     <link rel="stylesheet" href="industries.css">
+    <link rel="shortcut icon" href="/BioVitalyAge-Website/includes/images/icone/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../componenti.css">
 
+    <!-- Import CDN -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Js -->
     <script src="../../app.js" defer></script>
     <script src="app.js" defer></script>
+    <script src="/BioVitalyAge-Website/includes/components/components-loader.js" defer"></script>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,52 +29,8 @@
 </head>
 <body>
 
-    <div class="MobileNavBar-backdrop">
-        <ul class="linkage-containerMobile">
-            <li><a href="../../index.html">Home Page</a></li>
-            <li><a href="../../url/BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a></li>
-            <li><a href="../../url/BioVitalAgeTherapy/BioVitalAgeTeraphy.html">BioVitalAge Therapy</a></li>
-            <li><a href="../../url/Innovation/innovation.html">Innovation</a></li>
-            <li><a href="industries.html">Industries</a></li>
-            <li><a href="../../url/Corporation/corporation.html">Corporation</a></li>
-            <li><a href="../../url/contattaci/contattaci.html">Contattaci</a></li>
-            
-        </ul>
-        
-    </div>
-    
-    <nav class="nav-bar-mobile" id="navBarMobile">
-        <div class="nav-barMobile__logo-container">
-            <img src="../../includes/images/Logo.png">
-        </div>
-    </nav>
-    
-    <div class="menu-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-
-    <nav class="nav-bar" id="navbar">
-        <div class="nav-bar__logo-container">
-            <img src="../../includes/images/Logo.png">
-        </div>
-
-        <div class="nav-bar__linkage">
-            <ul class="linkage-container">
-                <li><a href="../../index.html">Home Page</a> <img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/BioVitalAgeTherapy/BioVitalAgeTeraphy.html">BioVitalAge Therapy</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/Innovation/innovation.html">Innovation</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="industries.html">Industries</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="../../url/Corporation/corporation.html">Corporation</a><img src="../../includes/images/navBarArrow.png" alt=""></li>
-            </ul>
-        </div>
-        <div class="nav-bar__other-link">
-            <a href="../../url/contattaci/contattaci.html" class="info-link">Contattaci<img src="../../includes/images/navBarArrow.png" alt=""></a>
-            <a href="http://biovitalageplatformdeployed-env.eba-exhbgdpt.us-east-1.elasticbeanstalk.com/" class="button-style accedi" style="text-align: center; padding-top: 6px;">Accedi</a>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
 
     <section class="Home" id="Home_Section_secondary">
 
@@ -94,7 +57,7 @@ dell’intelligenza artificiale per creare una piattaforma all’avanguardia.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
 
-                    <button class="button-style" onclick="window.location='../../url/Innovation/innovation.html'">Le ultime notizie</button>
+                    <button class="button" onclick="window.location='../../url/Innovation/innovation.html'">Le ultime notizie</button>
                 
                 </div>
 
@@ -125,7 +88,7 @@ biologico e migliorare la qualità della vita.
 trasformare la longevità in un percorso consapevole e misurabile, migliorando la vita delle persone
 attraverso soluzioni innovative e validate scientificamente.
                 </p>
-                <button class="button-style" id="percorsi" onclick="window.location ='../../url/Corporation/corporation.html'">Le nostre collaborazioni</button>
+                <button class="button" id="percorsi" onclick="window.location ='../../url/Corporation/corporation.html'">Le nostre collaborazioni</button>
             </div>
 
             
@@ -164,8 +127,8 @@ capace di integrare medicina, biotecnologia e intelligenza artificiale per migli
 è a disposizione per rispondere a ogni tua domanda.
                 </p>
                 <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
-                    <button class="button-style" onclick="window.location ='../../url/contattaci/contattaci.html'">I nostri contatti</button>
-                    <button class="button-style" onclick="window.location ='../../url/Corporation/corporation.html'">Collabora con noi</button>
+                    <button class="button" onclick="window.location ='../../url/contattaci/contattaci.html'">I nostri contatti</button>
+                    <button class="button" onclick="window.location ='../../url/Corporation/corporation.html'">Collabora con noi</button>
                 </div>
             </div>            
         </div>

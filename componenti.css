@@ -152,7 +152,7 @@ body{
 .menu-container .bar1,
 .menu-container .bar2,
 .menu-container .bar3 {
-    width: 20px;
+    width: 25px;
     height: 2px;
     background-color: var(--light1);
     margin: 6px 0;
@@ -177,7 +177,6 @@ body{
 }
 .nav-barMobile__logo-container img{
     width: 100%;
-    height: 80px;
     padding-top: 5px;
     padding-bottom: 10px;
 }
@@ -304,16 +303,27 @@ body{
     font-weight: bold;
     font-style: italic;
 }
-.accedi{
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    height: 2.4rem;
-    width: 10rem;
+
+.nav-bar,
+.nav-bar-mobile {
+    position: fixed;
+    z-index: 10;
 }
-.nav-bar.scrolled,
-.nav-bar-mobile.scrolled{
+
+.nav-bar::before,
+.nav-bar-mobile::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.nav-bar.scrolled::before,
+.nav-bar-mobile.scrolled::before {
+    opacity: 1;
 }
 
 
@@ -329,57 +339,71 @@ body{
 
 
 
-/* :root --Style Generic Button */
-.button-style{
-    height: 80%;
-    width: 50%;
-    background-color:  var(--contrast-color-shadow);
-    border: 2px solid var(--contrast-color2);
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    color: var(--tittle1);
+
+/* ! BUTTON STYLE GENERAL */
+/* From Uiverse.io by Creatlydev */
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
     cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    height: 3rem;
-    width: 15rem;
-    transition: all 0.2s ease-in-out;
-}
-.button-style::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    left: 0;
+    align-items: center;
+    gap: 0.75rem;
     background-color: var(--contrast-color2);
-    z-index: -1;
-    transition: width 0.4s ease;
+    color: #fff;
+    border-radius: 18px;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
 }
-.button-style::after{
-    content: '';
-    width: 0%;
-    height: 100%;
-    top: 0;
+
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--contrast-color2);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: var(--dark1);
+}
+
+.button:hover .button__icon-wrapper {
+    color: var(--dark1);
+}
+
+.button__icon-svg--copy {
     position: absolute;
-    right: 0;
-    background-color: var(--dark2);
-    z-index: -1;
-    transition: width 0.4s ease;
+    transform: translate(-150%, 150%);
 }
-.button-style:hover::before {
-    width: 0%; 
+
+.button__icon-svg:first-child {
+    position: absolute;
+    transform: translate(0);
 }
-.button-style:hover::after {
-    width: 100%; 
+
+.button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
 }
-.button-style:hover{
-    color: var(--tittle1); 
-    font-weight: bold
+
+.button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
 }
+  
+  
 
 
 
@@ -434,6 +458,7 @@ body{
     background: none;
     padding-top: 6px;
     letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
 }
 .arrow-button::after{
     content: '➜';
@@ -671,6 +696,7 @@ footer{
         width: 100%;
     }
     .img-container {
+        transition: all 0.2s ease-in-out;
         height: 180px;
     }
     .img-container-description{

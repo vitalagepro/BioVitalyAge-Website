@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Vitaly Age</title>
+    <title>BioVitalAge®</title>
     <link rel="shortcut icon" href="/BioVitalyAge-Website/includes/images/icone/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="componenti.css">
     <link rel="stylesheet" href="style.css">
@@ -17,6 +17,7 @@
 
     <!-- Js -->
     <script src="app.js" defer></script>
+    <script src="/BioVitalyAge-Website/includes/components/components-loader.js" defer></script>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,53 +28,9 @@
 </head>
 <body>
 
-    <div class="MobileNavBar-backdrop">
-        <ul class="linkage-containerMobile">
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="url/BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a></li>
-            <li><a href="url/BioVitalAgeTherapy/BioVitalAgeTeraphy.html">BioVitalAge Therapy</a></li>
-            <li><a href="url/Innovation/innovation.html">Innovation</a></li>
-            <li><a href="url/Industries/industries.html">Industries</a></li>
-            <li><a href="url/Corporation/corporation.html">Corporation</a></li>
-            <li><a href="url/contattaci/contattaci.html">Contattaci</a></li>  
-        </ul>
-    </div>
-    
-    <nav class="nav-bar-mobile" id="navBarMobile">
-        <div class="nav-barMobile__logo-container">
-            <img src="includes/images/Logo.png">
-        </div>
-    </nav>
-    
-    <div class="menu-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-    
-    <nav class="nav-bar" id="navbar">
-        <div class="nav-bar__logo-container">
-            <img src="includes/images/Logo.png">
-        </div>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
 
-        <div class="nav-bar__linkage">
-            <ul class="linkage-container">
-                <li><a href="index.html">Home Page</a> <img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="url/BioVitalAgeClock/BioVitalAgeClock.html">BioVitalAge Clock</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="url/BioVitalAgeTherapy/BioVitalAgeTeraphy.html">BioVitalAge Therapy</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="url/Innovation/innovation.html">Innovation</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="url/Industries/industries.html">Industries</a><img src="includes/images/navBarArrow.png" alt=""></li>
-                <li><a href="url/Corporation/corporation.html">Corporation</a><img src="includes/images/navBarArrow.png" alt=""></li>
-            </ul>
-        </div>
-        
-        <div class="nav-bar__other-link">
-            <a href="url/contattaci/contattaci.html" class="info-link">Contattaci<img src="includes/images/navBarArrow.png" alt=""></a>
-
-            <a href="http://biovitalageplatformdeployed-env.eba-exhbgdpt.us-east-1.elasticbeanstalk.com/" class="button-style accedi" style="text-align: center; padding-top: 6px;">Accedi</a>
-
-        </div>
-    </nav>
 
     <section class="Home">
         
@@ -87,9 +44,67 @@
                     Organizza e gestisci i tuoi pazienti in modo efficiente
                 </h3>
                 <div class="button-container">
-                    <button class="button-style" onclick="window.location = 'url/BioVitalAgeClock/BioVitalAgeClock.html';">Scopri la Piattaforma</button>
-                    <button class="button-style-active" onclick="window.location = 'url/contattaci/contattaci.html';">Prova la demo ora</button>
-                </div>
+                    <button onclick="window.location ='/BioVitalyAge-Website/url/BioVitalAgeClock/BioVitalAgeClock.html'" class="button">
+                        <span class="button__icon-wrapper">
+                          <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg"
+                            width="10"
+                          >
+                            <path
+                              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+            
+                          <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            width="10"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg button__icon-svg--copy"
+                          >
+                            <path
+                              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                        Scopri la Piattaforma
+                    </button>
+                      <button onclick="window.location = '/BioVitalyAge-Website/url/contattaci/contattaci.html';" class="button">
+                        <span class="button__icon-wrapper">
+                          <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg"
+                            width="10"
+                          >
+                            <path
+                              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+            
+                          <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            width="10"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg button__icon-svg--copy"
+                          >
+                            <path
+                              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </span>
+                        Prova la Demo ora
+                      </button>
+                    </div>
             </div>
         </div>
 
@@ -105,9 +120,9 @@
     
                     <p class="col-md-12 p-4">
                         Biovitalage è una piattaforma avanzata per la gestione medica che integra una cartella clinica
-completa di tutte le informazioni del paziente con BiovitalageClock, l&#39;innovativa funzione per il
-calcolo dell&#39;età biologica. Un software all&#39;avanguardia per monitorare la salute e il benessere dei
-pazienti con un approccio scientifico e personalizzato.
+                        completa di tutte le informazioni del paziente con BiovitalageClock, l&#39;innovativa funzione per il
+                        calcolo dell&#39;età biologica. Un software all&#39;avanguardia per monitorare la salute e il benessere dei
+                        pazienti con un approccio scientifico e personalizzato.
                     </p>
                 
                 </div>
@@ -136,7 +151,7 @@ pazienti con un approccio scientifico e personalizzato.
                     <p>
                       
                     </p>
-                    <button class="button-style" onclick="window.location = 'url/BioVitalAgeClock/BioVitalAgeClock.html';">Scopri di più</button>
+                    <button class="button" onclick="window.location = 'url/BioVitalAgeClock/BioVitalAgeClock.html';">Scopri di più</button>
                 </div>
 
                 <div class="col-md-12 col-lg-6 p-0 piattaforma-img translate-img">
@@ -164,7 +179,7 @@ pazienti con un approccio scientifico e personalizzato.
                     <p>
                 
                     </p>
-                    <button class="button-style">Esplora le funzionalità</button>
+                    <button class="button">Esplora le funzionalità</button>
                 </div>
             </div>
 
@@ -359,7 +374,23 @@ affrontare le avversità della vita.
             <p style="text-align: center; margin-top: 2rem; margin-bottom: -2rem;">Hai ancora dubbi?</p>
 
             <div class="col-md-12 p-5 container-btn-domanda">
-                <button class="button-style" onclick="window.location = 'url/contattaci/contattaci.html';" id="domanda">Contattaci</button>
+                <button onclick="window.location ='/BioVitalyAge-Website/url/contattaci/contattaci.html'" class="button">
+                    <span class="button__icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="button__icon-svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 012-2h12a2 2 0 012 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.617A2 2 0 002 14h12a2 2 0 002-2V5.383l-7.555 4.533a.5.5 0 01-.89 0L0 5.383z" />
+                        </svg>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            class="button__icon-svg button__icon-svg--copy" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 012-2h12a2 2 0 012 2v.217l-8 4.8-8-4.8V4zm0 1.383v6.617A2 2 0 002 14h12a2 2 0 002-2V5.383l-7.555 4.533a.5.5 0 01-.89 0L0 5.383z" />
+                        </svg>
+                
+                    </span>
+                    Contattaci
+                </button>
             </div>
            
         </div>
@@ -466,7 +497,36 @@ affrontare le avversità della vita.
             </div>
 
             <div class="col-md-12 p-5 container-btn-notizie">
-                <button class="button-style" id="notizie" onclick="window.location = 'url/Innovation/innovation.html';">Leggi tutte le notizie</button>
+                <button onclick="window.location ='/BioVitalyAge-Website/url/innovation/innovation.html'" class="button">
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+        
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    Leggi tutte le notizie
+                </button>            
             </div>
         </div>      
 
@@ -504,7 +564,24 @@ tuo stato di salute, esplora il calcolo dell’età biologica con BiovitalageClo
 personalizzati possono migliorare il tuo benessere.
                 </p>
                 <div class="p-0 d-flex justify-content-center align-items-center button-container-demo">
-                    <button class="button-style" onclick="window.location = 'url/contattaci/contattaci.html';">Inizia la prova GRATUITA!</button>
+                    <button onclick="window.location ='/BioVitalyAge-Website/url/contattaci/contattaci.html'"
+                        class="button">
+                        <span class="button__icon-wrapper">
+                            <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg" width="10">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor"></path>
+                            </svg>
+                
+                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                                class="button__icon-svg button__icon-svg--copy">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        Inizia la prova GRATUITA!
+                    </button>
                 </div>
             </div>
 
@@ -631,7 +708,36 @@ personalizzati possono migliorare il tuo benessere.
                 </p>
                 
                
-                <button class="button-style">Invia</button>
+                <button class="button">
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+        
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    Invia
+                </button>
               
             </div>
             
