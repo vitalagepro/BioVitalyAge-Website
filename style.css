@@ -1,4 +1,8 @@
 /* Home Section Style */
+.grid-container{
+    height: 490px;
+    transition: all 0.2s ease-in-out;
+}
 
 /* Home img container */
 .Home__img-container{
