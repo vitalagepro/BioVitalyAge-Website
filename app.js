@@ -62,3 +62,26 @@ const scalator = new IntersectionObserver((entries) => {
 ImgToScale.forEach(img => {
     scalator.observe(img); 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          // Se vuoi che l'effetto avvenga solo la prima volta:
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2, // parte quando il 20% dell'elemento entra in viewport
+    }
+  );
+
+  // Seleziona tutti gli h3 con questa classe
+  document.querySelectorAll("h3").forEach((el) => {
+    observer.observe(el);
+  });
+});

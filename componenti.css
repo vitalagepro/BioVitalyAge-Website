@@ -34,7 +34,15 @@
     text-align: center;
     letter-spacing: 1px;
     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+* h3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
 * h3 span{
     color: var(--tittle2);
 }

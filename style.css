@@ -1,8 +1,12 @@
 /* Home Section Style */
 .grid-container{
-    height: 490px;
     transition: all 0.2s ease-in-out;
 }
+
+.text-justify {
+    text-align: justify !important;
+}
+  
 
 /* Home img container */
 .Home__img-container{
