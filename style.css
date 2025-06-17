@@ -73,7 +73,7 @@
 video{
     width: 100%;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 .backdrop{
     background-color: rgba(0,0,0,0.5);
@@ -187,6 +187,7 @@ video{
     background-color: rgba(176, 184, 193, 0.2);
     width: 100%;
     border-radius: 4px;
+    height: 24rem;
 }
 .grid-container:hover{
     background-color: var(--neutral-bg-color-contrast);
