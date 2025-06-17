@@ -108,6 +108,12 @@ body{
     align-items: center;
     padding: 20px;
 }
+
+.card-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card-description h3{
     font-size: 20px;
     color: var(--tittle2);

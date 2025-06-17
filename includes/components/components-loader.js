@@ -37,5 +37,23 @@ $(function () {
     });
 
     // Se hai un footer, lo puoi caricare così:
-    $("#footer-placeholder").load("footer.html");
+    $("#footer-placeholder").load("/BioVitalyAge-Website/includes/components/Footer/footer.html", function () {
+        // ✅ Imposta l’anno dinamico
+        const yearSpan = document.getElementById("current-year");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    
+        // ✅ (facoltativo) effetto animazione sugli h3 del footer
+        const footerH3 = document.querySelectorAll('#footer-placeholder h3');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fade-in 2s forwards';
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        footerH3.forEach(h3 => observer.observe(h3));
+    });
 });

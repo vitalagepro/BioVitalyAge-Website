@@ -512,10 +512,13 @@ footer{
     align-items: center;
 }
 .social-container div a img{
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(.215, .61, .355, 1);
     width: 35px;
     height: 35px;
 }
+/* #facebook img{
+    transition: all 0.3s cubic-bezier(.215, .61, .355, 1);
+} */
 .social-container div a img:hover{
     transform: scale(1.2);
 }
@@ -553,6 +556,7 @@ footer{
     text-decoration: none;
     color: var(--tittle1);
     letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
 }
 .widget-link ul li a:hover{
     color: var(--contrast-color2);
@@ -586,6 +590,7 @@ footer{
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    gap: 5px;
     align-items: center;
 }
 .link-copyright{
@@ -598,6 +603,7 @@ footer{
 }
 .link-copyright a{
     color: var(--tittle1);
+    transition: all 0.2s ease-in-out;
 }
 .link-copyright a:hover{
     color: var(--contrast-color2);

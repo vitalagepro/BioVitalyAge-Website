@@ -28,25 +28,6 @@ document.querySelectorAll('.accordion-btn').forEach(button => {
 });
 
 
-
-
-const allh3 = document.querySelectorAll('h3');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animation = 'fade-in 2s forwards';
-        }
-    });
-}, {
-    threshold: 0.1 
-});
-
-allh3.forEach(h3 => {
-    observer.observe(h3);
-});
-
-
 const allImgToTranslate = document.querySelectorAll('.translate-img');
 
 const translator = new IntersectionObserver((entries) => {
