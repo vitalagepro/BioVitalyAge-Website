@@ -81,4 +81,3 @@ const scalator = new IntersectionObserver((entries) => {
 ImgToScale.forEach(img => {
     scalator.observe(img); 
 });
-
