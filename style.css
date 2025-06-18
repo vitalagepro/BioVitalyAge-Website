@@ -19,6 +19,21 @@
     width: 50%;
     opacity: 0.6;
 }
+
+.Home__img-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden; /* 🔧 impedisce lo "strabordare" */
+}
+
+.Home__img-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover; /* 🔧 assicura che le immagini riempiano senza deformarsi */
+    flex-shrink: 0;
+}
+
 .Home__subtitle-container{
     width: 50%;
     height: 50%;
@@ -48,10 +63,10 @@
     height: 6rem;
     width: 50%;
     margin: auto;
-    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     transform: translate(0%, -40%);
     gap: 10px;
 }
@@ -61,19 +76,24 @@
 
 /* Home content container style */
 .Home-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     background: linear-gradient(to right, var(--dark2), var(--contrast-color), var(--dark2));
 }
 
 /* Contenitore Video */
 .contenitore-video{
     position: relative;
-    height: 700px;
+    height: 600px;
     overflow: hidden;
 }
 video{
     width: 100%;
     height: auto;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 .backdrop{
     background-color: rgba(0,0,0,0.5);
@@ -97,44 +117,39 @@ video{
     font-family: "Raleway", sans-serif;
     font-size: 45px;
     font-weight: 700;
-    text-align: center;
+    margin-bottom: 0;
 }
-.Home-content-Intro h3 span{
+.Home-content-Intro .subtitle{
     color: var(--tittle1);
     font-family: "Raleway", sans-serif;
     font-size: 25px;
     font-weight: lighter;
-    display: block;
-    padding-top: 8px;
-    max-width: 85%;
-    margin: auto;
-}  
-.Home-content-Intro p{
-    text-align: center;
-    margin-top: -2rem;
-    max-width: 85%;
-} 
-
+    display: flex;
+    line-height: normal;
+    margin-bottom: 0;
+    justify-content: start;
+}
 
 
 .Home-content-container-piattaforma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     margin: 1rem auto;
-}
-.Home-content-container-piattaforma-two{
-    margin: 8rem auto 0rem auto;
 }
 .funzionalità{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 5.5rem;
 }
 .piattaforma-description{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: justify;
 }
 .piattaforma-description h3{
     color: var(--tittle1);
@@ -188,6 +203,10 @@ video{
     width: 100%;
     border-radius: 4px;
     height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
 }
 .grid-container:hover{
     background-color: var(--neutral-bg-color-contrast);
@@ -222,6 +241,10 @@ video{
 .img-container-circle img{
     width: 30px;
     height: 30px;
+}
+.button-card{
+    position: absolute;
+    bottom: 2.7rem;
 }
 
 
@@ -396,6 +419,17 @@ video{
     justify-content: center;
     gap: 8px;
 }
+.container-icon-blog{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-icon-blog img{
+    width: 100%;
+    height: 100%;
+}
 .container-btn-notizie{
     display: flex;
     justify-content: center;
@@ -501,6 +535,9 @@ video{
 
 
     /* Container home presentation */
+    .Home-content-Intro{
+        padding: 30px;
+    }
     .Home__img-container{
         flex-wrap: wrap;
     }
@@ -551,9 +588,6 @@ video{
 
 
     /* Container video */
-    .contenitore-video{
-        height: 270px;
-    }
     video{
         width: 150%;
     }
@@ -563,19 +597,11 @@ video{
     .Home-content-Intro h3 span{
         font-size: 18px;
     }
-    .Home-content-Intro p{
-        display: none;
-    }
-
 
     /* Home container piattaforma */
     .Home-content-container-piattaforma{
         margin: 0rem auto;
         flex-wrap: wrap-reverse;
-    }
-    .Home-content-container-piattaforma-two{
-        margin: 2rem auto 0rem auto;
-        flex-wrap: wrap;
     }
     .piattaforma-description h3{
         font-size: 20px;
@@ -585,7 +611,7 @@ video{
         margin-bottom: 2rem;  
     }
     .funzionalità{
-        margin-left: 0rem;
+        margin-bottom: 1.5rem;
     }
     .funzionalità .button-style{
         width: 12rem;
@@ -803,23 +829,12 @@ video{
         transform: translate(0%, 30%);
     }
     
-
-    .contenitore-video{
-        height: 400px;
-    }
     .Home-content-Intro h3{
         font-size: 26px;
         min-width: 25rem;
     }
-    .Home-content-Intro p{
-        display: none;
-    }
     .Home-content-container-piattaforma{
         flex-direction: column-reverse;
-    }
-    .Home-content-container-piattaforma-two{
-        flex-direction: column;
-        margin-top: 3rem;
     }
     .piattaforma-description h3{
         font-size: 25px;
@@ -833,6 +848,7 @@ video{
     }
     .funzionalità{
         margin: 0;
+        margin-bottom: 1.5rem;
         padding: 0;
     }
     .funzionalità .button-style{
@@ -940,30 +956,22 @@ video{
     .button-container .button-style-active{
         width: 15rem;
     }
-    .Home-content-container-piattaforma,
-    .Home-content-container-piattaforma-two{
+    .Home-content-container-piattaforma{
         flex-direction: row;
     }
-    .Home-content-container-piattaforma h3,
-    .Home-content-container-piattaforma-two h3{
+    .Home-content-container-piattaforma h3{
         font-size: 25px;
     }
     .piattaforma-description p:last-of-type{
         display: none;
     }
     .funzionalità{
-        margin-left: 3rem;
+        margin-bottom: 1.5rem;
     }
 
-    .contenitore-video{
-        height: 450px;
-    }
     .Home-content-Intro h3{
         font-size: 26px;
         min-width: 25rem;
-    }
-    .Home-content-Intro p{
-        display: none;
     }
     .Home-Content-container-scleta h3{
         font-size: 28px;
@@ -1000,6 +1008,17 @@ video{
     }
 
 }
+
+@media (max-width: 1440px) {
+  .Home-content-container-piattaforma{
+    flex-wrap: wrap-reverse;
+  }
+
+  .grid-container h3{
+    font-size: 22px;
+  }
+}
+
 @media (min-width: 1400px) and (max-width: 1700px) {
 
     .Home__img-container{
@@ -1009,16 +1028,9 @@ video{
         width: 70%;
         height: 50%;
     }
-
-    .contenitore-video{
-        height: 500px;
-    }
     .Home-content-Intro h3{
         font-size: 26px;
         min-width: 25rem;
-    }
-    .Home-content-Intro p{
-        display: none;
     }
     .Home-Content-container-scleta h3{
         font-size: 28px;
