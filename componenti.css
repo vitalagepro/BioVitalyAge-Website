@@ -203,6 +203,36 @@ body{
     animation: fade-in 0.5s ease-in forwards;
     
 }
+
+.line-divisor{
+    width: 90%;
+    height: 2px;
+    background-color: var(--light1);
+    border-radius: 8px;
+}
+.has-dropdown-clock-mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.dropdown-menu-clock-mobile{
+    transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.active-clock-mobile {
+    height: 100px;
+    opacity: 1;
+    visibility: visible;
+    border-bottom: 2px solid var(--contrast-color2);
+}
+
+
 .nav-bar-mobile.active {
     left: 0; 
 }
@@ -250,7 +280,7 @@ body{
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1.3rem;
     align-items: flex-start;
     margin-top: 20%;
 }
@@ -363,6 +393,57 @@ body{
     width: 20px;
     height: 20px;
 }
+/* ! Nav Bar style */
+/* 1. Assicurati che il contenitore sia relativo */
+.nav-bar__linkage .has-dropdown {
+    position: relative;
+}
+
+/* 2. Nascondi il menu dropdown di default */
+/* 1. Impostazioni di base: menu nascosto e pronto alla transizione */
+.has-dropdown-clock{
+    position: relative;
+}
+
+.dropdown-menu-clock{
+    position: absolute;
+    top: 35px;
+    left: 5rem;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--dark1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 7rem;
+    transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
+}
+.dropdown-menu-clock::after {
+    content: "";
+    position: absolute;
+    top: -20px; /* distanza sopra il menu */
+    left: 50%; /* centratura orizzontale */
+    transform: translateX(-50%); /* centratura precisa */
+    
+    /* crea una freccia triangolare */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--dark1) transparent;
+    /* ↑↑↑↑
+       sopra: trasparente
+       destra: trasparente
+       sotto: colore reale (freccia)
+       sinistra: trasparente
+    */
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .nav-bar-tittle{
     color: var(--tittle1);
     font-weight: bold;
@@ -753,6 +834,9 @@ footer{
 
 /* Smartphone piccoli (320px-480px) */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .nav-barMobile__logo-container img{
+        width: 150%;
+    }
     .nav-bar{
         display: none;
     }

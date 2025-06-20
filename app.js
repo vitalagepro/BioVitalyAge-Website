@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 function myFunction(x) {
     x.classList.toggle("change");
 
@@ -6,6 +18,7 @@ function myFunction(x) {
 
     backdrop.classList.toggle('active');
     navBarMobile.classList.toggle('active');
+    document.body.style.overflow = document.body.style.overflow === 'hidden' ? '' : 'hidden';
 }
 
 
