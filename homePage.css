@@ -408,10 +408,17 @@ video{
     padding: 20px;
 }
 .autore-description{
-    width: 70%;
+    width: 72%;
     display: flex;
     padding-top: 10px;
     gap: 18px;
+}
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Numero di linee da mostrare */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .Container-autore,
 .Container-Data{

@@ -424,18 +424,11 @@ body{
     position: absolute;
     top: -20px; /* distanza sopra il menu */
     left: 50%; /* centratura orizzontale */
-    transform: translateX(-50%); /* centratura precisa */
-    
-    /* crea una freccia triangolare */
+    transform: translateX(-50%);
+
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent var(--dark1) transparent;
-    /* ↑↑↑↑
-       sopra: trasparente
-       destra: trasparente
-       sotto: colore reale (freccia)
-       sinistra: trasparente
-    */
 }
 
 .active{
@@ -811,11 +804,11 @@ footer{
 @keyframes scale {
     from {
         transform: scale(1.1);
-        opacity: 0; /* Start hidden */
+        opacity: 0;
     }
     to {
         transform: scale(1.0);
-        opacity: 1; /* Fully visible */
+        opacity: 1;
     }
 }
 
@@ -889,7 +882,7 @@ footer{
         margin-top: 0rem;
     }
 
-    
+
 
 
 
