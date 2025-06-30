@@ -408,7 +408,7 @@ body{
 .dropdown-menu-clock{
     position: absolute;
     top: 35px;
-    left: 5rem;
+    left: 4rem;
     opacity: 0;
     visibility: hidden;
     background-color: var(--dark1);
@@ -416,7 +416,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 7rem;
+    width: 10rem;
     transition: all 0.2s cubic-bezier(.215, .61, .355, 1);
 }
 .dropdown-menu-clock::after {
