@@ -56,6 +56,10 @@ body{
 
 /* Home Section Style */
 /* Home content container style */
+.home_section-etaBilogica{
+    padding: 8rem 2rem !important;
+}
+
 .Home-content-container{
     display: flex;
     flex-direction: column;
@@ -347,7 +351,6 @@ video{
 
 .home_section-etaBilogica{
     margin: 1rem auto 0rem auto;
-    background: var(--contrast-color-shadow) !important;
 }
 .marcatore{
     color: var(--tittle2);
@@ -655,7 +658,7 @@ video{
 }
 
 .img-container-circle img{
-    width: 80%;
+    width: 70%;
 }
 
 
@@ -745,14 +748,32 @@ iframe{
     width: 45px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Domande */
 .faq-container{
     margin: auto;
     background-color: var(--neutral-bg-color-contrast);
+    padding: 8rem 2rem !important;
 }
 .faq-container h3{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 30px;
     color: var(--tittle2);
     font-weight: 700;
@@ -794,6 +815,10 @@ iframe{
     text-align: left;
     position: relative;
 }
+.accordion-btn{
+    padding: 20px;
+    padding-right: 40px;
+}
 .accordion-btn::after {
     content: '+';
     position: absolute;
@@ -823,6 +848,16 @@ iframe{
     border: 1px solid var(--neutral-bg-color);
 }
 
+
+
+
+
+
+
+
+
+
+/* ! MEDIA QUERIES */
 @media (max-width: 1024px) {
    .Home-Content-container-vantaggi{
       padding: 0;
